@@ -10,10 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_23_155002) do
+ActiveRecord::Schema.define(version: 2020_11_23_173204) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "species", force: :cascade do |t|
+    t.string "name"
+    t.string "latin_name"
+    t.text "description"
+    t.string "threat_level"
+    t.integer "size"
+    t.string "color"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tags", force: :cascade do |t|
+    t.date "diving_date"
+    t.float "latitude"
+    t.float "longitude"
+    t.string "spot_name"
+    t.text "description"
+    t.integer "depth"
+    t.bigint "user_id", null: false
+    t.bigint "species_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["species_id"], name: "index_tags_on_species_id"
+    t.index ["user_id"], name: "index_tags_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
@@ -27,4 +53,6 @@ ActiveRecord::Schema.define(version: 2020_11_23_155002) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "tags", "species"
+  add_foreign_key "tags", "users"
 end
