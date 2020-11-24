@@ -6,4 +6,5 @@ class User < ApplicationRecord
 
   has_many :tags
   # has_many :species, through: :tags
+  has_one_attached :avatar
 end
