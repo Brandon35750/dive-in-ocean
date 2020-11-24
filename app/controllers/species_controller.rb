@@ -1,2 +1,7 @@
 class SpeciesController < ApplicationController
+  def show
+    # @species = Species.find(params[:id])
+  end
 end
+
+#@tools = Tool.all
