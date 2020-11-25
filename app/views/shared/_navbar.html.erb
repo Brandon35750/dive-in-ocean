@@ -36,13 +36,21 @@
 
 <div class="topnav text-center">
   <div class="text-center">
-    <a class="topnav-centered" href=""><%= image_tag "logo.png", alt: "logo" %></a>
+
+    <%= link_to "/", class: "topnav-centered" do %>
+    <%= image_tag "logo.png", alt: "logo" %>
+    <% end %>
+
+
+    <!-- <a class="topnav-centered" href=""><%= image_tag "logo.png", alt: "logo" %></a> -->
     <a href="#news">Species</a>
     <a href="#contact">About-Us</a>
     <a href="#contact">Eco-gests</a>
     <a href="#search">Gallery</a>
     <a href="#about">Post your dive</a>
     <a href="#about">Log in</a>
+    <!-- <a><%= link_to "Login", new_user_session_path, class: "" %></a> -->
+
   </div>
 </div>
 
