@@ -1,20 +1,22 @@
 class TagsController < ApplicationController
 
   def index
-    if params[:query].present?
-        @tags = Tag.global_search(params[:query])
+    if params[:query].present? && params[:secondquery].present?
+      @tags_species1 = Tag.global_search(params[:query]).to_a
+      @tags_species2 = Tag.global_search(params[:secondquery]).to_a
+      @tags = [@tags_species1, @tags_species2].flatten
+    elsif params[:query].present?
+      @tags = Tag.global_search(params[:query])
     else
-        @tags = Tag.all
+      @tags = Tag.all
     end
 
-    @markers = @tags.geocoded.map do |tag|
-        {
-          lat: tag.latitude,
-          lng: tag.longitude
-          # infoWindow:
-        }
+    @markers = @tags.map do |tag|
+      {
+        lat: tag.latitude,
+        lng: tag.longitude
+        # infoWindow:
+      }
     end
   end
-
 end
-
