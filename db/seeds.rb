@@ -233,8 +233,8 @@ specie11.save!
 
 
 tag1 = Tag.new(
-  longitude:  -8.678583,
-  latitude: 115.455586,
+  latitude:  -8.678583,
+  longitude: 115.455586,
   spot_name: "Crystal Bay",
   diving_date: "2020-1-6",
   species: specie1,
@@ -247,8 +247,8 @@ tag1.save!
 
 
 tag2 = Tag.new(
-  longitude: -9.678583,
-  latitude: 114.455586,
+  latitude: -9.678583,
+  longitude: 114.455586,
   spot_name: "Manta Point",
   diving_date: "2020-1-3",
   species: specie2,
@@ -286,8 +286,8 @@ tag4.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-
 tag4.save!
 
 tag5 = Tag.new(
-  longitude: 47.512396,
-  latitude: -61.490746,
+  latitude: 47.512396,
+  longitude: -61.490746,
   spot_name: "Golfe du St laurent",
   diving_date: "2020-8-11",
   species: specie7,
