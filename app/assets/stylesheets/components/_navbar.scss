@@ -1,12 +1,79 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+.topnav {
+  background-color: transparent;
+  padding: 30px 30px 30px 30px;
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content :center;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
+.topnav a {
+  color: black;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s ease-in-out 0.2s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin:16px;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.topnav a:hover {
+  color: #16a6b6;
+  transform: scale(1.1);
+  transition: all 0.3s ease-in-out 0.1s;
+  border-bottom: solid;
+  border-bottom: 1px solid #16a6b6;
 }
+
+.topnav a.active {
+  background-color: #16a6b6;
+  color: white;
+}
+
+.topnav-centered {
+padding: 16px 16px;
+}
+
+.topnav-centered img {
+width: 100px;
+}
+
+.topnav-centered img:hover {
+  border-bottom: none;
+  text-decoration: none;
+}
+
+
+/* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav-right{
+    float: none;
+    display: flex;
+    border-bottom: none;
+  }
+
+  // .topnav-centered a {
+  //   position: relative;
+  //   top: 0;
+  //   left: 0;
+  //   transform: none;
+  // }
+}
+
+// #image {
+//   width: 80px;
+// }
+
