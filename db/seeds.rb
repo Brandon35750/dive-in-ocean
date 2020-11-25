@@ -5,16 +5,17 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Tag.destroy_all
 User.destroy_all
 Species.destroy_all
-Tag.destroy_all
+
 
 user1 = User.create!(
   first_name: "Anna",
   last_name: "Chedeville",
   username: "chedanna",
   diving_level: "TSD",
-  description: "",
+  description: "princesse Anna",
   email: "anna@example.com",
   password: "password",
   )
@@ -26,7 +27,7 @@ user2 = User.create!(
   last_name: "Ruaux",
   username: "plongeur-fou",
   diving_level: "DM",
-  description: "27 et passioné de la vie.",
+  description: "27 et passioné par la vie.",
   email: "brandon@example.com",
   password: "password",
   )
@@ -62,7 +63,7 @@ user5 = User.create!(
   last_name:"Brendle",
   username:"xtineHK",
   diving_level:"TSD",
-  description:"",
+  description:"made in Hong Kong",
   email: "christine@example.com",
   password: "password",
   )
@@ -232,13 +233,13 @@ specie11.save!
 
 
 tag1 = Tag.new(
-  latitude:  -8.678583,
-  longitude: 115.455586,
+  longitude:  -8.678583,
+  latitude: 115.455586,
   spot_name: "Crystal Bay",
-  diving_date: 2020-1-6,
-  species_id: 1,
-  user_id: 17,
-  description: "Que de chance de pouvoir apercevoir le Mola Mola durant cette plongée ! Nous étions 3 dans notre palanqué et nous sommes tombé nez à nez avec ce magnifique spécimen de 2,7 lors de notre remonte en surface.",
+  diving_date: "2020-1-6",
+  species: specie1,
+  user: user1,
+  description: "Quelle chance de pouvoir apercevoir le Mola Mola durant cette plongée! Nous étions 3 dans notre palanqué et nous sommes tombé nez à nez avec ce magnifique spécimen de 2,7 lors de notre remonte en surface.",
   depth: 31
   )
 tag1.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola.jpg')), filename: 'mola-mola.jpg')
@@ -246,12 +247,12 @@ tag1.save!
 
 
 tag2 = Tag.new(
-  latitude: -9.678583,
-  longitude: 114.455586,
+  longitude: -9.678583,
+  latitude: 114.455586,
   spot_name: "Manta Point",
-  diving_date: 2020-1-3,
-  species_id: 2,
-  user_id: 18,
+  diving_date: "2020-1-3",
+  species: specie2,
+  user: user2,
   description: "Une plongé agréable dans la station de netoyage des Raies Manta , une expérience magnifique malgré la température de l'eau un peu faible",
   depth: 14
   )
@@ -259,91 +260,90 @@ tag2.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/manta-
 tag2.save!
 
 tag3 = Tag.new(
-  latitude: 43.681641,
-  longitude: -18.333669,
+  longitude: 43.681641,
+  latitude: -18.333669,
   spot_name: "Grand tombant de la possession",
-  diving_date: 2020-8-9,
-  species_id: 3,
-  user_id: 19,
-  description: "
-       White shark   Quelle surprise de tombé sur ce GRAND prédateur, ce requin avais été apercu la veille et nous avons eu la chance de tomber dessus lors de notre plongée",
+  diving_date: "2020-8-9",
+  species: specie2,
+  user: user3,
+  description: "Quelle surprise de tomber sur ce GRAND prédateur, ce requin avait été aperçu la veille et nous avons eu la chance de le retrouver lors de notre plongée",
   depth: 36
   )
 tag3.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/white-shark.jpg')), filename: 'white-shark.jpg')
 tag3.save!
 
 tag4 = Tag.new(
-  latitude: 43.769531,
-  longitude: -20.324024,
+  longitude: 43.769531,
+  latitude: -20.324024,
   spot_name: "Aquarium",
-  diving_date: 2020-7-8,
-  species_id: 3,
-  user_id: 20,
-  description:"Toujours un plaisir de voir une tortue évoluer dans son milieu. La température de l'eau était tres bonne ( aux alentour des 28°). Nous reviendrons pour pouvoir je 'espere voir un requin lors de notre prochaine plongée. ",
+  diving_date: "2020-7-8",
+  species: specie3,
+  user: user4,
+  description:"Toujours un plaisir de voir une tortue évoluer dans son milieu. La température de l'eau était tres bonne (aux alentour de 28°). Nous reviendrons pour voir un requin lors de notre prochaine plongée.",
   depth: 7
   )
 tag4.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle.jpg')), filename: 'green-turtle.jpg')
 tag4.save!
 
 tag5 = Tag.new(
-  latitude: 47.512396,
-  longitude: -61.490746,
+  longitude: 47.512396,
+  latitude: -61.490746,
   spot_name: "Golfe du St laurent",
-  diving_date: 2020-8-11,
-  species_id: 7,
-  user_id: 21,
-  description:"Etant explorateur je me suis rejuit de la rencontre avec ce Béluga. En ammorcant nos plongées nous avions vraiment un petit espoir de tomber sur l'espece, et nous avons eu extrenemnt de chance de voir ce Beluga. Un grand souvenir gravé à jamais dans ma mémoire. ",
+  diving_date: "2020-8-11",
+  species: specie7,
+  user: user5,
+  description:"Etant explorateur, je me rejouis de la rencontre avec ce Béluga: un moment rare et un souvenir gravé à jamais dans ma mémoire. ",
   depth: 39
   )
 tag5.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/beluga.jpg')), filename: 'beluga.jpg')
 tag5.save!
 
 tag6 = Tag.new(
-  latitude: 35.158233,
-  longitude: 24.627271,
+  longitude: 35.158233,
+  latitude: 24.627271,
   spot_name: "Sharm El Lulli",
-  diving_date: 2020-1-23,
-  species_id: 5,
-  user_id: 22,
-  description: "C'était la premiere fois que j'allais plongé dans la Mer Rouge. Ayant déja observer des raies manta lors de nos précedentes plongées en Indonésie. j'ai été agréablement surpris d'en coiser une, et qulle taille !!!! 4,2m !!! ",
+  diving_date: "2020-1-23",
+  species: specie5,
+  user: user6,
+  description: "C'était la premiere fois que j'allais plonger dans la Mer Rouge, mais j'avais déja observé des raies manta lors de précedentes plongées en Indonésie. J'ai été agréablement surpris de croiser cette rai de si grande taille: 4,2m! ",
   depth: 17
   )
 tag6.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/manta-ray2.jpg')), filename: 'manta-ray2.jpg')
 tag6.save!
 
 tag7 = Tag.new(
-  latitude: 124.106026,
-  longitude: 11.348062,
+  longitude: 124.106026,
+  latitude: 11.348062,
   spot_name:  "Grand tombant",
-  diving_date: 2020-3-12,
-  species_id: 4,
-  user_id: 23,
-  description: "J'avais entendu parler de cet endroit ou l'on pouvait observer des requins renards, je n'ai pas été decu, en 4 plongées nous avons eu la change d'en observer plus d'une dizaine !!!!",
+  diving_date: "2020-3-12",
+  species: specie4,
+  user: user7,
+  description: "J'avais entendu parler de cet endroit où l'on peut observer des requins renards, je n'ai pas été deçu, en 4 plongées nous avons eu la change d'en observer plus d'une dizaine!",
   depth: 27
   )
 tag7.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard.jpg')), filename: 'requin-renard.jpg')
 tag7.save!
 
 tag8 = Tag.new(
-  latitude: 99.994125,
-  longitude: 9.698736,
+  longitude: 99.994125,
+  latitude: 9.698736,
   spot_name: "Sail Rock",
-  diving_date: 2020-3-11,
-  species_id: 6,
-  user_id: 23,
-  description: "Ah le fameux Requin Baleine, on nous en parle depuis 2 semaines. Observable au Sud de Koh Tao nous avons effectué cette plongé et quelle surprise nous avons eu lors de notre remonté pour effectuer le pallier de sécurité à 5m. Un souvenir à jamais !!!!",
+  diving_date: "2020-3-11",
+  species: specie6,
+  user: user7,
+  description: "Ah le fameux Requin Baleine, on nous en parlait depuis 2 semaines. Observable au Sud de Koh Tao nous avons eu une belle surprise lors d'une remontée alors que nous respections le palier de sécurité des 5m: un souvenir inoubiable!",
   depth: 17
   )
 tag8.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/whale-shark.jpg')), filename: 'whale-shark.jpg')
 tag8.save!
 
 tag9 = Tag.new(
-  latitude: 100.020218,
-  longitude: 9.807011,
+  longitude: 100.020218,
+  latitude: 9.807011,
   spot_name: "Chumphon Pinnacle",
-  diving_date: 2020-4-11,
-  species_id: 6,
-  user_id: 17,
+  diving_date: "2020-4-11",
+  species: specie6,
+  user: user2,
   description: "Une grosse bestiole que tout le monde reve de pouvoir observer, apres plus d'une dizaine de plongée autours de Tao j'ai enfin pu apercevoir ce mastodonte... JE REVIENDRAIS !",
   depth: 38
   )
@@ -351,26 +351,26 @@ tag9.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/whale-
 tag9.save!
 
 tag10 = Tag.new(
-  latitude: 57.615738,
-  longitude: 19.974801,
+  longitude: 57.615738,
+  latitude: 19.974801,
   spot_name: "Trou aux biches",
-  diving_date: 2020-5-11,
-  species_id: 11,
-  user_id: 18,
-  description: "Ma fille est extrenement fan des poissons clown qui sont devenu célèbre grace au film d'animation 'Le monde de Némo', elle a été emerveiller de pouvoir observer ces poissons dans leurs anémone.",
+  diving_date: "2020-5-11",
+  species: specie11,
+  user: user1,
+  description: "Ma fille adore les poissons clown qui sont devenus célèbres grâce au film d'animation 'Le monde de Némo', elle a été emerveillée de pouvoir observer ces poissons dans leurs anémones.",
   depth: 7
   )
 tag10.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/anemonefish.jpg')), filename: 'anemonefish.jpg')
 tag10.save!
 
 tag11 = Tag.new(
-  latitude: 58.615738,
-  longitude: 19.992224,
+  longitude: 58.615738,
+  latitude: 19.992224,
   spot_name: "Grand baie",
-  diving_date: 2020-6-11,
-  species_id: 3,
-  user_id: 19,
-  description:"Nous étions à l'Ile Maurice pour faire du Snorkeling et nous nous sommes laissé tenté pour effectuer un bapteme de plongée. C'était la premiere fois que je nageais avec des tortues et cétait magnifique !!!!!!",
+  diving_date: "2020-6-11",
+  species: specie3,
+  user: user3,
+  description:"Nous étions à l'Ile Maurice pour faire du snorkeling et nous nous sommes laissés tenter par un baptême de plongée. J'ai nagé avec des tortues pour la première fois et cétait magnifique!",
   depth: 13
   )
 tag11.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
