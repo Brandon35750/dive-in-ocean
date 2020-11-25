@@ -42,32 +42,53 @@
   display: inline-block;
 }
 
-.name-center p {
-  font-size: 23px;
-  opacity: 0.4;
-  font-weight: lighter;
+.name-center h3 {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #005586;
+  opacity: 0.5;
 }
 
+.name-center h1 {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #065CAB;
+}
 .container-description {
- text-align: center;
- //background-color: yellow;
- height: 30%;
- // border-bottom: solid #005586;
+  height: 30%;
   margin-bottom: 24px;
-  font-family: Karla;
   letter-spacing: 4px;
-  line-height: 32px;
-  font-size: 16px;
   opacity: 0.8;
   display: inline-block;
-  border-bottom: solid 1px #005586;
+}
 
+.container-description h3{
+  font-family: Karla;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 40px;
+  text-align: center;
+  color: #696969;
 }
 
 .name-center-item {
   display:flex;
   //background-color: white;
   height: 10%;
+  border-top: solid 1px #005586;
 }
 
 .btn-map {
@@ -75,36 +96,67 @@
   height:5%;
 }
 
-// .img-tag {
-//   height: 16%;
-//   display:flex;
-//   //background-color: orange;
-// }
+.img-tag {
+   height: 16%;
+   //background-color: orange;
+   padding-top: 8px;
+ }
+
+ .img-tag h3 {
+  float: left;
+  text-align: justify;
+  padding-left: 16px;
+ }
+
+.img-tag h4 {
+  float: right;
+  text-align: justify;
+  padding-right: 16px;
+ }
 
 .tiret {
   width: 33%;
-
   padding: 16px 16px 16px 16px;
   display: inline-block;
 }
 
-.tiret p {
-  padding-bottom: 0px;
-  color: #696969;
-  font-family: Karla;
-
-}
-
 .tiret h3 {
+  padding-bottom: 0px;
+  font-family: Inconsolata;
+  font-style: normal;
   font-weight: bold;
-  color: #065CAB;
   font-size: 16px;
-  border-right: solid 1px #005586;
-  font-family: Karla;
-
-
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #005586;
 }
 
+.tiret h4 {
+  border-right: solid 1px #005586;
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #696969;
+}
+
+.div-btn {
+  text-align: center;
+  width: 20%;
+  height: 5%;
+}
+
+.div-btn h3 {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #696969;
+}
 .btn-show {
   margin-top: 24px;
   border-color: #005586;
