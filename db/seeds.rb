@@ -5,9 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+Tag.destroy_all
 User.destroy_all
 Species.destroy_all
-Tag.destroy_all
+
 
 user1 = User.create!(
   first_name: "Anna",
@@ -51,7 +52,7 @@ user4 = User.create!(
   username:"celeston",
   diving_level:"Open Water",
   description:"",
-  email: "celeste@example.com",
+  email: "celeste@examplebis.com",
   password: "password",
   )
 user4.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
