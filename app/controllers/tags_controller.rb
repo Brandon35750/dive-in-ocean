@@ -14,9 +14,11 @@ class TagsController < ApplicationController
     @markers = @tags.map do |tag|
       {
         lat: tag.latitude,
-        lng: tag.longitude
+        lng: tag.longitude,
         # infoWindow:
+        # image_url: helpers.asset_url('assets/images/mask.png')
       }
     end
+
   end
 end
