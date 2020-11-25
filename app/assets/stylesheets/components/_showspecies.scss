@@ -32,9 +32,18 @@
   //background-color: green;
   height:15%;
   border-bottom: solid #B3CCDB;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
   letter-spacing: 4px;
   font-weight: bold;
+  font-size: 40px;
+  width: auto;
+   //display: inline-block;
+
+}
+
+.name-center p {
+  font-size: 16px;
+  opacity: 0.5;
 }
 
 .container-description {
@@ -45,6 +54,10 @@
   margin-bottom: 24px;
   font-family: Karla;
   letter-spacing: 4px;
+  line-height: 32px;
+  font-size: 16px;
+  opacity: 0.8;
+  display: inline-block;
 }
 
 .name-center-item {
