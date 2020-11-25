@@ -1,36 +1,42 @@
+
 <div class="container-species">
   <div class="img-species">
-    <img src="https://fr.nicodivescoolbali.com/wp-content/uploads/2017/10/banner-big-fish.jpg" alt="mola-mola">
+    <img <%= cl_image_tag @species.photo.key %>
   </div>
-    <div class=" rigth-description p-4">
-    <div class="name-center">
-      <p>Poisson Lune</p>
-      <p>Mola mola</p>
-    </div>
-    <div class="container-description">
-      <p>Ce poisson de corps quasi circulaire, comprimé latéralement forme un disque ovoïde caractéristique. Très apparentes, les deux nageoires dorsale et anale, triangulaires, reculées et opposées (placées en vis-à-vis du disque corporel), lui servent de rames verticales synchrones. Absence de queue remplacee par une frange.</p>
-    </div>
-    <div class="name-center-item">
-      <div class="tiret">
-        <p >55cm to 300cm</p>
+    <div class="rigth-description p-4 text-center">
+      <div class="name-center ">
+        <p><%=@species.latin_name%></p>
+        <h1><%=@species.name%></h1>
       </div>
-      <div class="tiret">
-        <p>bleu gris</p>
+      <div class="container-description">
+        <p><%=@species.description%></p>
       </div>
-      <div class="tiret">
-        <p>Peu menacé</p>
+      <div class="name-center-item">
+
+        <div class="tiret">
+          <h3>Size</h3>
+          <!-- <p>Size</p> -->
+          <p><%=@species.size%></p>
+        </div>
+        <div class="tiret">
+          <h3>Color</h3>
+          <!-- <p>Color</p> -->
+          <p><%=@species.color%></p>
+        </div>
+        <div class="tiret">
+          <h3>Threats</h3>
+        <!-- <p>Threats</p> -->
+        <p><%=@species.threat_level%></p>
+        </div>
       </div>
+      <div class="btn btn-show">
+        <p>Ou me trouver ?</p>
+      </div>
+      <!-- <div class="img-tag ">
+        <p>Photos</p>
+
+      </div> -->
     </div>
-    <div class="btn">
-      <p>Ou nous trouver</p>
-    </div>
-    <div class="img-tag">
-      <p>Photos</p>
-    </div>
-  </div>
 </div>
-
-
-
 
 

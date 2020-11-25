@@ -1,14 +1,14 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+<!-- <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
   <%= link_to "#", class: "navbar-brand" do %>
     <%= image_tag "https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" %>
     <% end %>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
-  </button>
+  </button> -->
 
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <% if user_signed_in? %>
         <li class="nav-item active">
@@ -30,6 +30,28 @@
           <%= link_to "Login", new_user_session_path, class: "nav-link" %>
         </li>
       <% end %>
-    </ul>
+    </ul> -->
+ <!--  </div>
+</div> -->
+
+<div class="topnav text-center">
+  <div class="text-center">
+
+    <%= link_to "/", class: "topnav-centered" do %>
+    <%= image_tag "logo.png", alt: "logo" %>
+    <% end %>
+
+
+    <!-- <a class="topnav-centered" href=""><%= image_tag "logo.png", alt: "logo" %></a> -->
+    <a href="#news">Species</a>
+    <a href="#contact">About-Us</a>
+    <a href="#contact">Eco-gests</a>
+    <a href="#search">Gallery</a>
+    <a href="#about">Post your dive</a>
+    <a href="#about">Log in</a>
+    <!-- <a><%= link_to "Login", new_user_session_path, class: "" %></a> -->
+
   </div>
 </div>
+
+
