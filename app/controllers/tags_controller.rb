@@ -22,7 +22,8 @@ class TagsController < ApplicationController
       {
         lat: tag.latitude,
         lng: tag.longitude,
-        # infoWindow:
+        infoWindow: render_to_string(partial: "info_window", locals: { tag: tag })
+        # infoWindow: render_to_string(partial: "info_window", locals: { tag: tag })
         # image_url: helpers.asset_url('assets/images/mask.png')
       }
     end
