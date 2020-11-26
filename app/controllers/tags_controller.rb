@@ -7,7 +7,6 @@ class TagsController < ApplicationController
     @tag = Tag.find(params[:id])
   end
 
-
   def index
     if params[:query].present? && params[:secondquery].present?
       @tags_species1 = Tag.global_search(params[:query]).to_a
@@ -27,4 +26,5 @@ class TagsController < ApplicationController
         # image_url: helpers.asset_url('assets/images/mask.png')
       }
     end
+  end
 end
