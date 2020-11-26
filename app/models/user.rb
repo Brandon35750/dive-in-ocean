@@ -7,4 +7,7 @@ class User < ApplicationRecord
   has_many :tags
   # has_many :species, through: :tags
   has_one_attached :avatar
+
+  validates :first_name, :last_name, :diving_level, presence: true
+  validates :email, :username, presence: true, uniqueness: true
 end
