@@ -80,13 +80,33 @@
 .carousel-inner{
   background-color: rgb(3,13,36);
   text-align: center;
-  padding-top: 50px;
-  padding-bottom: 400px;
+  padding-top: 15px;
+  padding-bottom: 220px;
+  position: relative;
 
 }
 
 .corail {
   width: 100%;
-  bottom: 80rem;
-  opacity: 10%;
+  opacity: 95%;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+}
+
+.about {
+  position: absolute;
+  bottom: 40px;
+  right : 650px;
+  // text-align: center;
+
+}
+
+
+
+.about-divin p{
+  text-align: center;
+  padding-left: 500px;
+  padding-right: 500px;
+  line-height: 40px;
 }
