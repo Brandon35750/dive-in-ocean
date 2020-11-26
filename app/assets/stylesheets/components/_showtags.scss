@@ -1,32 +1,49 @@
+.mapboxgl-popup-content {
+  /*height: 300px;
+  width: 175px;*/
+  position: relative;
+  background: #fff;
+
+  padding: 0px 0px 0px;
+  pointer-events: auto;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
 .card-tag {
-  height: 500px;
-  width: 300px;
+  width: 150px;
+  border-radius: 4px;
   overflow: hidden;
   background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .card-tag > img {
-  height: 300px;
+  height: 150px;
   width: 100%;
   object-fit: cover;
 }
 
 .card-tag h2 {
+  font-size: 12px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.card-tag h1 {
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-tag p {
-  font-size: 12px;
+  font-size: 10px;
+  font-family: Inconsolata;
   opacity: .7;
   margin: 0;
 }
 
 
 .card-tag .card-tag-infos {
-  padding: 16px;
+  padding: 12px;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -35,7 +52,7 @@
 
 .card-tag-infos .card-tag-user {
   position: absolute;
-  right: 16px;
-  top: -20px;
-  width: 80px;
+  right: 8px;
+  top: -38px;
+  width: 56px;
 }
