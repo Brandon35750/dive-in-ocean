@@ -44,6 +44,10 @@
   color: white;
 }
 
+.liens.active {
+  background-color: #16a6b6;
+  color: white;
+}
 .topnav-centered img {
 width: 100px;
 }
@@ -72,9 +76,22 @@ width: 100px;
 }
 
 .menu-avatar {
-  margin: 24px 0px 100px 100px;
-  padding: 16px 16px 16px 16px;
+  text-align: center;
   border-radius: 8px;
-  box-shadow: 8px 8px 4px 4px rgba(102, 141, 107, 0.5);
-  border-color: rgba(102, 141, 107, 0.5);
+  box-shadow: 4px 4px 4px 4px white;
+  border-color: #005586;
+  background-color:transparent;
+  margin-top: 12px;
+}
+
+.nav-item a {
+  color: #005586;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out 0.2s;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 4px;
+
 }
