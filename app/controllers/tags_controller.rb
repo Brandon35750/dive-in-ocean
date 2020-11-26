@@ -24,7 +24,7 @@ class TagsController < ApplicationController
         lng: tag.longitude,
         infoWindow: render_to_string(partial: "info_window", locals: { tag: tag })
         # infoWindow: render_to_string(partial: "info_window", locals: { tag: tag })
-        # image_url: helpers.asset_url('assets/images/mask.png')
+        # image_url: helpers.asset_url('../assets/images/mask.png')
       }
     end
   end
