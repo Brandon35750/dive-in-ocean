@@ -1,6 +1,13 @@
 class TagsController < ApplicationController
   skip_before_action :authenticate_user!, only: [:index, :show]
 
+  skip_before_action :authenticate_user!, only: [:index, :show]
+
+  def show
+    @tag = Tag.find(params[:id])
+  end
+
+
   def index
     if params[:query].present? && params[:secondquery].present?
       @tags_species1 = Tag.global_search(params[:query]).to_a
@@ -15,9 +22,9 @@ class TagsController < ApplicationController
     @markers = @tags.map do |tag|
       {
         lat: tag.latitude,
-        lng: tag.longitude
+        lng: tag.longitude,
         # infoWindow:
+        # image_url: helpers.asset_url('assets/images/mask.png')
       }
     end
-  end
 end
