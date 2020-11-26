@@ -21,7 +21,7 @@
 
 .topnav a {
   color: #005586;
-  padding: 8px 16px;
+  padding: 8px 2px;
   text-decoration: none;
   font-size: 18px;
   transition: all 0.3s ease-in-out 0.2s;
@@ -48,9 +48,10 @@
 width: 100px;
 }
 
+
 .topnav-centered img:hover {
   border-bottom: none;
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 
@@ -68,4 +69,12 @@ width: 100px;
   left: 0;
   transform: none;
 }
+}
+
+.menu-avatar {
+  margin: 24px 0px 100px 100px;
+  padding: 16px 16px 16px 16px;
+  border-radius: 8px;
+  box-shadow: 8px 8px 4px 4px rgba(102, 141, 107, 0.5);
+  border-color: rgba(102, 141, 107, 0.5);
 }

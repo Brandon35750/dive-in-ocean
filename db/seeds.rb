@@ -154,7 +154,9 @@ specie4.save!
 specie5 = Species.new(
   name: "Raies Manta",
   latin_name: "Mobula alfredi",
+
   description: "Les raies manta possèdent un corps aplati. Les yeux et les spiracles sont latéraux alors que les 5 fentes branchiales sont sur la face ventrale. La tête est très large et porte deux nageoires céphaliques deux fois plus longues que larges qui sont des extensions de ses nageoires pectorales.",
+
   threat_level: "Espece vulnerable",
   size: 5,
   color: "Brun",
@@ -165,8 +167,10 @@ specie5.save!
 specie6 = Species.new(
   name: "Requin Baleine",
   latin_name: "Rhincodon typus",
+
   description: "Le requin-baleine est le plus grand de tous les poissons cartilagineux et osseux, sa taille pouvant atteindre 12 m. Il est reconnaissable à sa tête plate et large, fendue d'une très grande bouche qui peut mesurer jusqu'à 1,50 m de large. Ses yeux sont situés juste en arrière de la bouche.",
   threat_level: "Espece vulnerable",
+
   size: 8,
   color: "Bleu & blanc",
   )
