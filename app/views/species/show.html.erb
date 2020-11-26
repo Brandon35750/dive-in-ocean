@@ -1,9 +1,12 @@
 
 <div class="container-species">
   <div class="img-species">
-    <img <%= cl_image_tag @species.photo.key %>
+    <img <%= cl_image_tag @species.photo.key %>>
   </div>
     <div class="rigth-description p-4 text-center">
+      <div class="button-previous div-btn ">
+        <h3>Back-Map <i class="fas fa-map-pin"></i></h3>
+      </div>
       <div class="name-center ">
         <h3><%=@species.latin_name%></h3>
         <h1><%=@species.name%></h1>
@@ -16,7 +19,8 @@
         <div class="tiret">
           <h3>Size</h3>
           <!-- <h3>Size</h3> -->
-          <h4><%=@species.size%></h4>
+          <h4><%=@species.size%>m</h4>
+
         </div>
         <div class="tiret">
           <h3>Color</h3>
@@ -35,9 +39,20 @@
       <div class="img-tag ">
         <h3>Last Pictures</h3>
         <h4>See all</h4>
-
+      </div>
+      <div class="card-show">
+        <div class="card-product">
+          <img><%= cl_image_tag @species.photo.key %>
+        </div>
+        <div class="card-product">
+          <img><%= cl_image_tag @species.photo.key %>
+        </div>
+        <div class="card-product">
+          <img><%= cl_image_tag @species.photo.key %>
+        </div>
       </div>
     </div>
 </div>
+
 
 
