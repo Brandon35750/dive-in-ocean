@@ -111,7 +111,7 @@ specie1 = Species.new(
   latin_name: "Mola mola",
   description:"Ce poisson de corps quasi circulaire, comprimé latéralement forme un disque ovoïde caractéristique. Très apparentes, les deux nageoires dorsale et anale, triangulaires, reculées et opposées (placées en vis-à-vis du disque corporel), lui servent de rames verticales synchrones. Absence de queue remplacee par une frange.",
   threat_level:"",
-  size: "55cm to 300cm",
+  size: 2,
   color: "bleu gris",
   )
 specie1.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/mola-mola.jpg')), filename: 'mola-mola.jpg')
@@ -122,12 +122,11 @@ specie2 = Species.new(
   latin_name: "Carcharodon carcharias",
   description: "Le corps fusiforme du grand requin blanc, massif antérieurement, présente une coloration gris variable selon les individus et les latitudes, allant du brun-gris au noir-bleuté pour la partie située au dessus de la ligne latérale, blanchâtre au dessous. museau conique. La forme en croissant de lune de la nageoire caudale est une caractéristique.",
   threat_level: "Espece reglementee",
-  size: "600 cm",
+  size: 6,
   color: "bleu gris et ventre blanc",
   )
 specie2.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-blanc.jpg')), filename: 'requin-blanc.jpg')
 specie2.save!
-
 
 
 specie3 = Species.new(
@@ -135,7 +134,7 @@ specie3 = Species.new(
   latin_name: "Chelonia mydas",
   description: "La tortue verte est la plus connue des tortues marines. Sa morphologie est variable en fonction de sa zone géographique.Le cou de la tortue verte est court. Sa tête est petite et non rétractable.",
   threat_level: "Espece reglementee",
-  size: "71 to 139 cm",
+  size: 1,
   color: "plastron clair, dos brun/vert",
   )
 specie3.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/tortue-verte.jpg')), filename: 'tortue-verte.jpg')
@@ -146,18 +145,18 @@ specie4 = Species.new(
   latin_name: "Alopias vulpinus",
   description:"S'il est facilement reconnaissable entre tous, c'est parce que notre renard de mer se caractérise par une nageoire caudale de taille pratiquement égale à son corps fusiforme. L animal peut atteindre 6 mètres et plus pour un poids de 500 kg !Sa robe à couleur dominante sombre varie du bleu argenté au noir en passant par un gris brun sur le dos.",
   threat_level: "",
-  size: "600cm",
+  size: 6,
   color: "Bleu",
   )
 specie4.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-renard.jpg')), filename: 'requin-renard.jpg')
 specie4.save!
 
 specie5 = Species.new(
-  name: "Raies Manta de récif",
+  name: "Raies Manta",
   latin_name: "Mobula alfredi",
   description: "Les raies manta possèdent un corps aplati. Les yeux et les spiracles sont latéraux alors que les 5 fentes branchiales sont sur la face ventrale.La tête est très large, et porte deux nageoires céphaliques deux fois plus longues que larges qui sont des extensions de ses nageoires pectorales. Pour se nourrir, elle les déroule afin de s'en servir pour canaliser l'eau vers sa bouche.",
   threat_level: "Espece vulnerable",
-  size: "",
+  size: 5,
   color: "",
   )
 specie5.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/raie-manta.jpg')), filename: 'raie-manta.jpg')
@@ -169,29 +168,29 @@ specie6 = Species.new(
   description: "Le requin-baleine est le plus grand de tous les poissons cartilagineux et osseux, sa taille habituelle variant de 5 à 12 m. Il est facilement reconnaissable à sa tête plate et large, fendue d'une très grande bouche qui peut mesurer jusqu'à 1,50 m de large.
   Son corps massif, globalement cylindrique, est parcouru de chaque côté par 3 lignes transversales ou carènes*, particulièrement saillantes au niveau du pédoncule caudal. Sa livrée dorsale est gris-bleu mouchetée de points blancs et parcourue de bandes claires horizontales et verticales. Ses yeux, proportionnellement très petits, sont situés juste en arrière de la bouche.",
   threat_level: "",
-  size: "500 cm to 1200 cm",
+  size: 8,
   color: "Bleu / Tacheté de point blanc",
   )
 specie6.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-baleine.jpg')), filename: 'requin-baleine.jpg')
 specie6.save!
 
 specie7 = Species.new(
-  name: "Béluga",
+  name: "Beluga",
   latin_name: "Delphinapterus leucas",
   description: "La tête est relativement petite par rapport au reste du corps, massif, mais reste imposante du fait du melon massif situé en avant du crâne. Le melon est plus ou moins accentué et contient de l'huile dont la fonction divise encore certains chercheurs.",
   threat_level: "",
-  size: "450 to 750 cm",
+  size: 7,
   color: "brun / blanc a l age adulte",
   )
 specie7.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/beluga.jpg')), filename: 'beluga.jpg')
 specie7.save!
 
 specie8 = Species.new(
-  name: "Hippocampe à long nez",
+  name: "Hippocampe",
   latin_name: "Hippocampus reidi",
   description: "L'hippocampe à long museau mesure environ 10 cm lorsqu'il est accroché (soit 15 cm étiré), mais peut atteindre une longueur maximale de 17,5 cm. Les couleurs de sa robe sont variables : du jaune au brun, mais il présente toujours de minuscules points noirs dispersés sur l'ensemble du corps. Son museau est long et épais. Son corps comporte de  servant à s'accrocher.",
   threat_level: "Vulnérable",
-  size: "Max 17,5 cm",
+  size: 1,
   color: "Jaune / Bleu / Marron / Orange",
   )
 specie8.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/hippocampe.jpg')), filename: 'hippocampe.jpg')
@@ -202,18 +201,18 @@ specie9 = Species.new(
   latin_name: "Balaenoptera musculus",
   description: "La baleine bleue est le plus grand mammifère qui existe sur Terre mais également le plus grand qui ait jamais existé. Son corps est long et massif,, son poids est d'environ une centaine de tonnes. Sa tête est plate en forme de U, de couleur unie ardoise et mesure 6 à 7 m de long. L'ensemble du corps, sauf la tête et la queue, est généralement tacheté. Il est de couleur dominante ardoise foncé ou claire. La baleine bleue est l'animal qui produit les sons les plus graves et les plus puissants au monde.",
   threat_level: "Espèce menacée",
-  size: "Comprise entre 24 et 26 m",
+  size: 25,
   color: "Bleue",
   )
 specie9.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/baleine-bleue.png')), filename: 'baleine-bleue.png')
 specie9.save!
 
 specie10 = Species.new(
-  name: "Napoléon",
+  name: "Napoleon",
   latin_name: "Cheilinus undulatus",
   description: "Le napoléon est le plus grand de tous les labres : il peut mesurer jusqu'à 2,30 m et peser jusqu'à 190 kg. Les écailles sont grandes et peuvent atteindre 10 cm de diamètre chez des poissons de taille moyenne. La forme du corps ainsi que sa couleur changent au cours de sa vie. Les mâles possèdent d'épaisses lèvres charnues et une bosse frontale d'autant plus grande que le poisson est âgé. Leur livrée est dans les couleurs vertes, et les écailles ont des lignes verticales foncées.",
   threat_level: "En danger",
-  size: "Jusqu'à 2,30 m",
+  size: 2,
   color: "Bleu / Jaune / Vert",
   )
 specie10.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/napoleon.jpg')), filename: 'napoleon.jpg')
@@ -224,7 +223,7 @@ specie11 = Species.new(
   latin_name: "Amphiprion bicinctus",
   description: "La couleur de base va du jaune orangé à brun. Deux bandes blanches verticales bordées de noir divisent le corps : la première le traverse depuis l'arrière de la tête en s’élargissant dorsalement, la seconde, plus fine, passe au milieu du corps. La coloration des nageoires est identique à celle du corps, la caudale est tronquée ou légèrement émarginée.",
   threat_level: "",
-  size: "14 cm",
+  size: 1,
   color: "Orange / Blanc",
   )
 specie11.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/poisson-clown.jpg')), filename: 'poisson-clown.jpg')
@@ -232,8 +231,8 @@ specie11.save!
 
 
 tag1 = Tag.new(
-  longitude:  -8.678583,
-  latitude: 115.455586,
+  latitude:  -8.678583,
+  longitude: 115.455586,
   spot_name: "Crystal Bay",
   diving_date: "2020-1-6",
   species: specie1,
@@ -246,8 +245,8 @@ tag1.save!
 
 
 tag2 = Tag.new(
-  longitude: -9.678583,
-  latitude: 114.455586,
+  latitude: -9.678583,
+  longitude: 114.455586,
   spot_name: "Manta Point",
   diving_date: "2020-1-3",
   species: specie2,
@@ -285,8 +284,8 @@ tag4.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-
 tag4.save!
 
 tag5 = Tag.new(
-  longitude: 47.512396,
-  latitude: -61.490746,
+  latitude: 47.512396,
+  longitude: -61.490746,
   spot_name: "Golfe du St laurent",
   diving_date: "2020-8-11",
   species: specie7,
