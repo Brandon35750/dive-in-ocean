@@ -52,7 +52,7 @@ user4 = User.create!(
   username:"celeston",
   diving_level:"Open Water",
   description:"",
-  email: "celeste@example.com",
+  email: "celeste@examplebis.com",
   password: "password",
   )
 user4.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
