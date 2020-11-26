@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_11_24_155213) do
+ActiveRecord::Schema.define(version: 2020_11_26_110723) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 2020_11_24_155213) do
     t.string "latin_name"
     t.text "description"
     t.string "threat_level"
-    t.integer "size"
+    t.float "size"
     t.string "color"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
