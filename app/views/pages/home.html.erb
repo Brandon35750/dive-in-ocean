@@ -6,17 +6,19 @@
 
   <div class= "searchbar">
     <div class= "searchbar-picto"> <%= image_tag "mask.png", class: "image-small-32" %> </div>
-      <form novalidate="novalidate" class="simple_form search w-100" action="/" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+      <%= form_tag tags_path, class: "simple_form search w-100", method: :get do %>
        <div class="search-form-control form-group">
-         <input class="form-control string required" placeholder= "Type the species you dream of approaching" type="text" name="search[query]" id="search_query" />
+         <input class="form-control string required" placeholder= "Type the species you dream of approaching" type="text" name="query" id="query" />
          <button name="button" type="submit" class="btn btn-flat">
          <i class="fas fa-search"></i>
          </button>
         </div>
-      </form>
+
+      <% end %>
     </div>
   </div>
 </div>
+
 
 
 
@@ -24,24 +26,110 @@
 <div id="carouselExampleSlidesOnly" class="carousel-slide" data-ride="carousel">
   <div class="carousel-inner">
     <h2>No idea ? let us guide you to one of these wonderful species...</h2>
-    <br>
-    <div class="carousel-item active">
-      <%= image_tag "molamola.jpg", class: "d-block w-100", class:"slide" %>
+
+    <div class="container my-4">
+
+    <hr class="my-4">
+
+    <!--Carousel Wrapper-->
+    <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+      <!--Controls-->
+      <div class="controls-top">
+        <a class="btn-floating" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+        <a class="btn-floating" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+      </div>
+      <!--/.Controls-->
+
+      <!--Indicators-->
+      <%# <ol class="carousel-indicators">
+        <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+        <li data-target="#multi-item-example" data-slide-to="1"></li>
+        <li data-target="#multi-item-example" data-slide-to="2"></li>
+      </ol> %>
+      <!--/.Indicators-->
+
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+
+        <!--First slide-->
+        <div class="carousel-item active">
+          <div class="row">
+            <% @species.first(3).each do |species| %>
+              <div class="col-md-4">
+                <%= link_to tags_path(query: species.name) do %>
+                  <div class="card mb-2">
+                    <%= cl_image_tag species.photo.key, crop: :fill, width: 350 %>
+                      <div class="card-body">
+                        <h4 class="card-title"><%= species.name %></h4>
+                        <p class="card-text">14</p>
+                      </div>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+          </div>
+        </div>
+        <!--/.First slide-->
+        <% @species[3..-1].each_slice(3) do |species_slice| %>
+          <div class="carousel-item">
+            <div class="row">
+              <% species_slice.each  do |species| %>
+                <div class="col-md-4">
+                  <%= link_to tags_path(query: species.name) do %>
+                    <div class="card mb-2">
+                      <%= cl_image_tag species.photo.key, crop: :fill, width: 350 %>
+                        <div class="card-body">
+                          <h4 class="card-title"><%= species.name %></h4>
+                          <p class="card-text">14</p>
+                        </div>
+                    </div>
+                  <% end %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        <% end %>
+      </div>
+      <!--/.Slides-->
+
     </div>
-    <div class="carousel-item">
-      <%= image_tag "beluga.jpg", class: "d-block w-100", class:"slide" %>
-    </div>
-    <div class="carousel-item">
-      <%= image_tag "hippocampe.jpg", class: "d-block w-100", class:"slide" %>
-    </div>
+    <!--/.Carousel Wrapper-->
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+
+
     <div class= "corailpic">
-      <%= image_tag "coraux2.png", class: "corail" %>
-      <div class= "about"><h2>...before diving into the world of Dive-in Ocean</h2></div>
+      <%= image_tag "coraux3.png", class: "corail" %>
     </div>
   </div>
 </div>
 
+
+<div class= "container text-center">
 <div class= "about-divin">
-<p>Mauris at iaculis risus. In ut condimentum augue. Etiam vitae pellentesque magna. Vivamus vitae rhoncus mauris, sit amet vehicula felis. Phasellus id imperdiet magna, et tempus dui. Curabitur augue quam, vulputate et ipsum eget, rhoncus finibus metus. Vivamus viverra nisi sed dolor euismod bibendum.
-Nam a fermentum velit. Quisque efficitur ac velit et rhoncus. Vivamus commodo lectus viverra ligula interdum pretium. In et felis neque. Fusce fringilla, lectus ac hendrerit pharetra, dui justo ullamcorper metus, ut pellentesque tellus felis a arcu. Aliquam commodo, magna vel mattis volutpat, magna ligula lobortis sem, eget rutrum nibh ligula ac nulla.</p>
+<h2>...before diving into the world of Dive-in Ocean</h2>
+<p>Welcome to the wonderful world of Dive-in Ocean.<br>
+Dive-in Ocean is intended for all divers who wish to approach one or more specific species.<br>
+Our community references the dives and, thanks to our tag system, lists each species encountered during the dive.<br>
+<strong>Let us guide you to the species of your dreams.</strong><br> Do not forget to <strong>sign up to be part of our community</strong> and share your adventures!</p>
+</div>
+</div>
+
+<div class= "ecogest">
+<h2>Ecogests</h2>
+<p>Welcome to the wonderful world of Dive-in Ocean.<br>
+Dive-in Ocean is intended for all divers who wish to approach one or more specific species.<br>
+Our community references the dives and, thanks to our tag system, lists each species encountered during the dive.<br>
+<strong>Let us guide you to the species of your dreams.</strong><br> Do not forget to <strong>sign up to be part of our community</strong> and share your adventures!</p>
 </div>

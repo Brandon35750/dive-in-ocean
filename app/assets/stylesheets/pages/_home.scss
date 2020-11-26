@@ -81,10 +81,12 @@
   background-color: rgb(3,13,36);
   text-align: center;
   padding-top: 15px;
-  padding-bottom: 220px;
+  padding-bottom: 250px;
   position: relative;
 
 }
+
+
 
 .corail {
   width: 100%;
@@ -97,8 +99,6 @@
 .about {
   position: absolute;
   bottom: 40px;
-  right : 650px;
-  // text-align: center;
 
 }
 
@@ -106,7 +106,12 @@
 
 .about-divin p{
   text-align: center;
-  padding-left: 500px;
-  padding-right: 500px;
   line-height: 40px;
+}
+
+.ecogest {
+  padding-top: 100px;
+  text-align: center;
+  line-height: 40px;
+
 }
