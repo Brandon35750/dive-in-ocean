@@ -154,7 +154,7 @@ specie4.save!
 specie5 = Species.new(
   name: "Raies Manta",
   latin_name: "Mobula alfredi",
-  description: "Les raies manta possèdent un corps aplati. Les yeux et les spiracles sont latéraux alors que les 5 fentes branchiales sont sur la face ventrale.La tête est très large, et porte deux nageoires céphaliques deux fois plus longues que larges qui sont des extensions de ses nageoires pectorales. Pour se nourrir, elle les déroule afin de s'en servir pour canaliser l'eau vers sa bouche.",
+  description: "Les raies manta possèdent un corps aplati. Les yeux et les spiracles sont latéraux alors que les 5 fentes branchiales sont sur la face ventrale.La tête est très large, et porte deux nageoires céphaliques deux fois plus longues que larges qui sont des extensions de ses nageoires pectorales.",
   threat_level: "Espece vulnerable",
   size: 5,
   color: "",
@@ -165,8 +165,7 @@ specie5.save!
 specie6 = Species.new(
   name: "Requin Baleine",
   latin_name: "Rhincodon typus",
-  description: "Le requin-baleine est le plus grand de tous les poissons cartilagineux et osseux, sa taille habituelle variant de 5 à 12 m. Il est facilement reconnaissable à sa tête plate et large, fendue d'une très grande bouche qui peut mesurer jusqu'à 1,50 m de large.
-  Son corps massif, globalement cylindrique, est parcouru de chaque côté par 3 lignes transversales ou carènes*, particulièrement saillantes au niveau du pédoncule caudal. Sa livrée dorsale est gris-bleu mouchetée de points blancs et parcourue de bandes claires horizontales et verticales. Ses yeux, proportionnellement très petits, sont situés juste en arrière de la bouche.",
+  description: "Le requin-baleine est le plus grand de tous les poissons cartilagineux et osseux, sa taille habituelle variant de 5 à 12 m. Il est facilement reconnaissable à sa tête plate et large, fendue d'une très grande bouche qui peut mesurer jusqu'à 1,50 m de large.Son corps massif, globalement cylindrique, est parcouru de chaque côté par 3 lignes transversales.",
   threat_level: "",
   size: 8,
   color: "Bleu / Tacheté de point blanc",
@@ -188,7 +187,7 @@ specie7.save!
 specie8 = Species.new(
   name: "Hippocampe",
   latin_name: "Hippocampus reidi",
-  description: "L'hippocampe à long museau mesure environ 10 cm lorsqu'il est accroché (soit 15 cm étiré), mais peut atteindre une longueur maximale de 17,5 cm. Les couleurs de sa robe sont variables : du jaune au brun, mais il présente toujours de minuscules points noirs dispersés sur l'ensemble du corps. Son museau est long et épais. Son corps comporte de  servant à s'accrocher.",
+  description: "L'hippocampe à long museau mesure environ 10 cm lorsqu'il est accroché (soit 15 cm étiré), mais peut atteindre une longueur maximale de 17,5 cm. Les couleurs de sa robe sont variables : du jaune au brun, mais il présente toujours de minuscules points noirs dispersés sur l'ensemble du corps. Son museau est long et épais.",
   threat_level: "Vulnérable",
   size: 1,
   color: "Jaune / Bleu / Marron / Orange",
@@ -199,7 +198,7 @@ specie8.save!
 specie9 = Species.new(
   name: "Baleine Bleue",
   latin_name: "Balaenoptera musculus",
-  description: "La baleine bleue est le plus grand mammifère qui existe sur Terre mais également le plus grand qui ait jamais existé. Son corps est long et massif,, son poids est d'environ une centaine de tonnes. Sa tête est plate en forme de U, de couleur unie ardoise et mesure 6 à 7 m de long. L'ensemble du corps, sauf la tête et la queue, est généralement tacheté. Il est de couleur dominante ardoise foncé ou claire. La baleine bleue est l'animal qui produit les sons les plus graves et les plus puissants au monde.",
+  description: "La baleine bleue est le plus grand mammifère qui existe sur Terre mais également le plus grand qui ait jamais existé. Son corps est long et massif,, son poids est d'environ une centaine de tonnes. Sa tête est plate en forme de U, de couleur unie ardoise et mesure 6 à 7 m de long. La baleine bleue est l'animal qui produit les sons les plus graves et les plus puissants au monde.",
   threat_level: "Espèce menacée",
   size: 25,
   color: "Bleue",
@@ -210,7 +209,7 @@ specie9.save!
 specie10 = Species.new(
   name: "Napoleon",
   latin_name: "Cheilinus undulatus",
-  description: "Le napoléon est le plus grand de tous les labres : il peut mesurer jusqu'à 2,30 m et peser jusqu'à 190 kg. Les écailles sont grandes et peuvent atteindre 10 cm de diamètre chez des poissons de taille moyenne. La forme du corps ainsi que sa couleur changent au cours de sa vie. Les mâles possèdent d'épaisses lèvres charnues et une bosse frontale d'autant plus grande que le poisson est âgé. Leur livrée est dans les couleurs vertes, et les écailles ont des lignes verticales foncées.",
+  description: "Le napoléon est le plus grand de tous les labres : il peut mesurer jusqu'à 2,30 m et peser jusqu'à 190 kg. Les écailles sont grandes et peuvent atteindre 10 cm de diamètre chez des poissons de taille moyenne. La forme du corps ainsi que sa couleur changent au cours de sa vie.",
   threat_level: "En danger",
   size: 2,
   color: "Bleu / Jaune / Vert",

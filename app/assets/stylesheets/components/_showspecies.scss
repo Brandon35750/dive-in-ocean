@@ -29,13 +29,22 @@
   text-align: center;
   color: #065CAB;
   height:15%;
-  border-bottom: solid 1px #005586;
+  // border-bottom: solid 1px #005586;
   margin-bottom: 24px;
   letter-spacing: 4px;
   font-weight: bold;
   font-size: 47px;
   width: auto;
   display: inline-block;
+}
+
+#footer:after {
+  content: "";
+  width: 240px;
+  height: 1px;
+  background-color: #005586;
+  display: block;
+  margin: 20px auto;
 }
 
 .name-center h3 {
@@ -62,10 +71,11 @@
   text-transform: uppercase;
   color: #065CAB;
 }
+
 .container-description {
   height: 30%;
   margin-bottom: 24px;
-  letter-spacing: 4px;
+  letter-spacing: 1px;
   opacity: 0.8;
   display: inline-block;
 }
@@ -83,29 +93,37 @@
 .name-center-item {
   display:flex;
   height: 10%;
-  border-top: solid 1px #005586;
+  // border-top: solid 1px #005586;
+  letter-spacing: 4px;
 }
 
 .btn-map {
   height:5%;
 }
 
-.img-tag {
-   height: 4%;
 
-   padding-top: 8px;
+.div-img {
+  height: 35%;
+  width: 100%;
+}
+.img-tag {
+  padding-top: 48px;
  }
 
  .img-tag h3 {
   float: left;
   text-align: justify;
   padding-left: 16px;
+  font-size: 16px;
+  letter-spacing: 4px;
  }
 
 .img-tag h4 {
   float: right;
   text-align: justify;
   padding-right: 16px;
+  font-size: 16px;
+  letter-spacing: 4px;
  }
 
 .tiret {
@@ -136,50 +154,43 @@
   color: #696969;
 }
 
-.div-btn {
-  text-align: center;
-  width: 20%;
-  height: 5%;
-}
-
-.div-btn h3 {
-  font-family: Inconsolata;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 17px;
-  text-transform: uppercase;
-  color: #696969;
-}
 .btn-show {
+  width: 30%;
+  height: 6%;
   margin-top: 24px;
   border-color: #005586;
-  border-radius: 16px;
   transition: .3s all ease-in-out;
-  background-color: white;
-  color: #005586;
-  font-family: Karla;
+  background-color: #005586;
+  color: white;
+  font-family: Inconsolata;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 8px;
 }
 
 .btn-show:hover {
-box-shadow: 0px 0px 5px 5px #065CAB;
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out 0.2s;
+  box-shadow: 0 0 0 2px #065CAB;
+  background-color: white;
+  color: #005586;
 }
 
 .card-show {
-  height: 24%;
+  height: 30%;
   width: 100%;
-  padding-top: 8px;
   display:flex;
-  justify-content: space-between;
 }
 
 .card-product {
-  height: 120px;
+  height: 100%;
   // background: white;
   // box-shadow: 0 0 15px rgba(0,0,0,0.2);
   width: 25%;
   // justify-content: space-between,
   display:flex;
+  margin: 32px 16px 0px 16px;
 }
 
 .card-product img {
@@ -187,20 +198,29 @@ box-shadow: 0px 0px 5px 5px #065CAB;
   width: 100%;
   object-fit: cover;
   border-radius: 8px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .card-product img:hover {
   transform: scale(1.2);
   transition: all 0.3s ease-in-out 0.4s;
-  box-shadow: 0 0 15px #065CAB;
 }
 
-.button-previous {   /* juste selection de button avec un float right */
-    color: #222222;
-    float: right;
-    float: top;
-    border-color: #005586;
-    border-radius: 16px;
-    color: #005586;
+.div-btn-previous {
+  position: fixed;
+  top:28px;
+  right:16px;
 }
+
+.div-btn-previous h3 {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: red;
+  border-color: red;
+  opacity: 0.5;
+  // border-radius: 16px;
+}
+

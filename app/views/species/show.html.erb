@@ -1,17 +1,19 @@
+<div class=" div-btn-previous">
+  <!-- <h3><%= link_to "Back to map  ", ""%><i class="fas fa-map-pin"></i></h3> -->
+  <h3><%= link_to "", ""%><i class="fas fa-times"></i></h3>
+  <!-- <h3><%= link_to "X", ""%></h3> -->
 
+</div>
 <div class="container-species">
   <div class="img-species">
-    <img <%= cl_image_tag @species.photo.key %>>
+    <img <%= cl_image_tag @species.photo.key %>
   </div>
     <div class="rigth-description p-4 text-center">
-      <div class="button-previous div-btn ">
-        <h3>Back-Map <i class="fas fa-map-pin"></i></h3>
-      </div>
-      <div class="name-center ">
+      <div class="name-center" id="footer">
         <h3><%=@species.latin_name%></h3>
         <h1><%=@species.name%></h1>
       </div>
-      <div class="container-description">
+      <div class="container-description" id="footer">
         <h3><%=@species.description%></h3>
       </div>
       <div class="name-center-item">
@@ -33,22 +35,20 @@
         <h4><%=@species.threat_level%></h4>
         </div>
       </div>
-      <div class="btn btn-show div-btn">
-        <h3>Ou me trouver ?</h3>
+      <div class="btn btn-show">
+        Ou me trouver ?
       </div>
-      <div class="img-tag ">
-        <h3>Last Pictures</h3>
-        <h4>See all</h4>
-      </div>
-      <div class="card-show">
-        <div class="card-product">
-          <img><%= cl_image_tag @species.photo.key %>
+      <div class=div-img>
+        <div class="img-tag ">
+          <h3>Last Pictures</h3>
+          <h4><%= link_to "Seel all", ""%></h4>
         </div>
-        <div class="card-product">
-          <img><%= cl_image_tag @species.photo.key %>
-        </div>
-        <div class="card-product">
-          <img><%= cl_image_tag @species.photo.key %>
+        <div class="card-show">
+          <%@species.tags.last(3).each do |tag| %>
+          <div class="card-product">
+            <img><%= cl_image_tag tag.photo.key %>
+          </div>
+          <% end %>
         </div>
       </div>
     </div>
