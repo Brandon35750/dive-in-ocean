@@ -43,3 +43,11 @@ document.addEventListener('turbolinks:load', () => {
   // initSelect2();
   $('.carousel').carousel()
 });
+
+// const images = document.querySelectorAll('img');
+// // => NODE LIST ! (Array)
+// images.forEach((image) => {
+//   image.addEventListener('click', (event) => {
+//     event.currentTarget.classList.toggle('img-circle');
+//   });
+// });

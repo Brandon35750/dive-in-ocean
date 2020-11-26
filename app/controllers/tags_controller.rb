@@ -27,4 +27,5 @@ class TagsController < ApplicationController
         # image_url: helpers.asset_url('assets/images/mask.png')
       }
     end
+  end
 end

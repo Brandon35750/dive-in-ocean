@@ -50,6 +50,15 @@
 
 }
 
+input::placeholder {
+  color: red;
+}
+
+.form-control:focus {
+  background-color: transparent;
+  color:white;
+}
+
 .search-form-control i{
   color: white;
 
