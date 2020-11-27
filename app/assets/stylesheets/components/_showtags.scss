@@ -2,7 +2,7 @@
   /*height: 300px;
   width: 175px;*/
   position: relative;
-  background: #fff;
+
 
   padding: 0px 0px 0px;
   pointer-events: auto;
@@ -10,10 +10,15 @@
 }
 
 .card-tag {
+  border: solid $blue_title 2px;
   width: 150px;
   border-radius: 4px;
   overflow: hidden;
-  background: white;
+
+}
+
+.infos {
+  padding-top: 6px;
 }
 
 .card-tag > img {
@@ -39,6 +44,7 @@
   font-family: Inconsolata;
   opacity: .7;
   margin: 0;
+  line-height: 12px;
 }
 
 
@@ -64,7 +70,7 @@
   opacity: .5;
   border-radius: 0px 8px 8px 0px;
   position: absolute;
-  left: 0px;
+  left: 2px;
   top: 16px;
   width: auto;
   padding: 0px 4px 0px 4px;

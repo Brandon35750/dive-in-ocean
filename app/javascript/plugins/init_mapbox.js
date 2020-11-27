@@ -29,12 +29,6 @@ const initMapbox = () => {
 
     fitMapToMarkers(map, markers);
     }
-
-   // clic on popup
-    //const poptag = document.querySelector(".card-tag");
-    //  poptag.addEventListener("click", (event) => {
-    //   window.open(www.google.fr);
-    //});
 };
 export { initMapbox };
 

@@ -1,13 +1,18 @@
 <div class="card-tag">
   <div class="species-name-in-popup">
-    <%=tag.species.name%>
+    <%= link_to(Species.find(tag.species_id).name, species_path(tag.species_id))%>
   </div>
   <%= cl_image_tag tag.photo.key %>
   <div class="card-tag-infos">
     <div>
-      <p><strong><%=tag.user.username%></strong>, diving close to <%=tag.spot_name%> on <%=tag.diving_date%> captured this picture at a depth of <%=tag.depth%> meters.</p>
+      <strong><p><%=tag.diving_date%></p></strong>
+    <div class="infos">
+      <p><strong><%=tag.user.username%></strong>, diving close to <strong><%=tag.spot_name%></strong> captured this picture at a depth of <strong><%=tag.depth%> meters</strong>.</p>
+    </div>
+    <div class="infos">
       <p>Lat: <%=tag.latitude%></p>
-      <p>Long: <%=tag.longitude%></p>
+      <p>Lng: <%=tag.longitude%></p>
+    </div>
       <!-- <h1><%=tag.user.username%></h1>
       <p><%=tag.latitude%></p>
       <p><%=tag.longitude%></p>
@@ -19,3 +24,6 @@
     <%= cl_image_tag tag.user.avatar.key, class: "card-tag-user avatar-bordered"%>
   </div>
 </div>
+
+
+<!--<%=tag.species.name%>-->
