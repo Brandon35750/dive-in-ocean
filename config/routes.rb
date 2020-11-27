@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 
   resources :tags, only: [:show, :index]
-  resources :species, only: [:show]
+  resources :species, only: [:show, :index]
   resources :users, only: [:show, :edit, :update]
   resource  :gallery, only: [:show]
   namespace :user do
