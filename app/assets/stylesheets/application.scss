@@ -12,4 +12,8 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
-@import "components/showtags"
+@import "components/showtags";
+
+// style general
+a:focus {outline: 0px !important};
+

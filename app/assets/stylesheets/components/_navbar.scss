@@ -30,30 +30,19 @@
   margin:16px;
 }
 
-.topnav a:hover {
+.topnav a:not(:first-child):hover  {
   color: #100844;
   transform: scale(1.1);
   transition: all 0.2s ease-in-out 0.1s;
-  border-bottom: solid;
-  // border-bottom: 1px solid #16a6b6;
   border-bottom: 1px solid #005586;
 }
 
-.topnav a.active {
-  background-color: #16a6b6;
-  color: white;
-}
 
-.liens.active {
-  background-color: #16a6b6;
-  color: white;
-}
-.topnav-centered img {
+.logo-home img {
 width: 100px;
 }
 
-
-.topnav-centered img:hover {
+.logo-home img:hover {
   border-bottom: none;
   text-decoration: none !important;
 }
@@ -67,7 +56,7 @@ width: 100px;
     border-bottom: none;
   }
 
-.topnav-centered a {
+.logo-home a {
   position: relative;
   top: 0;
   left: 0;
@@ -75,6 +64,15 @@ width: 100px;
 }
 }
 
+.topnav a.active {
+  background-color: #16a6b6;
+  color: white;
+}
+
+.liens.active {
+  background-color: #16a6b6;
+  color: white;
+}
 .menu-avatar {
   text-align: center;
   border-radius: 8px;
