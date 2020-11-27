@@ -59,10 +59,10 @@
               <div class="col-md-4">
                 <%= link_to tags_path(query: species.name) do %>
                   <div class="card mb-2">
-                    <%= cl_image_tag species.photo.key, crop: :fill, width: 350 %>
+                    <%= cl_image_tag species.photo.key, class: "picture", crop: :fill  %>
                       <div class="card-body">
                         <h4 class="card-title"><%= species.name %></h4>
-                        <p class="card-text">14</p>
+                        <%# <p class="card-text">14</p> %>
                       </div>
                   </div>
                 <% end %>
@@ -78,10 +78,10 @@
                 <div class="col-md-4">
                   <%= link_to tags_path(query: species.name) do %>
                     <div class="card mb-2">
-                      <%= cl_image_tag species.photo.key, crop: :fill, width: 350 %>
+                      <%= cl_image_tag species.photo.key, class: "picture", crop: :fill %>
                         <div class="card-body">
                           <h4 class="card-title"><%= species.name %></h4>
-                          <p class="card-text">14</p>
+                          <%# <p class="card-text">14</p> %>
                         </div>
                     </div>
                   <% end %>
@@ -96,19 +96,7 @@
     </div>
     <!--/.Carousel Wrapper-->
 
-
   </div>
-
-
-
-
-
-
-
-
-
-
-
     <div class= "corailpic">
       <%= image_tag "coraux3.png", class: "corail" %>
     </div>
@@ -117,19 +105,46 @@
 
 
 <div class= "container text-center">
-<div class= "about-divin">
-<h2>...before diving into the world of Dive-in Ocean</h2>
-<p>Welcome to the wonderful world of Dive-in Ocean.<br>
-Dive-in Ocean is intended for all divers who wish to approach one or more specific species.<br>
-Our community references the dives and, thanks to our tag system, lists each species encountered during the dive.<br>
-<strong>Let us guide you to the species of your dreams.</strong><br> Do not forget to <strong>sign up to be part of our community</strong> and share your adventures!</p>
+  <div class= "about-divin">
+    <h2>...before diving into the world of Dive-in Ocean</h2>
+    <p>Welcome to the wonderful world of Dive-in Ocean.<br>
+    Dive-in Ocean is intended for all divers who wish to approach one or more specific species.<br>
+    Our community references the dives and, thanks to our tag system, lists each species encountered during the dive.<br>
+    <strong>Let us guide you to the species of your dreams.</strong><br> Do not forget to <strong>sign up to be part of our community</strong> and share your adventures!</p>
+    <div class= "members">
+      <div class= "member"><div class= "pictoto"> <%= image_tag "octopus.png", class: "image-small-30" %> </div><p>CHRISTINE</p></div>
+      <div class= "member"><div class= "pictoto"> <%= image_tag "raiy.png", class: "image-small-30" %> </div><p>BRIAC</p></div>
+      <div class= "member"><div class= "pictoto"> <%= image_tag "shark.png", class: "image-small-30" %> </div><p>BRANDON</p></div>
+      <div class= "member"><div class= "pictoto"> <%= image_tag "hippo.png", class: "image-small-30" %> </div><p>MAREK</p></div>
+      <div class= "member"><div class= "pictoto"> <%= image_tag "turtle.png", class: "image-small-30" %> </div><p>CELESTE</p></div>
+    </div>
+    <p>We are Dive-in Ocean and we are a team!<br><strong>Preservation of species and their ecosystems is our first concern.</strong><br>Let's share our passion. Let's share our experiences. And let's never forget the eco-gests!<p>
+  </div>
 </div>
+<br>
+<br>
+<br>
+
+<div class= "container text-center">
+<div class= "Eco-gests"><h2>Eco-gests</h2></div>
+<div class= "ecogest">
+ <div class= "gest"><div class= "pictoto"> <%= image_tag "discretion.png", class: "image-small-30" %> </div><br><p>Do not try to get in touch with the animals, they are in their universe and you are only visitors.<br> If they are hiding, it is because they are stressed, so wait without moving.</p></div>
+ <div class= "gest"><div class= "pictoto"> <%= image_tag "corail.png", class: "image-small-30" %> </div><br><p>Do not feed any fish as this could pervert their behaviour and completely unbalance the ecosystem.<br> So if an excursion proposes to feed fish, sharks or any other marine animal, boycott it! </p></div>
+ <div class= "gest"><div class= "pictoto"> <%= image_tag "distance.png", class: "image-small-30" %> </div><br><p>Palm gently and do not land on the rocks.<br>The slightest friction can destroy a coral and disturb the animals that make it their home. </p></div>
 </div>
 
-<div class= "ecogest">
-<h2>Ecogests</h2>
-<p>Welcome to the wonderful world of Dive-in Ocean.<br>
-Dive-in Ocean is intended for all divers who wish to approach one or more specific species.<br>
-Our community references the dives and, thanks to our tag system, lists each species encountered during the dive.<br>
-<strong>Let us guide you to the species of your dreams.</strong><br> Do not forget to <strong>sign up to be part of our community</strong> and share your adventures!</p>
+<br>
+<br>
+<br>
+<br>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-github"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+  </div>
+  <div class="footer-copyright">
+    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+  </div>
 </div>
