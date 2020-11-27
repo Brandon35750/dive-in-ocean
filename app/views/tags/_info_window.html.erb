@@ -8,6 +8,7 @@
       <p><%=tag.depth%> metres</p>
       <p><%=tag.diving_date%></p>
       <h2><%=tag.spot_name%></h2>
+      <h2><%= link_to(Species.find(tag.species_id).name, species_path(tag.species_id))%></h2>
     </div>
     <h2 class="card-tag-pricing"></h2>
     <%= cl_image_tag tag.user.avatar.key, class: "card-tag-user avatar-bordered"%>
