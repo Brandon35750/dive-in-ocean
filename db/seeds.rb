@@ -19,7 +19,7 @@ user1 = User.create!(
   email: "anna@example.com",
   password: "password",
   )
-user1.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user1.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Anna.png')), filename: 'Anna.png')
 user1.save!
 
 user2 = User.create!(
@@ -31,7 +31,7 @@ user2 = User.create!(
   email: "brandon@example.com",
   password: "password",
   )
-user2.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user2.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/brandon.png')), filename: 'brandon.png')
 user2.save!
 
 user3 = User.create!(
@@ -43,7 +43,7 @@ user3 = User.create!(
   email: "briac@example.com",
   password: "password",
   )
-user3.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user3.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Briac.jpg')), filename: 'Briac.jpg')
 user3.save!
 
 user4 = User.create!(
@@ -55,7 +55,7 @@ user4 = User.create!(
   email: "celeste@examplebis.com",
   password: "password",
   )
-user4.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user4.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Celeste.jpg')), filename: 'Celeste.jpg')
 user4.save!
 
 user5 = User.create!(
@@ -67,19 +67,19 @@ user5 = User.create!(
   email: "christine@example.com",
   password: "password",
   )
-user5.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user5.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Xtine.jpg')), filename: 'Xtine.jpg')
 user5.save!
 
 user6 = User.create!(
-  first_name: "Gamin",
+  first_name: "Gabin",
   last_name:"Louazel",
   username:"glouazel",
   diving_level:"TSD",
   description:"Graine de grand marin",
-  email: "gamin@example.com",
+  email: "gabin@example.com",
   password: "password",
   )
-user6.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user6.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Gabin.png')), filename: 'Gabin.png')
 user6.save!
 
 user7 = User.create!(
@@ -91,7 +91,7 @@ user7 = User.create!(
   email: "marek@example.com",
   password: "password",
   )
-user7.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user7.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Marek.jpg')), filename: 'Marek.jpg')
 user7.save!
 
 user8 = User.create!(
@@ -103,7 +103,7 @@ user8 = User.create!(
   email: "paul@example.com",
   password: "password",
   )
-user8.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user8.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Paul.png')), filename: 'Paul.png')
 user8.save!
 
 specie1 = Species.new(
