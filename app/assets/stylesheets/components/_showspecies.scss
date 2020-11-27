@@ -1,4 +1,7 @@
-
+.closed {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out 0.2s;
+}
 .container-species {
   width: 100%;
   height: 100vh;
@@ -162,6 +165,10 @@
   transition: .3s all ease-in-out;
   background-color: #005586;
   color: white;
+}
+
+.btn-show a {
+  color: white;
   font-family: Inconsolata;
   font-weight: bold;
   font-size: 14px;
@@ -169,13 +176,21 @@
   padding-top: 8px;
 }
 
+.btn-show a:hover {
+  color: #005586;
+  text-decoration: none;
+  color:white;
+}
+
 .btn-show:hover {
   transform: scale(1.1);
   transition: all 0.2s ease-in-out 0.2s;
   box-shadow: 0 0 0 2px #065CAB;
-  background-color: white;
+
   color: #005586;
+  text-decoration: none;
 }
+
 
 .card-show {
   height: 30%;
@@ -209,9 +224,6 @@
   position: fixed;
   top:28px;
   right:16px;
-}
-
-.div-btn-previous h3 {
   font-family: Inconsolata;
   font-style: normal;
   font-weight: normal;
@@ -221,6 +233,4 @@
   color: red;
   border-color: red;
   opacity: 0.5;
-  // border-radius: 16px;
 }
-
