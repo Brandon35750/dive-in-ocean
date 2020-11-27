@@ -59,11 +59,12 @@
 .card-tag-infos .card-tag-user {
   position: absolute;
   right: 8px;
-  top: -38px;
+  top: -36px;
   width: 56px;
 }
 
 .species-name-in-popup {
+  a:hover{text-decoration: none}
   font-family: Inconsolata;
   font-size: 14px;
   background: #fff;
