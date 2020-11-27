@@ -8,9 +8,53 @@ const initMapbox = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11'
+      style: 'mapbox://styles/marekredon/ckhyvdf2h01tc19lrki6k28uc'
     });
 
+
+    // mapboxgl.accessToken = 'pk.eyJ1IjoibWFyZWtyZWRvbiIsImEiOiJja2d3ZjAybzEwOWdnMnRwOG1zNDNhc3B6In0.8998rUWrYideJqkSLe4Nng';
+    // var map = new mapboxgl.Map({
+    // container: 'map',
+    // style: 'mapbox://styles/mapbox/streets-v11',
+    // center: [142.591669, 11.373335],
+    // zoom: 3,
+    // minZoom: 3,
+    // maxZoom: 5
+    // });
+
+
+
+      map.on('load', function () {
+      map.addSource('10m-bathymetry-81bsvj', {
+      type: 'vector',
+      url: 'mapbox://mapbox.9tm8dx88'
+      });
+       
+      map.addLayer(
+      {
+      'id': '10m-bathymetry-81bsvj',
+      'type': 'fill',
+      'source': '10m-bathymetry-81bsvj',
+      'source-layer': '10m-bathymetry-81bsvj',
+      'layout': {},
+      'paint': {
+      'fill-outline-color': 'hsla(350, 82%, 62%, 0)',
+      // cubic bezier is a four point curve for smooth and precise styling
+      // adjust the points to change the rate and intensity of interpolation
+      'fill-color': [
+      'interpolate',
+      ['cubic-bezier', 0, 1, 1, 1],
+      ['get', 'DEPTH'],
+      100,
+      '#78bced',
+      11000,
+      '#15659f'
+      ]
+      }
+      },
+      // 'land-structure-polygon'
+      );
+      });
 
     const markers = JSON.parse(mapElement.dataset.markers);
     markers.forEach((marker) => {
