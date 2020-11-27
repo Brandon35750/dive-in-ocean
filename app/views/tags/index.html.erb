@@ -1,11 +1,8 @@
 <!-- index.html.erb  (tags) -->
+  <h1>Prends tes palmes</h1>
 
-
-<div id="map"
-     style="width: 100%; height: 100vh;"
-     data-markers="<%= @markers.to_json %>"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-</div>
-
-
-
+  <div id="map"
+      style="width: 100%; height: 100vh;"
+      data-markers="<%= @markers.to_json %>"
+      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
