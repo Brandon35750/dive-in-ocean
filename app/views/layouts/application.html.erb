@@ -15,8 +15,9 @@
     <% if controller_name == 'pages' || controller_name == 'users' %>
       <%= render 'shared/navbar' %>
     <% elsif controller_name == 'species'%>
-    <% else %>
       <%= render 'shared/navbar-two' %>
+    <% else %>
+      <%= render 'shared/navbar-map' %>
     <% end %>
     <%= render 'shared/flashes' %>
 
