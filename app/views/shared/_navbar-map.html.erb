@@ -1,7 +1,12 @@
-<div class="topnav2">
-    <%= link_to "/", class: "logo-home" do %>
+
+
+<div class="topnav-map">
+  <%= link_to "/", class: "logo-home" do %>
     <%= image_tag "logo.png", alt: "logo" %>
     <% end %>
+</div>
+
+<div class="topnav-map-avatar">
     <% if user_signed_in? %>
     <il class="nav-item dropdown">
       <%= image_tag "https://avatarfiles.alphacoders.com/207/thumb-207370.jpg", class: "zoom avatar dropdown-toggle m-3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
@@ -16,4 +21,4 @@
         <%= link_to "Login", new_user_session_path, class: "text-center" %>
       </a>
       <% end %>
-</div>
+  </div>
