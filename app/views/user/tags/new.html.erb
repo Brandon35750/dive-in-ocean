@@ -1,1 +1,25 @@
 
+<div id="map-new-tag"
+     style="width: 100%; height: 600px;"
+     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"></div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1>Add your new tag</h1>
+
+      <%= simple_form_for [:user, @tag] do |f| %>
+       <%= f.input :diving_date %>
+        <%= f.input :latitude %>
+        <%= f.input :longitude %>
+        <%= f.input :spot_name %>
+        <%= f.input :species %>
+        <%= f.input :depth %>
+        <%= f.input :description %>
+        <%= f.button :submit, class: 'btn btn-primary' %>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+

@@ -28,10 +28,11 @@ import "bootstrap";
 
 
 // Internal imports, e.g:
-import { initMapbox } from '../plugins/init_mapbox';
+import { initMapbox, initMapboxNewTag } from '../plugins/init_mapbox';
 
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
+  initMapboxNewTag(); 
 })
 
 
