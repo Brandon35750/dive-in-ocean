@@ -1,6 +1,38 @@
 // init_mapbox.js
 import mapboxgl from 'mapbox-gl';
 
+
+const initMapboxNewTag = () => {
+  const mapElement = document.getElementById('map-new-tag');
+  if (mapElement) { // only build a map if there's a div#map to inject into
+    mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
+    const map = new mapboxgl.Map({
+      container: 'map-new-tag',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      zoom: 0
+    });
+
+    const markers = [];
+    map.on('click', function (e) {
+      // document.getElementById('info').innerHTML =
+      // '<br />' +
+      // e.lngLat is the longitude, latitude geographical position of the event
+      const lngLat = e.lngLat.wrap();
+
+      const oldMarker = markers.pop();
+      if (oldMarker) oldMarker.remove();
+    
+      const newMarker = new mapboxgl.Marker()
+      .setLngLat([ lngLat.lng, lngLat.lat ])
+      .addTo(map);
+      markers.push(newMarker)
+      console.log(markers)
+    });   
+  };
+};
+
+
+
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
 
@@ -10,7 +42,6 @@ const initMapbox = () => {
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11'
     });
-
 
     const markers = JSON.parse(mapElement.dataset.markers);
     markers.forEach((marker) => {
@@ -30,7 +61,7 @@ const initMapbox = () => {
     fitMapToMarkers(map, markers);
     }
 };
-export { initMapbox };
+export { initMapbox, initMapboxNewTag};
 
 // zoom effect de JJ
 // var map = new mapboxgl.Map({

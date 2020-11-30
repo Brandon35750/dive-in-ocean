@@ -49,7 +49,7 @@
     <a class="liens"><%= link_to "About-Us", ""%></a>
     <a class="liens"><%= link_to "Eco-gests", ""%></a>
     <a class="liens"><%= link_to "Gallery", ""%></a>
-    <a class="liens"><%= link_to "Post your dive", ""%></a>
+    <%= link_to "Post your dive", new_user_tag_path, class: "liens"%>
     <!-- <a><%= link_to "Login", new_user_session_path%></a> -->
     <% if user_signed_in? %>
     <il class="nav-item dropdown">
