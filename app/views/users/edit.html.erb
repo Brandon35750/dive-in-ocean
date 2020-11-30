@@ -1,0 +1,24 @@
+<div class="container">
+  <h1>Edit my profile</h1>
+</div>
+
+<div class="container">
+  <%= simple_form_for @user do |f| %>
+    <%= f.error_notification %>
+
+    <%= f.input :first_name %>
+    <%= f.input :last_name %>
+    <%= f.input :username %>
+    <%= f.input :diving_level %>
+    <%= f.input :description %>
+    <%= f.input :avatar, as: :file %>
+    <%= f.button :submit, class: "btn-primary" %>
+    <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
+  <% end %>
+
+  <%= link_to 'Back', user_path %>
+</div>
+
+
+
+
