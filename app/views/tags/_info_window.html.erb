@@ -1,13 +1,13 @@
 <div class="card-tag">
   <div class="species-name-in-popup">
-    <%= link_to(Species.find(tag.species_id).name, species_path(tag.species_id))%>
+    <%= link_to(tag.species.name, species_path(tag.species))%>
   </div>
   <%= cl_image_tag tag.photo.key %>
   <div class="card-tag-infos">
     <div class="bloc-infos">
-        <strong><h2><%=tag.diving_date%></h2></strong>
+        <h2><strong><%=tag.diving_date%></strong></h2>
       <div class="infos">
-        <p><strong><%=tag.user.username%></strong>,</p>
+        <p><strong><%= link_to(tag.user.username, user_path(tag.user))%></strong></p>
         <p>diving close to <strong><%=tag.spot_name%></strong> captured this picture at a depth of <strong><%=tag.depth%> meters</strong>.</p>
       </div>
       <div class="infos">
