@@ -34,6 +34,11 @@
         <h4><%=@user.last_name%></h4>
         </div>
       </div>
+
+      <div class="btn btn-show">
+        <%= link_to "Edit my profile", edit_user_path(current_user.id)%>
+      </div>
+
       <div class=div-img>
         <div class="img-tag ">
           <h3>Last tag of <%=@user.first_name%></h3>
