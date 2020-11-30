@@ -12,10 +12,12 @@
   </head>
 
   <body>
-    <% if controller_name == 'pages' || controller_name == 'users' %>
+    <% if controller_name == 'pages' #|| controller_name == 'users' %>
       <%= render 'shared/navbar' %>
     <% elsif controller_name == 'species'%>
       <%= render 'shared/navbar-two' %>
+    <% elsif controller_name == 'users'%>
+      <%= render 'shared/navbar-profile' %>
     <% else %>
       <%= render 'shared/navbar-map' %>
     <% end %>
