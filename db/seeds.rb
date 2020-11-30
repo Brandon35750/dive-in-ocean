@@ -67,7 +67,7 @@ user5 = User.create!(
   email: "christine@example.com",
   password: "password",
   )
-user5.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Xtine.jpg')), filename: 'Xtine.jpg')
+user5.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Xtine.png')), filename: 'Xtine.png')
 user5.save!
 
 user6 = User.create!(
@@ -107,23 +107,23 @@ user8.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Paul.png'
 user8.save!
 
 specie1 = Species.new(
-  name: "Poisson Lune",
+  name: "Moonfish",
   latin_name: "Mola mola",
-  description:"Ce poisson de corps quasi circulaire, comprimé latéralement forme un disque ovoïde caractéristique. Très apparentes, les deux nageoires dorsale et anale, triangulaires, reculées et opposées (placées en vis-à-vis du disque corporel), lui servent de rames verticales synchrones. Absence de queue remplacee par une frange.",
-  threat_level:"Espece rare",
+  description:"This fish of almost circular body, compressed laterally forms a characteristic ovoid disc. Very apparent, the two dorsal and anal fins, triangular, set back and opposite (placed opposite the body disc), serve as synchronous vertical oars. No tail replaced by bangs.",
+  threat_level:"Rare species",
   size: 2,
-  color: "bleu gris",
+  color: "Blue grey",
   )
 specie1.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/mola-mola.jpg')), filename: 'mola-mola.jpg')
 specie1.save!
 
 specie2 = Species.new(
-  name: "Grand Requin Blanc",
+  name: "Great White-shark",
   latin_name: "Carcharodon carcharias",
-  description: "Le corps fusiforme du grand requin blanc, massif antérieurement, présente une coloration gris variable selon les individus et les latitudes. Museau conique. La forme en croissant de lune de la nageoire caudale est caractéristique.",
+  description: "The fusiform body of the great white shark, massive anteriorly, presents a variable gray color according to the individuals and the latitudes. Conical muzzle. The crescent moon shape of the caudal fin is characteristic.",
   threat_level: "Espece reglementee",
   size: 6,
-  color: "bleu & blanc",
+  color: "Blue & white",
   )
 specie2.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-blanc.jpg')), filename: 'requin-blanc.jpg')
 specie2.save!
