@@ -13,13 +13,13 @@ Species.destroy_all
 user1 = User.create!(
   first_name: "Anna",
   last_name: "Chedeville",
-  username: "chedanna",
+  username: "Chedanna",
   diving_level: "TSD",
   description: "Princesse Anna",
   email: "anna@example.com",
   password: "password",
   )
-user1.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user1.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Anna.png')), filename: 'Anna.png')
 user1.save!
 
 user2 = User.create!(
@@ -31,148 +31,144 @@ user2 = User.create!(
   email: "brandon@example.com",
   password: "password",
   )
-user2.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user2.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/brandon.png')), filename: 'brandon.png')
 user2.save!
 
 user3 = User.create!(
   first_name: "Briac",
   last_name:"Louazel",
-  username:"blouazel",
+  username:"Blouazel",
   diving_level:"Open Water",
   description:"Marketplace expert",
   email: "briac@example.com",
   password: "password",
   )
-user3.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user3.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Briac.jpg')), filename: 'Briac.jpg')
 user3.save!
 
 user4 = User.create!(
   first_name: "Celeste",
   last_name:"Gautier",
-  username:"celeston",
+  username:"Celeston",
   diving_level:"Open Water",
   description:"Reine du front",
   email: "celeste@examplebis.com",
   password: "password",
   )
-user4.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user4.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Celeste.jpg')), filename: 'Celeste.jpg')
 user4.save!
 
 user5 = User.create!(
   first_name: "Christine",
   last_name:"Brendle",
-  username:"xtineHK",
+  username:"XtineHK",
   diving_level:"TSD",
   description:"Made in Hong Kong",
   email: "christine@example.com",
   password: "password",
   )
-user5.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user5.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Xtine.png')), filename: 'Xtine.png')
 user5.save!
 
 user6 = User.create!(
-  first_name: "Gamin",
+  first_name: "Gabin",
   last_name:"Louazel",
-  username:"glouazel",
+  username:"Glouazel",
   diving_level:"TSD",
   description:"Graine de grand marin",
-  email: "gamin@example.com",
+  email: "gabin@example.com",
   password: "password",
   )
-user6.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user6.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Gabin.png')), filename: 'Gabin.png')
 user6.save!
 
 user7 = User.create!(
   first_name: "Marek",
   last_name:"Chrzestek",
-  username:"marekredon",
+  username:"Marekredon",
   diving_level:"INSTRUCTOR",
-  description:"le joueur",
+  description:"Le joueur",
   email: "marek@example.com",
   password: "password",
   )
-user7.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user7.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Marek.jpg')), filename: 'Marek.jpg')
 user7.save!
 
 user8 = User.create!(
   first_name: "Paul",
   last_name:"Louazel",
-  username:"plouazel",
+  username:"Plouazel",
   diving_level:"AAC SPE Deep",
   description:"Graine de marin",
   email: "paul@example.com",
   password: "password",
   )
-user8.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/photo.jpg')), filename: 'photo.jpg')
+user8.avatar.attach(io: File.open(Rails.root.join('db/fixtures/avatars/Paul.png')), filename: 'Paul.png')
 user8.save!
 
 specie1 = Species.new(
-  name: "Poisson Lune",
+  name: "Moonfish",
   latin_name: "Mola mola",
-  description:"Ce poisson de corps quasi circulaire, comprimé latéralement forme un disque ovoïde caractéristique. Très apparentes, les deux nageoires dorsale et anale, triangulaires, reculées et opposées (placées en vis-à-vis du disque corporel), lui servent de rames verticales synchrones. Absence de queue remplacee par une frange.",
-  threat_level:"Espece rare",
+  description:"This fish of almost circular body, compressed laterally forms a characteristic ovoid disc. Very apparent, the two dorsal and anal fins, triangular, set back and opposite (placed opposite the body disc), serve as synchronous vertical oars. No tail replaced by bangs.",
+  threat_level:"Rare species",
   size: 2,
-  color: "bleu gris",
+  color: "Blue grey",
   )
 specie1.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/mola-mola.jpg')), filename: 'mola-mola.jpg')
 specie1.save!
 
 specie2 = Species.new(
-  name: "Grand Requin Blanc",
+  name: "Great White-shark",
   latin_name: "Carcharodon carcharias",
-  description: "Le corps fusiforme du grand requin blanc, massif antérieurement, présente une coloration gris variable selon les individus et les latitudes. Museau conique. La forme en croissant de lune de la nageoire caudale est caractéristique.",
-  threat_level: "Espece reglementee",
+  description: "The fusiform body of the great white shark, massive anteriorly, presents a variable gray color according to the individuals and the latitudes. Conical muzzle. The crescent moon shape of the caudal fin is characteristic.",
+  threat_level: "Regulated species",
   size: 6,
-  color: "bleu & blanc",
+  color: "Blue & white",
   )
 specie2.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-blanc.jpg')), filename: 'requin-blanc.jpg')
 specie2.save!
 
 
 specie3 = Species.new(
-  name: "Tortue Verte",
+  name: "Green turtle",
   latin_name: "Chelonia mydas",
-  description: "La tortue verte est la plus connue des tortues marines. Sa morphologie est variable en fonction de sa zone géographique.Le cou de la tortue verte est court. Sa tête est petite et non rétractable.",
-  threat_level: "Espece reglementee",
+  description: "The green turtle is the most famous of the sea turtles. Its morphology is variable depending on its geographical area.The neck of the green turtle is short. Its head is small and non-retractable.",
+  threat_level: "Regulated species",
   size: 1,
-  color: "vert & beige",
+  color: "green & beige",
   )
 specie3.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/tortue-verte.jpg')), filename: 'tortue-verte.jpg')
 specie3.save!
 
 specie4 = Species.new(
-  name: "Requin Renard",
+  name: "Thresher shark",
   latin_name: "Alopias vulpinus",
-  description:"S'il est facilement reconnaissable entre tous, c'est parce que notre renard de mer se caractérise par une nageoire caudale de taille pratiquement égale à son corps fusiforme. L'animal peut atteindre 6 mètres et plus pour un poids de 500 kg !Sa robe a une couleur dominante sombre.",
-  threat_level: "Espece rare",
+  description:"Easily recognizable, the Thresher shark is characterized by a caudal fin of almost equal size to its fusiform body. The animal can reach 6 meters and more for a weight of 500 kg! Its coat has a dark dominant color.",
+  threat_level: "Endangered species",
   size: 6,
-  color: "Bleu",
+  color: "Blue",
   )
 specie4.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-renard.jpg')), filename: 'requin-renard.jpg')
 specie4.save!
 
 specie5 = Species.new(
-  name: "Raies Manta",
+  name: "Manta rays",
   latin_name: "Mobula alfredi",
-
-  description: "Les raies manta possèdent un corps aplati. Les yeux et les spiracles sont latéraux alors que les 5 fentes branchiales sont sur la face ventrale. La tête est très large et porte deux nageoires céphaliques deux fois plus longues que larges qui sont des extensions de ses nageoires pectorales.",
-
-  threat_level: "Espece vulnerable",
+  description: "Manta rays have a flattened body. The eyes and the spiracles are lateral while the 5 gill slits are on the ventral side. The head is very broad and has two cephalic fins twice as long as they are wide and are extensions of its pectoral fins.",
+  threat_level: "Vulnerable species",
   size: 5,
-  color: "Brun",
+  color: "Brown",
   )
 specie5.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/raie-manta.jpg')), filename: 'raie-manta.jpg')
 specie5.save!
 
 specie6 = Species.new(
-  name: "Requin Baleine",
+  name: "Whale shark",
   latin_name: "Rhincodon typus",
-
-  description: "Le requin-baleine est le plus grand de tous les poissons cartilagineux et osseux, sa taille pouvant atteindre 12 m. Il est reconnaissable à sa tête plate et large, fendue d'une très grande bouche qui peut mesurer jusqu'à 1,50 m de large. Ses yeux sont situés juste en arrière de la bouche.",
-  threat_level: "Espece vulnerable",
-
+  description: "The whale shark is the largest of all cartilaginous and bony fish, reaching up to 12 m in size. It is recognizable by its flat and broad head, slit with a very large mouth which can measure up to 1.50 m wide. Its eyes are located just behind the mouth.",
+  threat_level: "Vulnerable species",
   size: 8,
-  color: "Bleu & blanc",
+  color: "Blue & white",
   )
 specie6.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-baleine.jpg')), filename: 'requin-baleine.jpg')
 specie6.save!
@@ -180,32 +176,32 @@ specie6.save!
 specie7 = Species.new(
   name: "Beluga",
   latin_name: "Delphinapterus leucas",
-  description: "La tête est relativement petite par rapport au reste du corps, massif, mais reste imposante du fait du melon massif situé en avant du crâne. Le melon est plus ou moins accentué et contient de l'huile dont la fonction divise encore certains chercheurs.",
-  threat_level: "Espece vulnerable",
+  description: "Its head is relatively small compared to the rest of the body, massive, but remains imposing due to the massive melon located in front of the skull. The melon is more or less accentuated and contains oil, the function of which still divides researchers.",
+  threat_level: "Vulnerable species",
   size: 7,
-  color: "Brun & blanc",
+  color: "Brown & white",
   )
 specie7.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/beluga.jpg')), filename: 'beluga.jpg')
 specie7.save!
 
 specie8 = Species.new(
-  name: "Hippocampe",
+  name: "Seahorse",
   latin_name: "Hippocampus reidi",
-  description: "L'hippocampe à long museau mesure environ 10 cm lorsqu'il est accroché (soit 15 cm étiré), mais peut atteindre une longueur maximale de 17,5 cm. Les couleurs de sa robe sont variables : du jaune au brun, mais il présente de minuscules points noirs dispersés sur le corps. Son museau est long et épais.",
-  threat_level: "Espece vulnerable",
+  description: "The long-snouted seahorse measures around 10cm when hung (i.e. 15cm stretched), but can reach a maximum length of 17.5cm. The colors of his dress are variable: from yellow to brown, but he has tiny black dots scattered on the body. Its muzzle is long and thick.",
+  threat_level: "Endangered species",
   size: 0.25,
-  color: "Jaune",
+  color: "Yellow",
   )
 specie8.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/hippocampe.jpg')), filename: 'hippocampe.jpg')
 specie8.save!
 
 specie9 = Species.new(
-  name: "Baleine Bleue",
+  name: "Blue whale",
   latin_name: "Balaenoptera musculus",
-  description: "La baleine bleue est le plus grand mammifère sur Terre. Son corps est long et massif,son poids est d'environ une centaine de tonnes. Sa tête est plate en forme de U. Le corps est généralement tacheté. La baleine bleue est l'animal qui produit les sons les plus graves et les plus puissants au monde.",
-  threat_level: "Espece menacée",
+  description: "The blue whale is the largest mammal on Earth. Its body is long and massive, its weight is about a hundred tons. Its head is flat in the shape of a U. The body is usually spotted. The blue whale is the most bass and loudest sounding animal in the world.",
+  threat_level: "Endangered species",
   size: 25,
-  color: "Bleu",
+  color: "Blue",
   )
 specie9.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/baleine-bleue.png')), filename: 'baleine-bleue.png')
 specie9.save!
@@ -213,25 +209,80 @@ specie9.save!
 specie10 = Species.new(
   name: "Napoleon",
   latin_name: "Cheilinus undulatus",
-  description: "Le napoléon est le plus grand de tous les labres : il peut peser jusqu'à 190 kg. Les écailles sont grandes et peuvent atteindre 10 cm de diamètre. La forme du corps ainsi que sa couleur changent au cours de sa vie. Les mâles possèdent d'épaisses lèvres charnues et une bosse frontale d'autant plus grande que le poisson est âgé.",
-  threat_level: "Espece en danger",
+  description: "The napoleon is the largest of all wrasses: it can weigh up to 190 kg. The scales are large and can reach 10 cm in diameter. The shape of the body as well as its color change during its life. Males have thick, full lips and a frontal hump that is larger the older the fish.",
+  threat_level: "Endangered species",
   size: 2,
-  color: "Bleu & Vert",
+  color: "Blue & green",
   )
 specie10.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/napoleon.jpg')), filename: 'napoleon.jpg')
 specie10.save
 
 specie11 = Species.new(
-  name: "Poisson Clown",
+  name: "Clown fish",
   latin_name: "Amphiprion bicinctus",
-  description: "La couleur va du jaune orangé à brun. Deux bandes blanches verticales bordées de noir divisent le corps : la première le traverse depuis l'arrière de la tête en s’élargissant dorsalement, la seconde, plus fine, passe au milieu du corps. La nageoire caudale est tronquée ou légèrement émarginée.",
-  threat_level: "Espece vulnerable",
+  description: "Its color ranges from orange-yellow to brown. Two vertical white bands edged in black divide the body: the first crosses it from the back of the head, widening dorsally, the second, thinner, passes through the middle of the body. The caudal fin is truncated or slightly notched.",
+  threat_level: "Endangered species",
   size: 0.2,
-  color: "Orange & blanc",
+  color: "Orange & white",
   )
 specie11.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/poisson-clown.jpg')), filename: 'poisson-clown.jpg')
 specie11.save!
 
+
+specie12 = Species.new(
+  name: "Great barracuda",
+  latin_name: "Sphyraena barracuda",
+  description:"Spindle-shaped fish that can reach 2 m in length for a weight of 50 kg. As a general rule, the individuals encountered measure between 1 m and 1.40 m. The body is silvery gray, paler on the belly and often with irregular black markings.",
+  threat_level:"Not very vulnerable",
+  size: 2,
+  color: "Silver & grey",
+  )
+specie12.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/barracuda.jpg')), filename: 'barracuda.jpg')
+specie12.save!
+
+specie13 = Species.new(
+  name: "Leopard shark",
+  latin_name: "Stegostoma fasciatum",
+  description:"Shark relatively ubiquitous in the seabed, it is found on sandy bottoms, from the coast to the outer slope up to 70 m depth. He spends most of his time on the seabed.‭",
+  threat_level:"Endangered species",
+  size:  3.5,
+  color: "Sand & yellow‭",
+  )
+specie13.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-leopard.jpg')), filename: 'requin-leopard.jpg')
+specie13.save!
+
+specie14 = Species.new(
+  name: "Eagle ray",
+  latin_name: "Myliobatis aquila",
+  description:"The eagle ray preferentially swims near the bottom. Its bathymetric distribution extends from the surface to a depth of about 300 meters. Even if it can be found in open water and near the surface, it mainly likes the proximity of the coasts on sandy bottoms.",
+  threat_level:"Not very vulnerable",
+  size: 1.8,
+  color: "Brown & black",
+  )
+specie14.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/raie-aigle.jpg')), filename: 'raie-aigle.jpg')
+specie14.save!
+
+specie15 = Species.new(
+  name: "Trunk fish",
+  latin_name: "Ostracion meleagris",
+  description:"It is found in lagoons, on outer slopes and mixed coral reefs up to 30 meters deep. Boxfish seek clear waters.",
+  threat_level:"Not very vulnerable",
+  size: 0.3,
+  color: "Blue & yellow",
+  )
+specie15.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/poisson-coffre.jpg')), filename: 'poisson-coffre.jpg')
+specie15.save!
+
+specie16 = Species.new(
+  name: "Hammerhead shark",
+  latin_name: "Sphyrna lewini",
+  description:"This circumtropical species is found in all tropical and warm temperate seas around the world. The scalloped hammerhead shark usually evolves between 0 and 275m depth (one baited specimen was nevertheless filmed at a depth of 512m).",
+  threat_level:"Endangered species",
+  size: 3.5,
+  color: "Grey & brown",
+  )
+specie16.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-marteau.jpg')), filename: 'requin-marteau.jpg')
+specie16.save!
 
 tag1 = Tag.new(
   latitude:  -8.678583,
@@ -240,7 +291,7 @@ tag1 = Tag.new(
   diving_date: "2020-1-6",
   species: specie1,
   user: user1,
-  description: "Quelle chance de pouvoir apercevoir le Mola Mola durant cette plongée! Nous étions 3 dans notre palanqué et nous sommes tombé nez à nez avec ce magnifique spécimen de 2,7 lors de notre remonte en surface.",
+  description: "How lucky to be able to see the Mola Mola during this dive! We were 3 divers when we came face to face with this magnificent specimen of 2.7 during our return to the surface.",
   depth: 31
   )
 tag1.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola.jpg')), filename: 'mola-mola.jpg')
@@ -254,7 +305,7 @@ tag2 = Tag.new(
   diving_date: "2020-1-3",
   species: specie2,
   user: user2,
-  description: "Une plongé agréable dans la station de netoyage des Raies Manta , une expérience magnifique malgré la température de l'eau un peu faible",
+  description: "A pleasant dive in the Manta Rays cleaning station, a magnificent experience despite the slightly low water temperature.",
   depth: 14
   )
 tag2.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/manta-ray.jpg')), filename: 'manta-ray.jpg')
@@ -267,7 +318,7 @@ tag3 = Tag.new(
   diving_date: "2020-8-9",
   species: specie2,
   user: user3,
-  description: "Quelle surprise de tomber sur ce GRAND prédateur, ce requin avait été aperçu la veille et nous avons eu la chance de le retrouver lors de notre plongée",
+  description: "What a surprise to come across this BIG predator, this shark had been seen the day before and we had the chance to find it during our dive.",
   depth: 36
   )
 tag3.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/white-shark.jpg')), filename: 'white-shark.jpg')
@@ -280,7 +331,7 @@ tag4 = Tag.new(
   diving_date: "2020-7-8",
   species: specie3,
   user: user4,
-  description:"Toujours un plaisir de voir une tortue évoluer dans son milieu. Nous reviendrons voir un requin lors de notre prochaine plongée.",
+  description:"Always a pleasure to see a turtle evolving in its environment. We will be back to see a shark on our next dive.",
   depth: 7
   )
 tag4.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle.jpg')), filename: 'green-turtle.jpg')
@@ -289,11 +340,11 @@ tag4.save!
 tag5 = Tag.new(
   latitude: 47.512396,
   longitude: -61.490746,
-  spot_name: "Golfe du St laurent",
+  spot_name: "Saint Laurent",
   diving_date: "2020-8-11",
   species: specie7,
   user: user5,
-  description:"Etant explorateur, je me rejouis de la rencontre avec ce Béluga: un moment rare et un souvenir gravé à jamais dans ma mémoire. ",
+  description:"As an explorer, I was delighted to meet this Beluga: a rare moment, etched forever in my memory. ",
   depth: 39
   )
 tag5.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/beluga.jpg')), filename: 'beluga.jpg')
@@ -306,7 +357,7 @@ tag6 = Tag.new(
   diving_date: "2020-1-23",
   species: specie5,
   user: user6,
-  description: "C'était la premiere fois que j'allais plonger dans la Mer Rouge, mais j'avais déja observé des raies manta lors de précedentes plongées en Indonésie. J'ai été agréablement surpris de croiser cette rai de si grande taille: 4,2m! ",
+  description: "It was the first time I was diving in the Red Sea, but I had already observed Manta rays during previous dives in Indonesia. I was pleasantly surprised to spot this really large one: 4.2m!",
   depth: 17
   )
 tag6.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/manta-ray2.jpg')), filename: 'manta-ray2.jpg')
@@ -319,7 +370,7 @@ tag7 = Tag.new(
   diving_date: "2020-3-12",
   species: specie4,
   user: user7,
-  description: "J'avais entendu parler de cet endroit où l'on peut observer des requins renards, je n'ai pas été deçu, en 4 plongées nous avons eu la change d'en observer plus d'une dizaine!",
+  description: "I had heard about this place where you can observe Thresher sharks, I was not disappointed, in 4 dives we had the chance to observe more than ten!",
   depth: 27
   )
 tag7.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard.jpg')), filename: 'requin-renard.jpg')
@@ -332,7 +383,7 @@ tag8 = Tag.new(
   diving_date: "2020-3-11",
   species: specie6,
   user: user7,
-  description: "Ah le fameux Requin Baleine, on nous en parlait depuis 2 semaines. Observable au Sud de Koh Tao nous avons eu une belle surprise lors d'une remontée alors que nous respections le palier de sécurité des 5m: un souvenir inoubiable!",
+  description: "We had been talking about the famous Whale shark for 2 weeks. Observable South of Koh Tao, we had a nice surprise during an ascent, while we respected the 5m decompression stage: an unforgettable memory!",
   depth: 17
   )
 tag8.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/whale-shark.jpg')), filename: 'whale-shark.jpg')
@@ -345,20 +396,20 @@ tag9 = Tag.new(
   diving_date: "2020-4-11",
   species: specie6,
   user: user2,
-  description: "Une grosse bestiole que tout le monde reve de pouvoir observer, apres plus d'une dizaine de plongée autours de Tao j'ai enfin pu apercevoir ce mastodonte... JE REVIENDRAIS !",
+  description: "A big beast that everyone dreams of being able to observe, after more than ten dives around Tao I was finally able to see this mastodon ... I WILL BE BACK!",
   depth: 38
   )
 tag9.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/whale-shark.jpg')), filename: 'whale-shark.jpg')
 tag9.save!
 
 tag10 = Tag.new(
-  longitude: 57.615738,
+  longitude: 57.915738,
   latitude: 19.974801,
   spot_name: "Trou aux biches",
   diving_date: "2020-5-11",
   species: specie11,
   user: user1,
-  description: "Ma fille adore les poissons clown qui sont devenus célèbres grâce au film d'animation 'Le monde de Némo', elle a été emerveillée de pouvoir observer ces poissons dans leurs anémones.",
+  description: "My daughter loves the Clown fish, which became famous thanks to the animated film 'Finding Nemo', she was amazed to be able to observe these fish in their anemones!",
   depth: 7
   )
 tag10.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/anemonefish.jpg')), filename: 'anemonefish.jpg')
@@ -371,7 +422,7 @@ tag11 = Tag.new(
   diving_date: "2020-6-11",
   species: specie3,
   user: user3,
-  description:"Nous étions à l'Ile Maurice pour faire du snorkeling et nous nous sommes laissés tenter par un baptême de plongée. J'ai nagé avec des tortues pour la première fois et cétait magnifique!",
+  description:"We were in Mauritius to snorkel and we let ourselves be tempted by a first dive. I swam with turtles for the first time and it was beautiful!",
   depth: 13
   )
 tag11.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')

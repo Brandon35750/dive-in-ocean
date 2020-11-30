@@ -1,5 +1,7 @@
 // Specific CSS for your home-page
-
+a {
+  text-decoration: none !important;
+}
 
 .banner {
   background-image: asset-url('dauphin-carte.png');
@@ -95,23 +97,75 @@
   text-align: center;
   padding-top: 30px;
   padding-bottom: 110px;
-  position: relative;
+  // position: relative;
 
 }
 
 .card {
-  min-height: 300px;
+  // min-height: 300px;
   border-radius: 20px;
+  // position: relative;
+
+}
+
+.card-body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.card .onglet {
+  display: flex;
+  justify-content: space-around;
+  // align-items: center;
+
+}
+
+// .picture {
+//   max-height: 220px;
+//   min-height: 220px;
+//   border-top-left-radius: 20px;
+//   border-top-right-radius: 20px;
+// }
+
+.card-body .info {
+  background-color: turquoise;
+  width: 100%;
+  height: 60px;
+  border-bottom-right-radius: 20px;
+  align-items: center;
+  padding-top: 15px;
+  text-decoration: none;
+  font-family: Inconsolata;
+  color: white;
+}
+
+.card-body .where {
+  background-color: #0A859C;;
+  width: 100%;
+  height: 60px;
+  border-bottom-left-radius: 20px;
+  align-items: center;
+  padding-top: 15px;
+  font-family: Inconsolata;
 
 }
 
 .picture {
-  max-height: 220px;
-  min-height: 220px;
+  background-size: cover;
+  background-position: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  height: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white !important;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
-
 
 
 

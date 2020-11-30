@@ -4,8 +4,7 @@
   </div>
     <div class="rigth-description p-4 text-center">
       <div class="div-btn-previous">
-        <%= link_to "X", tags_path(query: @species.name)%>
-
+        <a href="javascript:history.go(-1)">X</a>
       </div>
       <div class="name-center" id="footer">
         <h3><%=@species.latin_name%></h3>
@@ -30,7 +29,7 @@
         <div class="tiret">
           <h3>Threats</h3>
         <!-- <h3>Threats</h3> -->
-        <h4><%=@species.threat_level%></h4>
+        <h5><%=@species.threat_level%></h5>
         </div>
       </div>
       <div class="btn btn-show">
@@ -39,7 +38,7 @@
       <div class=div-img>
         <div class="img-tag ">
           <h3>Last Pictures</h3>
-          <h4><%= link_to "Seel all", ""%></h4>
+          <h4><%= link_to "See all", ""%></h4>
         </div>
         <div class="card-show">
           <%@species.tags.last(3).each do |tag| %>
