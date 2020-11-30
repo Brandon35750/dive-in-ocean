@@ -89,6 +89,7 @@ a {
   border-radius: 20px;
   margin-top: 30px;
   margin-bottom: 100px;
+
 }
 
 .carousel-inner{
@@ -104,9 +105,16 @@ a {
 .card {
   // min-height: 300px;
   border-radius: 20px;
+  // transition: transform .2s;
   // position: relative;
+  margin-left: 10px;
+  margin-right: 10px;
 
 }
+
+// .card:hover {
+//   transform: scale(0.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+// }
 
 .card-body {
   margin: 0;
@@ -128,8 +136,13 @@ a {
 //   border-top-right-radius: 20px;
 // }
 
+.controls-top i {
+  color:  #0A859C;
+}
+
+
 .card-body .info {
-  background-color: turquoise;
+  background-color: white;
   width: 100%;
   height: 60px;
   border-bottom-right-radius: 20px;
@@ -137,11 +150,32 @@ a {
   padding-top: 15px;
   text-decoration: none;
   font-family: Inconsolata;
+
+
+}
+
+.onglet .info a{
+  color: #0A859C;
+
+}
+
+.onglet .where a{
   color: white;
 }
 
+.onglet .where a:hover {
+  font-weight: bold;
+  font-size: 18px;
+
+}
+
+.onglet .info a:hover {
+  font-weight: bold;
+  font-size: 18px;
+}
+
 .card-body .where {
-  background-color: #0A859C;;
+  background-color: #0A859C;
   width: 100%;
   height: 60px;
   border-bottom-left-radius: 20px;
@@ -165,6 +199,12 @@ a {
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  transition: transform .2s;
+}
+
+.picture:hover {
+  transform: scale(1.07);
+  border: 1px solid white;
 }
 
 
@@ -191,7 +231,7 @@ a {
 
 .about-divin {
   margin-top: 35px;
-  border: 1px solid #00005A;
+  border: 2px solid #0A859C;
   border-radius: 20px;
   padding: 30px;
 
@@ -223,7 +263,7 @@ a {
 
 .gest {
   border-radius: 16px;
-  border: 3px solid #0A859C;
+  border: 2px solid #0A859C;
   padding: 30px;
   margin-left: 20px;
   margin-right: 20px;
