@@ -1,4 +1,5 @@
 class User::TagsController < ApplicationController
+
     def create
         @tag = Tag.new(tag_params)
         if @tag.save
@@ -7,7 +8,6 @@ class User::TagsController < ApplicationController
             render 'new'
         end
     end
-
 
     def new
         @tag = Tag.new

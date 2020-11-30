@@ -33,4 +33,23 @@
   width: 100px;
 }
 
+.topnav-map {
+  background-color: transparent;
+  padding: 30px 30px 30px 30px;
+  position: fixed;
+  z-index: 999;
+  display: flex;
+  justify-content: space-between;
+}
+
+.topnav-map-avatar {
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  position: fixed;
+  top:30px;
+  right:30px;
+
+}
+
 

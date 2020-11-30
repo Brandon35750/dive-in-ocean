@@ -39,23 +39,21 @@
     <%= link_to "/", class: "logo-home" do %>
     <%= image_tag "logo.png", alt: "logo" %>
     <% end %>
-    <!-- <a class="topnav-centered" href=""><%= image_tag "logo.png", alt: "logo" %></a> -->
-    <!-- <a href="#news">Species</a>
-    <a href="#contact">About-Us</a>
-    <a href="#contact">Eco-gests</a>
-    <a href="#search">Gallery</a>
-    <a href="#about">Post your dive</a> -->
     <a class="liens"><%= link_to "Species", ""%></a>
-    <a class="liens"><%= link_to "About-Us", ""%></a>
-    <a class="liens"><%= link_to "Eco-gests", ""%></a>
+    <a class="liens"><%= link_to "About-Us", "#about"%></a>
+    <a class="liens"><%= link_to "Eco-gests", "#eco-gest"%></a>
     <a class="liens"><%= link_to "Gallery", ""%></a>
-    <%= link_to "Post your dive", new_user_tag_path, class: "liens"%>
+    <a class="liens"><%= link_to "Post your dive", new_user_tag_path, class: "liens"%></a>
+    
     <!-- <a><%= link_to "Login", new_user_session_path%></a> -->
+
+    
+
     <% if user_signed_in? %>
     <il class="nav-item dropdown">
       <%= image_tag "https://avatarfiles.alphacoders.com/207/thumb-207370.jpg", class: "zoom avatar dropdown-toggle m-3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       <div class="dropdown-menu dropdown-menu-right menu-avatar" aria-labelledby="navbarDropdown">
-       <a class="dropdown-item item"><%= link_to "Profile", "" %></a>
+       <a class="dropdown-item item"><%= link_to "Profile", ""%></a>
        <a class="dropdown-item item"><%= link_to "Log out", destroy_user_session_path, method: :delete%></a>
       </div>
     </il>
