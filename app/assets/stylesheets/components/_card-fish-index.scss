@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url(https://fonts.googleapis.com/css?family=Fauna+One);
+
+.container-index {
+  padding-top: 32px;
+  width: 100%;
+  display: flex;
+}
+
+.cards-index {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  margin: 0 auto;
+  width: 100%;
+  margin-left: 32px;
+  padding-top: 64px;
+}
+
+.card-fish-index {
+  font-family: Inconsolata, Arial, sans-serif;
+  position: relative;
+  // margin: 24px 20px;
+  min-width: 320px;
+  max-width: 320px;
+  min-height: 240px;
+  max-height: 240px;
+  width: 100%;
+  color: #ffffff;
+  text-align: right;
+  line-height: 1.4em;
+  background-color: #005586;
+  font-size: 16px;
+}
+.card-fish-index * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.35s ease;
+}
+.card-fish-index img {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  opacity: 1;
+  width: 100%;
+  -webkit-transform: translate(0%, -50%);
+  transform: translate(0%, -50%);
+}
+.card-fish-index figcaption {
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding: 20px 0 20px 20px;
+}
+.card-fish-index h2,
+.card-fish-index p {
+  margin: 0;
+  width: 100%;
+  -webkit-transform: translateX(20px);
+  transform: translateX(20px);
+  opacity: 0;
+  color: #ffffff;
+}
+.card-fish-index h2 {
+  font-family: Inconsolata, Arial, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+.card-fish-index p {
+  font-size: 0.8em;
+  color: yellow;
+}
+.card-fish-index a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.card-fish-index:hover img,
+.card-fish-index.hover img {
+  width: 60%;
+  right: -5%;
+}
+.card-fish-index:hover figcaption h2,
+.card-fish-index.hover figcaption h2,
+.card-fish-index:hover figcaption p,
+.card-fish-index.hover figcaption p {
+  -webkit-transform: translateX(0px);
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+
+@media(max-width: 992px) {
+  .cards-index {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media(max-width: 768px) {
+  .cards-index {
+    grid-template-columns: 1fr 2fr;
+  }
+}
