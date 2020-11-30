@@ -3,6 +3,7 @@
   color: black !important;
 }
 
-.form-inputs {
-  color: black !important;
+.form-control:focus {
+  background-color: transparent;
+  color: black;
 }
