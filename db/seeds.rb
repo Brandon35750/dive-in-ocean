@@ -233,6 +233,61 @@ specie11.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/poisson
 specie11.save!
 
 
+specie12 = Species.new(
+  name: "Grand barracuda",
+  latin_name: "Sphyraena barracuda",
+  description:"Poisson fusiforme pouvant atteindre 2 m de longueur pour un poids de 50 kg. En règle générale, les individus rencontrés mesurent entre 1 m et 1,40 m. Le corps est gris argenté, plus clair sur le ventre et avec souvent des taches noires irrégulières.",
+  threat_level:"",
+  size: 2,
+  color: "Gris argenté",
+  )
+specie12.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/barracuda.jpg')), filename: 'barracuda.jpg')
+specie12.save!
+
+specie13 = Species.new(
+  name: "Requin leopard",
+  latin_name: "Stegostoma fasciatum",
+  description:"Requin relativement omniprésent dans les fonds marins.‭ ‬Il‭ ‬se rencontre sur les fonds sableux,‭ ‬du littoral à‭ ‬la pente externe‭ jusqu'à ‬70‭ ‬m de profondeur‭. Il passe la plupart de son temps posé sur le fond.‭",
+  threat_level:"Espece vulnerable",
+  size:  3.5,
+  color: "Beige-jaune‭",
+  )
+specie13.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-leopard.jpg')), filename: 'requin-leopard.jpg')
+specie13.save!
+
+specie14 = Species.new(
+  name: "Raie aigle",
+  latin_name: "Myliobatis aquila",
+  description:"La raie aigle nage préférentiellement près du fond. Sa distribution bathymétrique s'étend depuis la surface jusqu'à une profondeur d'environ 300 mètres. Même si on peut la rencontrer en pleine eau et près de la surface, elle affectionne essentiellement la proximité des côtes sur fonds sableux.",
+  threat_level:"Peu vulnérable",
+  size: 1.8,
+  color: "Brune à noire",
+  )
+specie14.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/raie-aigle.jpg')), filename: 'raie-aigle.jpg')
+specie14.save!
+
+specie15 = Species.new(
+  name: "Poisson coffre",
+  latin_name: "Ostracion meleagris",
+  description:"On le rencontre dans les lagons, sur les pentes externes et les fonds coralliens mixtes jusqu’à 30 mètres de profondeur. Le poisson-coffre recherche les eaux claires.",
+  threat_level:"Peu vulnérable",
+  size: 0.3,
+  color: "Toutes couleurs",
+  )
+specie15.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/poisson-coffre.jpg')), filename: 'poisson-coffre.jpg')
+specie15.save!
+
+specie16 = Species.new(
+  name: "Requin marteau",
+  latin_name: "Sphyrna lewini",
+  description:"Cette espèce circumtropicale est présente dans toutes les mers tropicales et tempérées chaudes du monde. Le requin-marteau halicorne évolue habituellement entre 0 et 275 m de profondeur (un spécimen appâté a néanmoins été filmé par 512 m).",
+  threat_level:"Espèce en danger",
+  size: 3.5,
+  color: "Gris-brun",
+  )
+specie16.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/requin-marteau.jpg')), filename: 'requin-marteau.jpg')
+specie16.save!
+
 tag1 = Tag.new(
   latitude:  -8.678583,
   longitude: 115.455586,
