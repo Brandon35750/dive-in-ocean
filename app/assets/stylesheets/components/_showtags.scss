@@ -1,20 +1,17 @@
 .mapboxgl-popup-content {
-  /*height: 300px;
-  width: 175px;*/
+  width: 400px;
   position: relative;
-
-
   padding: 0px 0px 0px;
   pointer-events: auto;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+  background: rgba(225, 225, 225, .7);
 }
 
 .card-tag {
-  border: solid $blue_title 2px;
-  width: 150px;
+  border: solid $blue_title 3px;
+  width: 400px;
   border-radius: 4px;
   overflow: hidden;
-
 }
 
 .infos {
@@ -22,31 +19,30 @@
 }
 
 .card-tag > img {
-  height: 150px;
+  height: auto;
   width: 100%;
   object-fit: cover;
 }
 
 .card-tag h2 {
-  font-size: 12px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-tag h1 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-tag p {
-  font-size: 10px;
+  font-size: 20px;
   font-family: Inconsolata;
-  opacity: .7;
+  opacity: .9;
   margin: 0;
-  line-height: 12px;
+  line-height: 24px;
 }
-
 
 .card-tag .card-tag-infos {
   padding: 12px;
@@ -60,19 +56,19 @@
   position: absolute;
   right: 8px;
   top: -36px;
-  width: 56px;
-}
+  width: 80px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
 
 .species-name-in-popup {
   a:hover{text-decoration: none}
   font-family: Inconsolata;
-  font-size: 14px;
+  font-size: 24px;
   background: #fff;
-  opacity: .5;
+  opacity: .7;
   border-radius: 0px 8px 8px 0px;
   position: absolute;
   left: 2px;
-  top: 16px;
+  top: 32px;
   width: auto;
-  padding: 0px 4px 0px 4px;
+  padding: 8px 12px 8px 12px;
 }

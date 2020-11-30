@@ -4,17 +4,17 @@
   </div>
   <%= cl_image_tag tag.photo.key %>
   <div class="card-tag-infos">
-    <div>
-      <strong><p><%=tag.diving_date%></p></strong>
-    <div class="infos">
-      <p><strong><%=tag.user.username%></strong>, diving close to <strong><%=tag.spot_name%></strong> captured this picture at a depth of <strong><%=tag.depth%> meters</strong>.</p>
+    <div class="bloc-infos">
+        <strong><h2><%=tag.diving_date%></h2></strong>
+      <div class="infos">
+        <p><strong><%=tag.user.username%></strong>,</p>
+        <p>diving close to <strong><%=tag.spot_name%></strong> captured this picture at a depth of <strong><%=tag.depth%> meters</strong>.</p>
+      </div>
+      <div class="infos">
+        <p>Lat: <%=tag.latitude%></p>
+        <p>Lng: <%=tag.longitude%></p>
+      </div>
     </div>
-    <div class="infos">
-      <p>Lat: <%=tag.latitude%></p>
-      <p>Lng: <%=tag.longitude%></p>
-    </div>
-    </div>
-    <h2 class="card-tag-pricing"></h2>
     <%= cl_image_tag tag.user.avatar.key, class: "card-tag-user avatar-bordered"%>
   </div>
 </div>

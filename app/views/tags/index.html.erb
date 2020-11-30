@@ -8,10 +8,10 @@
 <div class= "barre text-center">
 
 <% if params[:query].present? && params[:secondquery].present? %>
-  <h2>showing results for <%= params[:query]%> and <%= params[:secondquery] %></h2>
+  <h2> <%= params[:query]%> and <%= params[:secondquery] %> are waiting for you there!</h2>
 
 <% elsif params[:query].present? %>
-  <h2>showing results for your search <%= params[:query]%></h2>
+  <h2><%= params[:query]%> lives there!</h2>
 <br>
   <div class= "searchbar">
     <div class= "searchbar-picto"> <%= image_tag "mask.png", class: "image-small-32" %> </div>
@@ -27,7 +27,7 @@
     </div>
   </div>
 <% else %>
-  <h2>showing all available results</h2>
+  <h2>Come and dive with us!</h2>
 
 <% end %>
 
