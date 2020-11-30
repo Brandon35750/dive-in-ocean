@@ -51,13 +51,15 @@
 }
 
 
+
 ::placeholder {
   color:white !important;
+  background-color: transparent !important;
 }
 
 
 .searchbar .form-control:focus {
-  background-color: transparent;
+  background-color: transparent !important;
   color: white;
 }
 
@@ -65,4 +67,3 @@
 .search-form-control i{
   color: white;
 }
-
