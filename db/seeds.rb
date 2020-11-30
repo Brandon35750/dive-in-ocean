@@ -403,7 +403,7 @@ tag9.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/whale-
 tag9.save!
 
 tag10 = Tag.new(
-  longitude: 57.615738,
+  longitude: 57.915738,
   latitude: 19.974801,
   spot_name: "Trou aux biches",
   diving_date: "2020-5-11",
