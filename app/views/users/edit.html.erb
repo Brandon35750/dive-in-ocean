@@ -1,24 +1,22 @@
-<div class="container">
-  <h1>Edit my profile</h1>
+<div class="edit-form">
+    <div class="edit-form-container">
+          <div class="input-bloc">
+            <h1>Edit my profile</h1>
+          </div>
+          <%= simple_form_for @user do |f| %>
+            <%= f.error_notification %>
+
+            <%= f.input :first_name, input_html: { class: "bar" } %>
+            <%= f.input :last_name, input_html: { class: "bar" } %>
+            <%= f.input :username, input_html: { class: "bar" } %>
+            <%= f.input :diving_level, input_html: { class: "bar" } %>
+            <%= f.input :description, textarea_html: { class: "bar" } %>
+            <%= f.input :avatar, as: :file %>
+            <%= f.button :submit, "Edit profile", class: "btn-form" %>
+            <%= f.button :button, "Cancel", type: "reset", class: "btn-form" %>
+          <% end %>
+          <div class="btn-form-back">
+            <%= link_to 'Back', user_path %>
+          </div>
+    </div>
 </div>
-
-<div class="container">
-  <%= simple_form_for @user do |f| %>
-    <%= f.error_notification %>
-
-    <%= f.input :first_name %>
-    <%= f.input :last_name %>
-    <%= f.input :username %>
-    <%= f.input :diving_level %>
-    <%= f.input :description %>
-    <%= f.input :avatar, as: :file %>
-    <%= f.button :submit, class: "btn-primary" %>
-    <%= f.button :button, "Cancel", type: "reset", class: "btn-outline-secondary" %>
-  <% end %>
-
-  <%= link_to 'Back', user_path %>
-</div>
-
-
-
-

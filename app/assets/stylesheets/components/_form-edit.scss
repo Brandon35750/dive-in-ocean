@@ -1,0 +1,71 @@
+/* BOTTOM BARS ================================= */
+.edit-form a {
+  color: white;
+}
+
+.bar  {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  border-color: #white !important;
+  position:relative;
+  display:block;
+  width:355px;
+  border: none;
+  border-bottom: 1px solid #white;
+}
+
+.edit-form {
+  padding-top: 80px;
+  background-image: asset-url('dauphins-home.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 1000px;
+}
+
+.edit-form h1 {
+  padding: 20px;
+}
+
+.edit-form input {
+  font-size: 20px;
+}
+
+.edit-form textarea {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 20px;
+  width: 355px;
+  border-color: none;
+}
+
+.edit-form label {
+  font-size: 20px;
+}
+
+.edit-form .btn-form {
+  font-family: Inconsolata;
+  font-size: 20px;
+  width: 176px;
+  height: 36px;
+  margin-top: 24px;
+  background-color: #005586;
+  color: white;
+}
+
+.edit-form-container {
+  margin-left: 10%;
+}
+
+.user_avatar input {
+
+}
+
+.edit-form .btn-form-back {
+  font-family: Inconsolata;
+  font-size: 20px;
+  width: 355px;
+  height: 36px;
+  margin-top: 24px;
+  background-color: #005586;
+  text-align: center;
+}
