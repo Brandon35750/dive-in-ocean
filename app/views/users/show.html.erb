@@ -31,7 +31,7 @@
         </div>
         <div class="tiret">
           <h3>Last name</h3>
-        <h4><%=@user.last_name%></h4>
+        <h5><%=@user.last_name%></h5>
         </div>
       </div>
 
@@ -44,9 +44,13 @@
           <h3>Last tag of <%=@user.first_name%></h3>
         </div>
         <div class="card-show">
-          <%@user.tags.last(3).each do |tag| %>
+          <%@user.tags.sort_by(&:created_at).reverse.first(3).each do |tag| %>
           <div class="card-product">
-            <img><%= cl_image_tag tag.photo.key %>
+             <% if tag.photo.attached? %>
+              <img><%= cl_image_tag tag.photo.key %>
+             
+             <% end %>
+             <%= tag.description %>
           </div>
           <% end %>
       </div>

@@ -1,0 +1,77 @@
+
+
+
+// .card-category:hover{
+//   background-size:105%;
+//   transition: all 1s ease;
+// }
+
+// .card-category {
+//   background-size: 100%;
+//   transition: all 1s ease;
+//   position: relative;
+//   background-position: center;
+//   height: 180px;
+//   width: 400px;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: white !important;
+//   font-size: 24px;
+//   font-weight: bold;
+//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+//   border-radius: 5px;
+//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+//   &:hover {
+//     .button{
+//       bottom: -11px;
+//       opacity:1;
+//       transition: 1s;
+
+//     }
+//   }
+// }
+
+// .button{
+//   position: absolute;
+//   bottom: 20px;
+//   transition: 1s;
+
+//  width: 400px;
+//  display:flex;
+//  margin-top: -10px;
+//  opacity: 0;
+//  text-align: center;
+// }
+
+//  .button .one{
+//    background-color:white;
+//    width: 200px;
+//    padding:15px 10px ;
+//    border-bottom-left-radius: 5px;
+//    border: 1px solid white;
+//    opacity: 0.8;
+//    font-size: 12px;
+//    color:#008297;
+//    font-weight: bold;
+//    font-family: "Karla", "Helvetica", "sans-serif";
+//    &:hover{
+//      box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
+//    }
+//   }
+
+//  .button .two{
+//    background-color:white;
+//    width: 200px;
+//    padding:15px 10px ;
+//    border-bottom-right-radius: 5px;
+//    border: 1px solid white;
+//    opacity: 0.8;
+//    font-size: 12px;
+//    font-weight: bold;
+//    color:#008297;
+//    font-family: "Karla", "Helvetica", "sans-serif";
+//    &:hover{
+//      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+//    }
+//   }
