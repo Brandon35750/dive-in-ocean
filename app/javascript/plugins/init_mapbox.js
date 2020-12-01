@@ -22,13 +22,10 @@ const initMapboxNewTag = () => {
       .setLngLat([ lngLat.lng, lngLat.lat ])
       .addTo(map);
       markers.push(newMarker)
-    });
-  };
-};
       console.log(lngLat)
       document.getElementById('tag_latitude').value = lngLat.lat;
       document.getElementById('tag_longitude').value = lngLat.lng;
-    });   
+    });
   };
 };
 
