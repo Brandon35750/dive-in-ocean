@@ -31,7 +31,7 @@
         </div>
         <div class="tiret">
           <h3>Last name</h3>
-        <h4><%=@user.last_name%></h4>
+        <h5><%=@user.last_name%></h5>
         </div>
       </div>
 
@@ -45,7 +45,7 @@
         </div>
         <div class="card-show">
           <%@user.tags.last(3).each do |tag| %>
-          <div class="card-product">
+          <div class="card-product-show">
             <img><%= cl_image_tag tag.photo.key %>
           </div>
           <% end %>
