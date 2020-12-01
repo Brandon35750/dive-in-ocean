@@ -5,14 +5,17 @@
    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
 
+
 <div class= "barre text-center">
   <div class= "container">
-    <div class="row justify-content-center">
+   <div class="row justify-content-center">
+
       <% if params[:query].present? && params[:secondquery].present? %>
       <h2> <%= params[:query]%> and <%= params[:secondquery] %> are waiting for you there!</h2>
       <% elsif params[:query].present? %>
       <h2><%= params[:query]%> lives there!</h2>
       <br>
+
       <div class= "searchbar">
             <div class= "searchbar-picto"> <%= image_tag "mask.png", class: "image-small-32" %> </div>
               <%= form_tag tags_path, class: "simple_form search w-100", method: :get do %>
@@ -45,7 +48,6 @@
         </div>
     </div>
   </div>
-
-    <% end %>
+<% end %>
 
 </div>

@@ -42,7 +42,7 @@
         </div>
         <div class="card-show">
           <%@species.tags.last(3).each do |tag| %>
-          <div class="card-product">
+          <div class="card-product-show">
             <img><%= cl_image_tag tag.photo.key %>
           </div>
           <% end %>
