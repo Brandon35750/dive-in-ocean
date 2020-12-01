@@ -15,4 +15,6 @@ class Tag < ApplicationRecord
   scope :geocoded, -> { where.not(latitude: nil, longitude: nil) }
 
   validates :diving_date, :latitude, :longitude, :spot_name, :depth, presence: true
+
+  attr_accessor :color_group
 end
