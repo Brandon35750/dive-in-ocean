@@ -2,8 +2,9 @@ class User::TagsController < ApplicationController
 
     def create
         @tag = Tag.new(tag_params)
+        @tag.user = current_user
         if @tag.save
-            redirect_to tag_path(@tag)
+            redirect_to user_path(current_user)
         else
             render 'new'
         end
@@ -11,5 +12,13 @@ class User::TagsController < ApplicationController
 
     def new
         @tag = Tag.new
+    end
+
+    def index
+        @tags = current_user.tags
+    end
+
+    def tag_params
+        params.require(:tag).permit(:diving_date, :latitude, :longitude, :spot_name, :species_id, :depth, :description, :photo)
     end
 end
