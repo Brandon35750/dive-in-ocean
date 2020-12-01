@@ -184,3 +184,32 @@
      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
    }
   }
+
+
+
+
+
+
+
+ 
+
+  .wrapper {
+    background: url("https://aduvan.ru/wp-content/uploads/photo-gallery/water/water-texture_(46).jpg");
+    color: #eee;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    perspective-origin: 50% 50%;
+    animation: animation 200s linear infinite;
+  }
+  
+  @keyframes animation {
+     100%{
+      background-position:0px -3000px;
+    }
+  }
+
+  
