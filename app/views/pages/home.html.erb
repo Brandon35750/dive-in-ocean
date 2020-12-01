@@ -25,7 +25,9 @@
 
 <div id="carouselExampleSlidesOnly" class="carousel-slide" data-ride="carousel">
   <div class="carousel-inner">
+    <div class= "noidea">
     <h2>No idea ? let us guide you to one of these wonderful species...</h2>
+    </div>
 
     <div class="container my-4 carou">
 
@@ -49,7 +51,7 @@
       <!--/.Indicators-->
 
       <!--Slides-->
-      <div class="carousel-inner" role="listbox">
+      <div class="carousel-slide" role="listbox">
 
         <!--First slide-->
         <div class="carousel-item active">
@@ -93,13 +95,11 @@
     <!--/.Carousel Wrapper-->
 
   </div>
-    <div class= "corailpic" id="about">
-      <%= image_tag "coraux3.png", class: "corail" %>
-    </div>
+      <%= image_tag "coraux3.png", class: "corail", id: "about" %>
   </div>
 </div>
 
-
+<div class= "fondcarte">
 <div class= "container text-center">
   <div class= "about-divin">
     <h2>...before diving into the world of Dive-in Ocean</h2>
@@ -123,12 +123,14 @@
 
 <div class= "container text-center" id="eco-gest">
 <div class= "Eco-gests"><h2>Eco-gests</h2></div>
+<p>Coral ecosystems are in decline: 20% of the planet's reefs are already destroyed while 24% are in danger of disappearing. They also estimate that by 2050, 26% of coral reefs will also be in mortal danger.</p>
 <div class= "ecogest">
- <div class= "gest"><div class= "pictoto"> <%= image_tag "discretion.png", class: "image-small-30" %> </div><br><p>Do not try to get in touch with the animals, they are in their universe and you are only visitors.<br> If they are hiding, it is because they are stressed, so wait without moving.</p></div>
- <div class= "gest"><div class= "pictoto"> <%= image_tag "corail.png", class: "image-small-30" %> </div><br><p>Do not feed any fish as this could pervert their behaviour and completely unbalance the ecosystem.<br> So if an excursion proposes to feed fish, sharks or any other marine animal, boycott it! </p></div>
- <div class= "gest"><div class= "pictoto"> <%= image_tag "distance.png", class: "image-small-30" %> </div><br><p>Palm gently and do not land on the rocks.<br>The slightest friction can destroy a coral and disturb the animals that make it their home. </p></div>
+ <div class= "gest"><div class= "pictoto"> <%= image_tag "discretion.png", class: "image-small-30" %> </div><br><p><strong>Do not try to get in touch with the animals,</strong> they are in their universe and you are only visitors.<br> If they are hiding, it is because they are stressed, so wait without moving.</p></div>
+ <div class= "gest"><div class= "pictoto"> <%= image_tag "corail.png", class: "image-small-30" %> </div><br><p><strong>Do not feed any fish</strong> as this could pervert their behaviour and completely unbalance the ecosystem.<br> So if an excursion proposes to feed fish, sharks or any other marine animal,<br>boycott it! </p></div>
+ <div class= "gest"><div class= "pictoto"> <%= image_tag "distance.png", class: "image-small-30" %> </div><br><p><strong>Palm gently and do not land on the rocks.</strong><br><br>The slightest friction can destroy a coral and disturb the animals that make it their home. </p></div>
 </div>
-
+</div>
+</div>
 <br>
 <br>
 <br>
@@ -141,6 +143,6 @@
     <a href="#"><i class="fab fa-facebook"></i></a>
   </div>
   <div class="footer-copyright">
-    This footer is made with <i class="fas fa-heart"></i> at Le Wagon
+    This footer is made with <i class="fas fa-heart"></i> and <i class="fab fa-octopus-deploy"></i> and <i class="fas fa-fish"></i> at Le Wagon by Dive-in Ocean
   </div>
 </div>
