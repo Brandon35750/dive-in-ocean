@@ -3,6 +3,23 @@
   color: white;
 }
 
+.form-control {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+}
+
+.localisation {
+  justify-content: space-around;
+}
+
+.test div div {
+  justify-content: space-around !important;
+}
+
+.test div label {
+  margin-left: 137px;
+}
+
 .bar  {
   background-color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
@@ -10,6 +27,7 @@
   position:relative;
   display:block;
   width:355px;
+  height: 40px;
   border: none;
   border-bottom: 1px solid #white;
 }
@@ -58,6 +76,9 @@
 
 .edit-form-container {
   margin-left: 10%;
+}
+
+.edit-form-container-tag{
 }
 
 .user_avatar input {
