@@ -1,6 +1,30 @@
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(https://fonts.googleapis.com/css?family=Fauna+One);
 
+.cover {
+    background-size: 100% 160% !important;
+    width: 100%;
+    height: 300px;
+}
+
+.cover h1 {
+  color: white;
+  font-family: Inconsolata;
+}
+
+.cover a {
+  color: white;
+  font-family: Inconsolata;
+  background-color: transparent;
+  border-color: white;
+}
+
+.cover a:hover {
+
+  background-color: transparent;
+  border-color: white;
+}
+
 .container-index {
   padding-top: 40px;
   width: 100%;
@@ -14,12 +38,13 @@
   margin: 0 auto;
   width: 100%;
   padding-left: 64px;
-  padding-top: 64px;
+  padding-top: 32px;
   margin-bottom: 64px;
 }
 
-.cards-category-index h4 {
-  font-size: Karla;
+.cards-index h4 {
+  font-family: Inconsolata;
+  margin-top: 12px;
 }
 
 .card-category-index:hover{
