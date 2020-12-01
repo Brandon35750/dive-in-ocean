@@ -13,8 +13,44 @@
   grid-gap: 16px;
   margin: 0 auto;
   width: 100%;
-  margin-left: 32px;
+  padding-left: 64px;
   padding-top: 64px;
+  margin-bottom: 64px;
+}
+
+.cards-category-index h4 {
+  font-size: Karla;
+}
+
+.card-category-index:hover{
+  background-size:105%;
+  transition: all 1s ease;
+}
+
+.card-category-index {
+  background-size: 100%;
+  transition: all 1s ease;
+  position: relative;
+  background-position: center;
+  height: 180px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px 6px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin-bottom: 32px;
+  &:hover {
+    .button{
+      bottom: -11px;
+      opacity:1;
+      transition: 1s;
+
+    }
+  }
 }
 
 .card-fish-index {
@@ -112,35 +148,6 @@
 
 
 
-.card-category-index:hover{
-  background-size:105%;
-  transition: all 1s ease;
-}
-
-.card-category-index {
-  background-size: 100%;
-  transition: all 1s ease;
-  position: relative;
-  background-position: center;
-  height: 180px;
-  width: 400px;
-  display: flex;
-  justify-content: center;
-  color: white;
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: 2px 2px 2px 6px rgba(0,0,0,0.2);
-  border-radius: 5px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  &:hover {
-    .button{
-      bottom: -11px;
-      opacity:1;
-      transition: 1s;
-
-    }
-  }
-}
 .button{
   position: absolute;
   bottom: 20px;

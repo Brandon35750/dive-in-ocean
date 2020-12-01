@@ -28,11 +28,13 @@ import "bootstrap";
 
 
 // Internal imports, e.g:
-import { initMapbox, initMapboxNewTag } from '../plugins/init_mapbox';
-
+import { initMapbox, initMapboxNewTag, initMapboxUser } from '../plugins/init_mapbox';
+import { scrollnavbar } from '../plugins/scroll-navbar.js';
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
-  initMapboxNewTag(); 
+  initMapboxNewTag();
+  initMapboxUser();
+  scrollnavbar();
 })
 
 
@@ -52,3 +54,4 @@ document.addEventListener('turbolinks:load', () => {
 //     event.currentTarget.classList.toggle('img-circle');
 //   });
 // });
+
