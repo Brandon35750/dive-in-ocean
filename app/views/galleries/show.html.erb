@@ -1,0 +1,18 @@
+
+<div class="container-gallery">
+
+	<h1 class="heading">Dive-in gallery </h1>
+
+	<div class="gallery">
+
+    <% @tags.each do |tag| %>
+      <% if tag.photo.attached? %>
+		    <div class="gallery-item">
+          <%= cl_image_tag tag.photo.key, class: "gallery-image" %>
+        </div>
+      <% end %>
+    <% end %>
+
+	</div>
+
+</div>

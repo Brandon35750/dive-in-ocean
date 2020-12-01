@@ -119,10 +119,10 @@ margin-bottom: 150px;
   border-bottom-left-radius: 5px;
   border: 1px solid white;
   opacity: 0.8;
-  font-size: 12px;
+  font-size: 15px;
   color:#008297;
   font-weight: bold;
-  font-family: "Karla", "Helvetica", "sans-serif";
+  font-family: "Inconsolata";
   &:hover{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
   }
@@ -135,10 +135,10 @@ margin-bottom: 150px;
     border-bottom-right-radius: 5px;
     border: 1px solid white;
     opacity: 0.8;
-    font-size: 12px;
+    font-size: 15px;
     font-weight: bold;
     color:#008297;
-    font-family: "Karla", "Helvetica", "sans-serif";
+    font-family: "Inconsolata";
     &:hover{
       box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     }
@@ -149,7 +149,7 @@ margin-bottom: 150px;
 
 .corail {
   width: 100%;
-  opacity: 95%;
+  opacity: 100%;
   position: absolute;
   bottom: 0px;
   right: 0px;
