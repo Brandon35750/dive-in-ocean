@@ -1,6 +1,6 @@
 
 
-<div class="topnav-map">
+<div class="topnav-map-bandeau">
   <%= link_to "/", class: "logo-home" do %>
     <%= image_tag "logo.png", alt: "logo" %>
     <% end %>
@@ -9,7 +9,7 @@
 <div class="topnav-map-avatar">
     <% if user_signed_in? %>
     <il class="nav-item dropdown">
-      <%= image_tag "https://avatarfiles.alphacoders.com/207/thumb-207370.jpg", class: "zoom avatar dropdown-toggle m-3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+      <%= image_tag current_user.avatar, class: "zoom avatar dropdown-toggle m-3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       <div class="dropdown-menu dropdown-menu-right menu-avatar" aria-labelledby="navbarDropdown">
         <a class="dropdown-item item"><%= link_to "Add a tag", "" %></a>
         <a class="dropdown-item item"><%= link_to "Profile", "" %></a>
