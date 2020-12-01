@@ -1,5 +1,7 @@
 class GalleriesController < ApplicationController
-  def index
-    @species = Species.all
+  skip_before_action :authenticate_user!, only: [:show]
+
+  def show
+    @tags = Tag.all
   end
 end
