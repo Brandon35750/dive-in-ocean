@@ -6,6 +6,7 @@ const scrollnavbar = () => {
       if (ypos >= 0 && ypos < 300) {
         navbar.style.opacity = '1';
         navbar.style.background = 'transparent';
+        navbar.style.margin = '32px 0px 0px 0px';
       }
 
       if (ypos >= 300 && ypos <= 1700) {
@@ -13,9 +14,9 @@ const scrollnavbar = () => {
         navbar.style.background = 'transparent';
       }
 
-      if (ypos > 1700 ) {
+      if (ypos > 1700) {
         navbar.style.opacity = '1';
-        navbar.style.background = 'white';
+        navbar.style.background = '#FAFAFA';
         navbar.style.margin = '0px';
       }
 
