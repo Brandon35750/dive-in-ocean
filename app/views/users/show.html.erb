@@ -44,9 +44,13 @@
           <h3>Last tag of <%=@user.first_name%></h3>
         </div>
         <div class="card-show">
-          <%@user.tags.last(3).each do |tag| %>
-          <div class="card-product-show">
-            <img><%= cl_image_tag tag.photo.key %>
+          <%@user.tags.sort_by(&:created_at).reverse.first(3).each do |tag| %>
+          <div class="card-product">
+             <% if tag.photo.attached? %>
+              <img><%= cl_image_tag tag.photo.key %>
+             
+             <% end %>
+             <%= tag.description %>
           </div>
           <% end %>
       </div>

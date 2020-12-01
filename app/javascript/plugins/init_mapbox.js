@@ -1,4 +1,4 @@
-// init_mapbox.js
+
 import mapboxgl from 'mapbox-gl';
 
 
@@ -14,9 +14,6 @@ const initMapboxNewTag = () => {
 
     const markers = [];
     map.on('click', function (e) {
-      // document.getElementById('info').innerHTML =
-      // '<br />' +
-      // e.lngLat is the longitude, latitude geographical position of the event
       const lngLat = e.lngLat.wrap();
 
       const oldMarker = markers.pop();
@@ -26,13 +23,12 @@ const initMapboxNewTag = () => {
       .setLngLat([ lngLat.lng, lngLat.lat ])
       .addTo(map);
       markers.push(newMarker)
-      console.log(markers)
-    });
+      console.log(lngLat)
+      document.getElementById('tag_latitude').value = lngLat.lat;
+      document.getElementById('tag_longitude').value = lngLat.lng;
+    });   
   };
 };
-
-
-
 const initMapbox = () => {
   const mapElement = document.getElementById('map');
 
