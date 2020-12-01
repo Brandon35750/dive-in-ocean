@@ -21,13 +21,13 @@ const initMapboxNewTag = () => {
 
       const oldMarker = markers.pop();
       if (oldMarker) oldMarker.remove();
-    
+
       const newMarker = new mapboxgl.Marker()
       .setLngLat([ lngLat.lng, lngLat.lat ])
       .addTo(map);
       markers.push(newMarker)
       console.log(markers)
-    });   
+    });
   };
 };
 
@@ -154,7 +154,7 @@ const initMapbox = () => {
   }
 
 };
-export { initMapbox, initMapboxNewTag};
+
 
 // zoom effect de JJ
 // var map = new mapboxgl.Map({
@@ -186,7 +186,36 @@ export { initMapbox, initMapboxNewTag};
 //     .addTo(map);
 // });
 
+const initMapboxUser = () => {
+  const mapElement = document.getElementById('map-user');
+
+  if (mapElement) { // only build a map if there's a div#map to inject into
+    mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
+    const map = new mapboxgl.Map({
+      container: 'map-user',
+      style: 'mapbox://styles/mapbox/streets-v11'
+    });
 
 
+    const markers = JSON.parse(mapElement.dataset.markers);
+    markers.forEach((marker) => {
+      const popup = new mapboxgl.Popup().setHTML(marker.infoWindow);
+      new mapboxgl.Marker()
+        .setLngLat([ marker.lng, marker.lat ])
+        .setPopup(popup) // add popups
+        .addTo(map);
+    });
+
+    const fitMapToMarkers = (map, markers) => {
+      const bounds = new mapboxgl.LngLatBounds();
+      markers.forEach(marker => bounds.extend([ marker.lng, marker.lat ]));
+      map.fitBounds(bounds, { padding: 70, maxZoom: 3, duration: 0 });
+    };
+
+    fitMapToMarkers(map, markers);
+    }
+};
+
+export { initMapbox, initMapboxNewTag, initMapboxUser };
 
 
