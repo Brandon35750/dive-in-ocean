@@ -1,39 +1,50 @@
 /* BOTTOM BARS ================================= */
+.container{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.form-group {
+  margin-bottom: 2px !important;
+}
+
+.form-control-file {
+  color: white;
+}
+
+.form-dive {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .edit-form a {
   color: white;
 }
 
-.form-control {
-  display: grid;
-  grid-template-columns: 200px 1fr;
+
+.form-btn-fa {
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 35px;
 }
 
-.localisation {
-  justify-content: space-around;
-}
-
-.test div div {
-  justify-content: space-around !important;
-}
-
-.test div label {
-  margin-left: 137px;
+.add-a-dive {
+  font-size: 43px;
 }
 
 .bar  {
   background-color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
-  border-color: #white !important;
-  position:relative;
-  display:block;
-  width:355px;
-  height: 40px;
+  width:100%;
+  height: 30px;
   border: none;
   border-bottom: 1px solid #white;
 }
 
-.form-control-file {
-  width: 355px;
+.form-dive-btn {
+  display: flex;
+  justify-content: space-between;
 }
 
 .edit-form {
@@ -46,51 +57,36 @@
 }
 
 .edit-form h1 {
-  padding: 20px;
+  padding: 45px;
 }
 
 .edit-form input {
-  font-size: 20px;
+  font-size: 16px;
+  margin-bottom: 2px !important;
 }
 
 .edit-form textarea {
   background-color: rgba(255, 255, 255, 0.5);
-  font-size: 20px;
-  width: 355px;
-  border-color: none;
+  font-size: 16px;
+  width: 100%;
+  border-color: none !important;
 }
 
 .edit-form label {
-  font-size: 20px;
+  font-size: 16px;
 }
 
-.edit-form .btn-form {
-  font-family: Inconsolata;
-  font-size: 20px;
-  width: 176px;
-  height: 36px;
-  margin-top: 24px;
-  background-color: #005586;
+.white-text {
   color: white;
 }
 
-.edit-form-container {
-  margin-left: 10%;
+.edit-form textarea{
+    color: white;
 }
 
-.edit-form-container-tag{
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
-.user_avatar input {
 
-}
-
-.edit-form .btn-form-back {
-  font-family: Inconsolata;
-  font-size: 20px;
-  width: 355px;
-  height: 36px;
-  margin-top: 24px;
-  background-color: #005586;
-  text-align: center;
-}
