@@ -69,11 +69,11 @@ const createMarkers = (map, markers) => {
         'circle-color': [
           'step',
           ['get', 'point_count'],
-          'rgba(120, 255, 255, 0.9)', // couleur petit point
+          'rgba(121, 255, 254, 1)', // couleur petit point
           5, // jusqu'à ce nombre de point
-          'rgba(245, 211, 0, 0.95)', // couleur gros point qu'on n'a pas encore
+          'rgba(1, 31, 253, 1)', // couleur gros point qu'on n'a pas encore
           10,
-          'rgba(241, 134, 104, 1)' // couleur mega gros point qu'on n'a pas encore
+          'rgba(40, 207, 117, 1)' // couleur mega gros point qu'on n'a pas encore
         ],
         'circle-radius': [
           'step',
@@ -97,10 +97,10 @@ const createMarkers = (map, markers) => {
           "match",
           ["get", "color"],
           1,
-          "#153e90",
+          "#FFAA01",
           2,
-          "#9d0191",
-          "#fecd1a"
+          "#037A90",
+          "#FEC763"
         ],
         'circle-radius': 25,
         'circle-stroke-width': 1,
@@ -223,5 +223,3 @@ const initMapboxUser = () => {
 };
 
 export { initMapbox, initMapboxNewTag, initMapboxUser };
-
-
