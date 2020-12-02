@@ -51,7 +51,7 @@
 
     <% if user_signed_in? %>
     <il class="nav-item dropdown">
-      <%= image_tag current_user.avatar, class: "zoom avatar dropdown-toggle m-3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+      <%= cl_image_tag current_user.avatar.key, class: "zoom avatar dropdown-toggle m-3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
       <div class="dropdown-menu dropdown-menu-right menu-avatar" aria-labelledby="navbarDropdown">
        <a class="dropdown-item item"><%= link_to "Profile", user_path(current_user.id) %></a>
        <a class="dropdown-item item"><%= link_to "Log out", destroy_user_session_path, method: :delete%></a>
