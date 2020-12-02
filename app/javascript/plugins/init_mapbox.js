@@ -39,8 +39,7 @@ const initMapbox = () => {
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [14.5, -17],
       zoom: 1.3,
-      // pitch: 60,
-      // bearing: -60,
+      pitch: 60,
     });
 
     const markers = JSON.parse(mapElement.dataset.markers);
@@ -66,22 +65,14 @@ const createMarkers = (map, markers) => {
       source: "tags",
       filter: ['has', 'point_count'],
       paint: {
-        'circle-color': [
-          'step',
-          ['get', 'point_count'],
-          'rgba(121, 255, 254, 1)', // couleur petit point
-          5, // jusqu'à ce nombre de point
-          'rgba(1, 31, 253, 1)', // couleur gros point qu'on n'a pas encore
-          10,
-          'rgba(40, 207, 117, 1)' // couleur mega gros point qu'on n'a pas encore
-        ],
+        'circle-color': "#FFAA01",
         'circle-radius': [
           'step',
           ['get', 'point_count'],
           25,  // px
-          35,  // jusqu'à ce nombre de point
+          5,  // jusqu'à ce nombre de point
           45,  // px
-          50,  // jusqu'à ce nombre de point
+          15,  // jusqu'à ce nombre de point
           60   // px pour au delà
         ]
       }
@@ -114,7 +105,7 @@ const createMarkers = (map, markers) => {
       source: "tags",
       filter: ['!', ['has', 'point_count']],
       paint: {
-        'text-color': '#fff'
+        'text-color': 'black'
       },
       layout: {
         'text-field': "{species}",
@@ -136,31 +127,49 @@ const createMarkers = (map, markers) => {
     });
   });
 
-map.on('click', "clusters", function(e) {
-  const features = map.queryRenderedFeatures(e.point, {
-    layers: ["clusters"]
-  });
-  const clusterId = features[0].properties.cluster_id;
-  map.getSource("tags").getClusterExpansionZoom(
-    clusterId,
-    function(err, zoom) {
-    if (err) return;
-    map.easeTo({
-      center: features[0].geometry.coordinates,
-      zoom: zoom
+  map.on('click', "clusters", function(e) {
+    const features = map.queryRenderedFeatures(e.point, {
+      layers: ["clusters"]
+    });
+    const clusterId = features[0].properties.cluster_id;
+    map.getSource("tags").getClusterExpansionZoom(
+      clusterId,
+      function(err, zoom) {
+      if (err) return;
+      map.flyTo({
+        center: features[0].geometry.coordinates,
+        zoom: zoom,
+        speed: 0.2,
+        curve: 1,
+        easing: function (t) {
+          return t;
+        }
+      });
     });
   });
-});
 
-map.on('click', "unclustered-point", function(e) {
-  const coordinates = e.features[0].geometry.coordinates.slice();
-  const infoWindow    = e.features[0].properties.infoWindow;
-  new mapboxgl.Popup()
-    .setLngLat(coordinates)
-    .setHTML(infoWindow)
-    .addTo(map)
+  map.on('click', "unclustered-point", function(e) {
+    const coordinates = e.features[0].geometry.coordinates.slice();
+    const infoWindow    = e.features[0].properties.infoWindow;
+    map.flyTo({
+      center: e.features[0].geometry.coordinates,
+        zoom: 9,
+        speed: 0.2,
+        curve: 1,
+        easing: function (t) {
+          return t;
+        }
+        // itch: 60,
+        // bearing: -60,
+    });
+    new mapboxgl.Popup()
+      .setLngLat(coordinates)
+      .setHTML(infoWindow)
+      .addTo(map)
   });
 };
+
+
 
 // zoom effect de JJ
 // var map = new mapboxgl.Map({
