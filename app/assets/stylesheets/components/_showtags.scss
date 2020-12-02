@@ -78,8 +78,9 @@
 
 
 .bin {
-  opacity: .4;
-  position: relative;
+  position: absolute;
+  bottom: 11px;
   right: 10px;
-  padding: 0px 0px 0px 330px;
+  opacity: .4;
 }
+ 
