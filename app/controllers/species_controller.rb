@@ -10,6 +10,6 @@ class SpeciesController < ApplicationController
   end
 
   def species_params
-    params.require(:species).permit(:name, :latin_name)
+    params.require(:species).permit(:name, :latin_name, :photo)
   end
 end
