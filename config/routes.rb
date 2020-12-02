@@ -8,6 +8,6 @@ Rails.application.routes.draw do
   resources :users, only: [:show, :edit, :update]
   resource  :gallery, only: [:show]
   namespace :user do
-    resources :tags, only: [:index, :new, :create]
+    resources :tags, only: [:index, :new, :create, :destroy]
   end
 end
