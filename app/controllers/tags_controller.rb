@@ -6,15 +6,18 @@ class TagsController < ApplicationController
   end
 
   def index
+    @species = Species.all
     if params[:query].present? && params[:secondquery].present?
-      tags_species1 = Tag.global_search(params[:query]).to_a
-      tags_species1.each { |tag| tag.color_group = 1 }
-      tags_species2 = Tag.global_search(params[:secondquery]).to_a
-      tags_species2.each { |tag| tag.color_group = 2 }
-      @tags = [tags_species1, tags_species2].flatten
+      @tags_species1 = Tag.global_search(params[:query]).to_a
+      @tags_species1.each { |tag| tag.color_group = 1 }
+      @tags_species2 = Tag.global_search(params[:secondquery]).to_a
+      @tags_species2.each { |tag| tag.color_group = 2 }
+      @tags = [@tags_species1, @tags_species2].flatten
+
 
     elsif params[:query].present?
       @tags = Tag.global_search(params[:query])
+      @tags_species1 = Tag.global_search(params[:query]).to_a
 
     else
       @tags = Tag.all

@@ -1,66 +1,181 @@
+.card-map1:hover{
+  background-size:115%;
+  transition: all 1s ease;
+}
+
+.card-map1 {
+  background-size: 110% ;
+  margin-right: 30px;
+  border: 3px solid #FFAA01;
+  transition: all 1s ease;
+  position: relative;
+  background-position: center;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  &:hover {
+    .buttonmap{
+      bottom: -11px;
+      opacity:1;
+      transition: 1s;
+
+    }
+  }
+}
+
+
+.card-map2:hover{
+  background-size:115%;
+  transition: all 1s ease;
+}
+
+
+.barremap {
+  display: flex;
+}
+
+.buttontostart {
+  border: 2px solid white;
+  margin-left: 30px;
+  border-radius: 10px;
+  max-height: 90px;
+  padding: 20px;
+  vertical-align: middle;
+}
+
+.startt a {
+  color: white !important;
+  font-family: Inconsolata;
+  font-size: 20px;
+  vertical-align: middle !important;
+  padding-bottom: 30px;
+
+}
+
+.card-map2 {
+  margin-right: 30px;
+  background-size: 110% ;
+  border: 3px solid #FEC763;
+  transition: all 1s ease;
+  position: relative;
+  background-position: center;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  &:hover {
+    .buttonmap{
+      bottom: -11px;
+      opacity:1;
+      transition: 1s;
+
+    }
+  }
+}
 
 
 
-// .card-category:hover{
-//   background-size:105%;
-//   transition: all 1s ease;
-// }
 
-// .card-category {
-//   background-size: 100%;
-//   transition: all 1s ease;
-//   position: relative;
-//   background-position: center;
-//   height: 180px;
-//   width: 400px;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   color: white !important;
-//   font-size: 24px;
-//   font-weight: bold;
-//   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-//   border-radius: 5px;
-//   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-//   &:hover {
-//     .button{
-//       bottom: -11px;
-//       opacity:1;
-//       transition: 1s;
 
-//     }
-//   }
-// }
+.card-map3:hover{
+  background-size:115%;
+  transition: all 1s ease;
+}
 
-// .button{
-//   position: absolute;
-//   bottom: 20px;
-//   transition: 1s;
+.card-map3 {
+  background-size: 110% ;
+  border: 3px solid  #037A90;
+  transition: all 1s ease;
+  position: relative;
+  background-position: center;
+  height: 150px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  &:hover {
+    .buttonmap{
+      bottom: -11px;
+      opacity:1;
+      transition: 1s;
 
-//  width: 400px;
-//  display:flex;
-//  margin-top: -10px;
-//  opacity: 0;
-//  text-align: center;
-// }
+    }
+  }
+}
 
-//  .button .one{
-//    background-color:white;
-//    width: 200px;
-//    padding:15px 10px ;
-//    border-bottom-left-radius: 5px;
-//    border: 1px solid white;
-//    opacity: 0.8;
-//    font-size: 12px;
-//    color:#008297;
-//    font-weight: bold;
-//    font-family: "Karla", "Helvetica", "sans-serif";
-//    &:hover{
-//      box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
-//    }
-//   }
+.card-map3 a {
+  font-size: 20px;
+  font-family: "Inconsolata";
+  font-weight: 100;
 
-//  .button .two{
+}
+
+.card-map2 a {
+  font-size: 20px;
+  font-family: "Inconsolata";
+  font-weight: 100;
+}
+
+.card-map1 a {
+  font-size: 20px;
+  font-family: "Inconsolata";
+  font-weight: 100;
+}
+
+
+
+.buttonmap{
+  position: absolute;
+  bottom: 20px;
+  transition: 1s;
+  width: 400px;
+  display:flex;
+  margin-top: -10px;
+  opacity: 0;
+  text-align: center;
+}
+
+ .buttonmap .one{
+   background-color:white;
+   width: 400px;
+   padding:15px 10px ;
+   border-bottom-left-radius: 5px;
+   border: 1px solid white;
+   opacity: 0.8;
+   font-size: 12px;
+   color:#008297;
+   font-weight: bold;
+   font-family: "Karla", "Helvetica", "sans-serif";
+   &:hover{
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
+   }
+  }
+
+  .buttonmap .one a {
+    color:#008297 !important;
+
+  }
+
+//  .buttonmap .two{
 //    background-color:white;
 //    width: 200px;
 //    padding:15px 10px ;
