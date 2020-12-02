@@ -57,6 +57,7 @@
   right: 8px;
   top: -36px;
   width: 80px;
+  height: 80px;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;}
 
 .species-name-in-popup {
@@ -72,3 +73,14 @@
   width: auto;
   padding: 8px 12px 8px 12px;
 }
+
+
+
+
+.bin {
+  position: absolute;
+  bottom: 11px;
+  right: 10px;
+  opacity: .4;
+}
+ 
