@@ -65,11 +65,4 @@
   </div>
 </div>
 
-        <div class="card-show">
-          <%@user.tags.last(3).each do |tag| %>
-          <div class="card-product-show">
-            <img><%= cl_image_tag tag.photo.key %>
-          </div>
-          <% end %>
-        </div>
 

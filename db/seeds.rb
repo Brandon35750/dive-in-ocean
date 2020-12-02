@@ -263,7 +263,7 @@ specie14.photo.attach(io: File.open(Rails.root.join('db/fixtures/species/raie-ai
 specie14.save!
 
 specie15 = Species.new(
-  name: "Trunk fish",
+  name: "Box fish",
   latin_name: "Ostracion meleagris",
   description:"It is found in lagoons, on outer slopes and mixed coral reefs up to 30 meters deep. Boxfish seek clear waters.",
   threat_level:"Not very vulnerable",
@@ -427,5 +427,558 @@ tag11 = Tag.new(
   )
 tag11.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
 tag11.save!
+
+
+
+
+
+
+
+tag12 = Tag.new(
+  longitude: 115.455,
+  latitude: -8.711,
+  spot_name: "Crystal Bay",
+  diving_date: "2020-10-11",
+  species: specie1,
+  user: user3,
+  description:"",
+  depth: 25
+  )
+tag12.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag12.save!
+
+tag13 = Tag.new(
+  longitude: 115.444,
+  latitude: -8.719,
+  spot_name: "Crystal Bay",
+  diving_date: "2020-10-19",
+  species: specie1,
+  user: user2,
+  description:"",
+  depth: 35
+  )
+tag13.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag13.save!
+
+tag14 = Tag.new(
+  longitude: 115.470,
+  latitude: -8.719,
+  spot_name: "Crystal Bay",
+  diving_date: "2020-12-11",
+  species: specie1,
+  user: user4,
+  description:"",
+  depth: 12
+  )
+tag14.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag14.save!
+
+tag15 = Tag.new(
+  longitude: 115.571,
+  latitude: -8.81,
+  spot_name: "Manta Point",
+  diving_date: "2020-6-1",
+  species: specie1,
+  user: user5,
+  description:"",
+  depth: 38
+  )
+tag15.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag15.save!
+
+tag16 = Tag.new(
+  longitude: 115.445,
+  latitude: -8.668,
+  spot_name: "Blue Corner",
+  diving_date: "2020-1-11",
+  species: specie1,
+  user: user7,
+  description:"",
+  depth: 39
+  )
+tag16.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag16.save!
+
+tag17 = Tag.new(
+  longitude: 115.445,
+  latitude: -8.668,
+  spot_name: "Blue Corner",
+  diving_date: "2020-6-7",
+  species: specie1,
+  user: user2,
+  description:"",
+  depth: 25
+  )
+tag17.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag17.save!
+
+tag18 = Tag.new(
+  longitude: 115.544,
+  latitude: -8.671,
+  spot_name: "SD Point",
+  diving_date: "2020-2-2",
+  species: specie1,
+  user: user3,
+  description:"",
+  depth: 13
+  )
+tag18.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag18.save!
+
+tag19 = Tag.new(
+  longitude: 55.389,
+  latitude: -21.310,
+  spot_name: "Tombant de la pointe au sel",
+  diving_date: "2020-6-11",
+  species: specie2,
+  user: user5,
+  description:"",
+  depth: 25
+  )
+tag19.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag19.save!
+
+tag20 = Tag.new(
+  longitude: 55.381,
+  latitude: -21.316,
+  spot_name: "Tombant de la pointe au sel",
+  diving_date: "2020-2-10",
+  species: specie2,
+  user: user4,
+  description:"",
+  depth: 35
+  )
+tag20.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag20.save!
+
+tag21 = Tag.new(
+  longitude: 55.324,
+  latitude: -21.27,
+  spot_name: "La Borge",
+  diving_date: "2020-6-11",
+  species: specie2,
+  user: user5,
+  description:"",
+  depth: 37
+  )
+tag21.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag21.save!
+
+tag22 = Tag.new(
+  longitude: 55.381,
+  latitude: -21.319,
+  spot_name: "Tombant de la pointe au sel",
+  diving_date: "2020-6-8",
+  species: specie3,
+  user: user7,
+  description:"",
+  depth: 25
+  )
+tag22.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag22.save!
+
+tag23 = Tag.new(
+  longitude: 55.37,
+  latitude: -21.315,
+  spot_name: "Tombant de la pointe au sel",
+  diving_date: "2020-10-11",
+  species: specie2,
+  user: user2,
+  description:"",
+  depth: 21
+  )
+tag23.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag23.save!
+
+tag24 = Tag.new(
+  longitude: 136.059,
+  latitude: -32.239,
+  spot_name: "Neptune Island",
+  diving_date: "2020-5-1",
+  species: specie2,
+  user: user3,
+  description:"",
+  depth: 36
+  )
+tag24.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag24.save!
+
+tag25 = Tag.new(
+  longitude: 115.444,
+  latitude: -8.719,
+  spot_name: "Crystal Bay",
+  diving_date: "2020-6-11",
+  species: specie2,
+  user: user4,
+  description:"",
+  depth: 20
+  )
+tag25.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag25.save!
+
+tag26 = Tag.new(
+  longitude: 115.715,
+  latitude: -8.396,
+  spot_name: "Amed",
+  diving_date: "2020-5-11",
+  species: specie3,
+  user: user5,
+  description:"",
+  depth: 11
+  )
+tag26.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag26.save!
+
+tag27 = Tag.new(
+  longitude: 115.716,
+  latitude: -8.392,
+  spot_name: "Amed",
+  diving_date: "2020-3-11",
+  species: specie3,
+  user: user7,
+  description:"",
+  depth: 7
+  )
+tag27.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag27.save!
+
+tag28 = Tag.new(
+  longitude: 115.444,
+  latitude: -8.719,
+  spot_name: "Gili Air",
+  diving_date: "2020-6-11",
+  species: specie3,
+  user: user3,
+  description:"",
+  depth: 20
+  )
+tag28.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag28.save!
+
+tag29 = Tag.new(
+  longitude: 116.052,
+  latitude: -8.340,
+  spot_name: "Gili Meno",
+  diving_date: "2020-2-11",
+  species: specie3,
+  user: user2,
+  description:"",
+  depth: 20
+  )
+tag29.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag29.save!
+
+tag30 = Tag.new(
+  longitude: 116.052,
+  latitude: -8.342,
+  spot_name: "Gili Meno",
+  diving_date: "2020-7-10",
+  species: specie3,
+  user: user4,
+  description:"",
+  depth: 27
+  )
+tag30.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag30.save!
+
+tag31 = Tag.new(
+  longitude: 116.052,
+  latitude: -8.344,
+  spot_name: "Gili Meno",
+  diving_date: "2020-8-8",
+  species: specie3,
+  user: user5,
+  description:"",
+  depth: 8
+  )
+tag31.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag31.save!
+
+tag32 = Tag.new(
+  longitude: 115.444,
+  latitude: -8.719,
+  spot_name: "Gili Air",
+  diving_date: "2020-6-11",
+  species: specie3,
+  user: user7,
+  description:"",
+  depth: 20
+  )
+tag32.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag32.save!
+
+tag33 = Tag.new(
+  longitude: 146.87,
+  latitude: -18.126,
+  spot_name: "Grande barriere de Corail",
+  diving_date: "2020-1-1",
+  species: specie3,
+  user: user2,
+  description:"",
+  depth: 5
+  )
+tag33.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag33.save!
+
+tag34 = Tag.new(
+  longitude: 146.874,
+  latitude: -18.124,
+  spot_name: "Grande barriere de corail",
+  diving_date: "2020-9-10",
+  species: specie3,
+  user: user3,
+  description:"",
+  depth: 15
+  )
+tag34.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag34.save!
+
+tag35 = Tag.new(
+  longitude: 146.872,
+  latitude: -18.125,
+  spot_name: "Grande barriere de Corail",
+  diving_date: "2020-6-11",
+  species: specie3,
+  user: user4,
+  description:"",
+  depth: 17
+  )
+tag35.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag35.save!
+
+tag36 = Tag.new(
+  longitude: 55.389,
+  latitude: -21.310,
+  spot_name: "Tombant de la pointe au sel",
+  diving_date: "2020-2-10",
+  species: specie3,
+  user: user5,
+  description:"",
+  depth: 6
+  )
+tag36.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag36.save!
+
+tag37 = Tag.new(
+  longitude: 55.324,
+  latitude: -21.277,
+  spot_name: "La Borge",
+  diving_date: "2020-2-11",
+  species: specie3,
+  user: user7,
+  description:"",
+  depth: 26
+  )
+tag37.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag37.save!
+
+tag38 = Tag.new(
+  longitude: 55.32472,
+  latitude: -21.2761,
+  spot_name: "La Borge",
+  diving_date: "2020-8-11",
+  species: specie3,
+  user: user2,
+  description:"",
+  depth: 7
+  )
+tag38.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag38.save!
+
+tag39 = Tag.new(
+  longitude: 55.325,
+  latitude: -21.276939,
+  spot_name: "La Borge",
+  diving_date: "2020-6-1",
+  species: specie3,
+  user: user3,
+  description:"",
+  depth: 5
+  )
+tag39.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag39.save!
+
+tag40 = Tag.new(
+  longitude: 123.92,
+  latitude: 9.49,
+  spot_name: "Pamilacan Island",
+  diving_date: "2020-8-1",
+  species: specie4,
+  user: user4,
+  description:"",
+  depth: 25
+  )
+tag40.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag40.save!
+
+tag41 = Tag.new(
+  longitude: 123.926,
+  latitude: 9.493,
+  spot_name: "Pamilacan Island",
+  diving_date: "2020-1-1",
+  species: specie4,
+  user: user5,
+  description:"",
+  depth: 27
+  )
+tag41.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag41.save!
+
+tag42 = Tag.new(
+  longitude: 123.922,
+  latitude: 9.499,
+  spot_name: "Pamilacan Island",
+  diving_date: "2020-12-1",
+  species: specie4,
+  user: user7,
+  description:"",
+  depth: 34
+  )
+tag42.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag42.save!
+
+tag43 = Tag.new(
+  longitude: 115.544,
+  latitude: -8.671,
+  spot_name: "SD Point",
+  diving_date: "2020-9-1",
+  species: specie4,
+  user: user2,
+  description:"",
+  depth: 38
+  )
+tag43.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag43.save!
+
+tag44 = Tag.new(
+  longitude: 55.3892,
+  latitude: -21.3101,
+  spot_name: "Tombant de la Pointe au sel",
+  diving_date: "2020-6-1",
+  species: specie4,
+  user: user3,
+  description:"",
+  depth: 21
+  )
+tag44.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag44.save!
+
+tag45 = Tag.new(
+  longitude: 55.3899,
+  latitude: -21.3109,
+  spot_name: "Tombant de la Pointe au sel",
+  diving_date: "2020-12-1",
+  species: specie4,
+  user: user4,
+  description:"",
+  depth: 37
+  )
+tag45.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag45.save!
+
+tag46 = Tag.new(
+  longitude: 123.9211111,
+  latitude: 9.491000,
+  spot_name: "Pamilacan Island",
+  diving_date: "2020-10-1",
+  species: specie4,
+  user: user5,
+  description:"",
+  depth: 32
+  )
+tag46.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag46.save!
+
+tag47 = Tag.new(
+  longitude: 115.54111,
+  latitude: -8.6721,
+  spot_name: "SD Point",
+  diving_date: "2020-6-1",
+  species: specie4,
+  user: user7,
+  description:"",
+  depth: 29
+  )
+tag47.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag47.save!
+
+tag48 = Tag.new(
+  longitude: 115.571,
+  latitude: -8.81,
+  spot_name: "Manta Point",
+  diving_date: "2020-3-1",
+  species: specie5,
+  user: user2,
+  description:"",
+  depth: 12
+  )
+tag48.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag48.save!
+
+tag49 = Tag.new(
+  longitude: 115.579,
+  latitude: -8.819,
+  spot_name: "Manta Point",
+  diving_date: "2020-10-10",
+  species: specie5,
+  user: user3,
+  description:"",
+  depth: 20
+  )
+tag49.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag49.save!
+
+tag50 = Tag.new(
+  longitude: 115.579,
+  latitude: -8.819,
+  spot_name: "Manta Point",
+  diving_date: "2020-6-1",
+  species: specie5,
+  user: user4,
+  description:"",
+  depth: 25
+  )
+tag50.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag50.save!
+
+tag51 = Tag.new(
+  longitude: 55.389,
+  latitude: -21.310,
+  spot_name: "Tombant de la pointe au sel",
+  diving_date: "2020-11-1",
+  species: specie5,
+  user: user5,
+  description:"",
+  depth: 19
+  )
+tag51.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag51.save!
+
+tag52 = Tag.new(
+  longitude: 115.579,
+  latitude: -8.819,
+  spot_name: "Manta Point",
+  diving_date: "2020-6-1",
+  species: specie4,
+  user: user7,
+  description:"",
+  depth: 8
+  )
+tag52.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag52.save!
+
+tag53 = Tag.new(
+  longitude: 115.579,
+  latitude: -8.819,
+  spot_name: "Manta Point",
+  diving_date: "2020-6-1",
+  species: specie11,
+  user: user2,
+  description:"",
+  depth: 19
+  )
+tag53.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag53.save!
+
 
 
