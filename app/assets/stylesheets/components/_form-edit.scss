@@ -38,6 +38,15 @@
   border-bottom: 1px solid #white;
 }
 
+.bar-user  {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  width:21%;
+  height: 30px;
+  border: none;
+  border-bottom: 1px solid #white;
+}
+
 .form-dive-btn {
   display: flex;
   justify-content: space-between;
@@ -52,8 +61,48 @@
   height: 1000px;
 }
 
+.string label {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.text label {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.float label {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.file label {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.select label {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.integer label {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
+.date label {
+  margin-bottom: 0px;
+  margin-top: 4px;
+}
+
 .edit-form h1 {
-  padding: 45px;
+  padding: 45px 45px 45px 10px;
+}
+
+.edit-form-profile h1 {
+  padding-top: 45px;
+  padding-bottom: 20px;
 }
 
 .edit-form input {
@@ -68,6 +117,13 @@
   border-color: none !important;
 }
 
+.input-bloc textarea {
+  background-color: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  width: 21%;
+  border-color: none !important;
+}
+
 .edit-form label {
   font-size: 16px;
 }
@@ -76,13 +132,33 @@
   color: white;
 }
 
-.edit-form textarea{
-    color: white;
+.edit-form-profile textarea{
+  width: 21%;
 }
 
 .nopadding {
    padding: 0 !important;
    margin: 0 !important;
+}
+
+.edit-form .btn-form {
+  font-family: Inconsolata;
+  font-size: 20px;
+  width: 10.3%;
+  height: 36px;
+  margin-top: 24px;
+  background-color: #005586;
+  color: white;
+}
+
+.edit-form .btn-form-back {
+  font-family: Inconsolata;
+  font-size: 20px;
+  width: 21%;
+  height: 36px;
+  margin-top: 24px;
+  background-color: #005586;
+  text-align: center;
 }
 
 
