@@ -1,4 +1,14 @@
 /* BOTTOM BARS ================================= */
+.container .nomargin {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.form-dive {
+  width: 70%;
+  margin: 0 auto;
+}
+
 .edit-form a {
   color: white;
 }
@@ -12,21 +22,18 @@
   justify-content: space-around;
 }
 
-.test div div {
-  justify-content: space-around !important;
-}
-
-.test div label {
-  margin-left: 137px;
+.test{
+  color: white;
+  background-color: transparent;
+  border: none;
+  font-size: 40px;
 }
 
 .bar  {
   background-color: rgba(255, 255, 255, 0.5);
   text-decoration: none;
   border-color: #white !important;
-  position:relative;
-  display:block;
-  width:355px;
+  width:100%;
   height: 40px;
   border: none;
   border-bottom: 1px solid #white;
@@ -34,6 +41,11 @@
 
 .form-control-file {
   width: 355px;
+}
+
+.form-dive-btn {
+  display: flex;
+  justify-content: space-between;
 }
 
 .edit-form {
@@ -62,6 +74,15 @@
 
 .edit-form label {
   font-size: 20px;
+}
+.map-addadive {
+  height: 400px;
+  width: 400px;
+}
+
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
 }
 
 .edit-form .btn-form {

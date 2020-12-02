@@ -1,38 +1,49 @@
 
-<div id="map-new-tag"
-     style="width: 100%; height: 600px;"
-     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
-</div>
+<div class="addadive">
 
-<div class="edit-form p-1">
-  <div class="edit-form-container-tag">
-    <div class="input-bloc">
-      <h1>Post your new dive</h1>
+  <div class="row no-padding">
+
+    <div class="col-8 nopadding">
+      <div id="map-new-tag"
+           style="height: 100%;"
+           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+      </div>
     </div>
-      <%= simple_form_for [:user, @tag] do |f| %>
-        <div class="d-flex flex-column align-items test">
-          <%= f.input :diving_date, input_html: { class: "bar" } %>
-        </div>
-        <div class="d-flex localisation">
+
+    <div class="col-4 nopadding edit-form">
+      <div class="input-bloc">
+        <h1>Post your new dive</h1>
+      </div>
+        <div class="form-dive">
+          <%= simple_form_for [:user, @tag] do |f| %>
+          <%= f.input :diving_date, as: :date, html5: true, label: "Diving date", input_html: { class: "bar" } %>
           <%= f.input :spot_name, input_html: { class: "bar" } %>
           <%= f.input :latitude, input_html: { class: "bar" } %>
           <%= f.input :longitude, input_html: { class: "bar" } %>
-        </div>
-        <div class="d-flex localisation">
           <%= f.association :species, input_html: { class: "bar" } %>
           <%= f.input :depth, input_html: { class: "bar" } %>
-          <%= f.input :description %>
-        </div>
-        <div class="d-flex localisation">
+          <%= f.input :description , input_html: { class: "bar" }%>
           <%= f.input :photo, as: :file %>
-          <div>
-            <%= f.button :submit, "Create a dive", class: "btn-form"  %>
-            <%= f.button :button, "Cancel", type: "reset", class: "btn-form" %>
+          <div class="form-dive-btn">
+            <button type="submit" class="test">
+              <i class="fas fa-plus-circle"></i>
+            </button>
+            <!-- <button type="reset" class="test">
+              <i class="fas fa-undo-alt"></i>
+            </button> -->
+
+            <%= link_to tags_path, class: "test" do%>
+               <i class="fas fa-undo-alt"></i>
+            <% end %>
           </div>
           <% end %>
-          <div class="btn-form-back">
-            <%= link_to 'Back', tags_path %>
-          </div>
+        </div>
+
+
+
+
+
+
         </div>
   </div>
 </div>
