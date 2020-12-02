@@ -16,7 +16,7 @@ const scrollnavbar = () => {
 
       if (ypos > 1700) {
         navbar.style.opacity = '1';
-        navbar.style.background = '#FAFAFA';
+        navbar.style.background = 'white';
         navbar.style.margin = '0px';
       }
 

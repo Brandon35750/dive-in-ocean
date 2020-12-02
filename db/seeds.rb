@@ -303,7 +303,7 @@ tag2 = Tag.new(
   longitude: 114.455586,
   spot_name: "Manta Point",
   diving_date: "2020-1-3",
-  species: specie2,
+  species: specie5,
   user: user2,
   description: "A pleasant dive in the Manta Rays cleaning station, a magnificent experience despite the slightly low water temperature.",
   depth: 14
@@ -386,7 +386,7 @@ tag8 = Tag.new(
   description: "We had been talking about the famous Whale shark for 2 weeks. Observable South of Koh Tao, we had a nice surprise during an ascent, while we respected the 5m decompression stage: an unforgettable memory!",
   depth: 17
   )
-tag8.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/whale-shark.jpg')), filename: 'whale-shark.jpg')
+tag8.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-baleine10.jpg')), filename: 'requin-baleine10.jpg')
 tag8.save!
 
 tag9 = Tag.new(
@@ -441,10 +441,10 @@ tag12 = Tag.new(
   diving_date: "2020-10-11",
   species: specie1,
   user: user3,
-  description:"",
+  description:"One of my best dive.",
   depth: 25
   )
-tag12.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag12.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola10.jpg')), filename: 'mola-mola10.jpg')
 tag12.save!
 
 tag13 = Tag.new(
@@ -454,10 +454,10 @@ tag13 = Tag.new(
   diving_date: "2020-10-19",
   species: specie1,
   user: user2,
-  description:"",
+  description:"One of my best dive.",
   depth: 35
   )
-tag13.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag13.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola11.jpg')), filename: 'mola-mola11.jpg')
 tag13.save!
 
 tag14 = Tag.new(
@@ -467,10 +467,10 @@ tag14 = Tag.new(
   diving_date: "2020-12-11",
   species: specie1,
   user: user4,
-  description:"",
+  description:"One of my best dive.",
   depth: 12
   )
-tag14.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag14.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola12.jpg')), filename: 'mola-mola12.jpg')
 tag14.save!
 
 tag15 = Tag.new(
@@ -480,10 +480,10 @@ tag15 = Tag.new(
   diving_date: "2020-6-1",
   species: specie1,
   user: user5,
-  description:"",
+  description:"One of my best dive.",
   depth: 38
   )
-tag15.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag15.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola13.jpg')), filename: 'mola-mola13.jpg')
 tag15.save!
 
 tag16 = Tag.new(
@@ -493,10 +493,10 @@ tag16 = Tag.new(
   diving_date: "2020-1-11",
   species: specie1,
   user: user7,
-  description:"",
+  description:"One of my best dive.",
   depth: 39
   )
-tag16.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag16.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola14.jpg')), filename: 'mola-mola14.jpg')
 tag16.save!
 
 tag17 = Tag.new(
@@ -506,10 +506,10 @@ tag17 = Tag.new(
   diving_date: "2020-6-7",
   species: specie1,
   user: user2,
-  description:"",
+  description:"One of my best dive.",
   depth: 25
   )
-tag17.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag17.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola15.jpg')), filename: 'mola-mola15.jpg')
 tag17.save!
 
 tag18 = Tag.new(
@@ -519,10 +519,10 @@ tag18 = Tag.new(
   diving_date: "2020-2-2",
   species: specie1,
   user: user3,
-  description:"",
+  description:"One of my best dive.",
   depth: 13
   )
-tag18.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag18.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/mola-mola16.jpg')), filename: 'mola-mola16.jpg')
 tag18.save!
 
 tag19 = Tag.new(
@@ -532,10 +532,10 @@ tag19 = Tag.new(
   diving_date: "2020-6-11",
   species: specie2,
   user: user5,
-  description:"",
+  description:"One of my best dive.",
   depth: 25
   )
-tag19.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag19.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/grand-requin-blanc10.jpg')), filename: 'grand-requin-blanc10.jpg')
 tag19.save!
 
 tag20 = Tag.new(
@@ -545,10 +545,10 @@ tag20 = Tag.new(
   diving_date: "2020-2-10",
   species: specie2,
   user: user4,
-  description:"",
+  description:"One of my best dive.",
   depth: 35
   )
-tag20.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag20.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/grand-requin-blanc11.jpg')), filename: 'grand-requin-blanc11.jpg')
 tag20.save!
 
 tag21 = Tag.new(
@@ -558,10 +558,10 @@ tag21 = Tag.new(
   diving_date: "2020-6-11",
   species: specie2,
   user: user5,
-  description:"",
+  description:"One of my best dive.",
   depth: 37
   )
-tag21.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag21.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/grand-requin-blanc12.jpg')), filename: 'grand-requin-blanc12.jpg')
 tag21.save!
 
 tag22 = Tag.new(
@@ -571,7 +571,7 @@ tag22 = Tag.new(
   diving_date: "2020-6-8",
   species: specie3,
   user: user7,
-  description:"",
+  description:"One of my best dive.",
   depth: 25
   )
 tag22.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
@@ -584,10 +584,10 @@ tag23 = Tag.new(
   diving_date: "2020-10-11",
   species: specie2,
   user: user2,
-  description:"",
+  description:"One of my best dive.",
   depth: 21
   )
-tag23.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag23.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/grand-requin-blanc13.jpg')), filename: 'grand-requin-blanc13.jpg')
 tag23.save!
 
 tag24 = Tag.new(
@@ -597,10 +597,10 @@ tag24 = Tag.new(
   diving_date: "2020-5-1",
   species: specie2,
   user: user3,
-  description:"",
+  description:"One of my best dive.",
   depth: 36
   )
-tag24.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag24.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/grand-requin-blanc14.jpg')), filename: 'grand-requin-blanc14.jpg')
 tag24.save!
 
 tag25 = Tag.new(
@@ -609,11 +609,11 @@ tag25 = Tag.new(
   spot_name: "Crystal Bay",
   diving_date: "2020-6-11",
   species: specie2,
-  user: user4,
-  description:"",
+  user: user2,
+  description:"One of my best dive.",
   depth: 20
   )
-tag25.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag25.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/grand-requin-blanc16.jpg')), filename: 'grand-requin-blanc16.jpg')
 tag25.save!
 
 tag26 = Tag.new(
@@ -623,7 +623,7 @@ tag26 = Tag.new(
   diving_date: "2020-5-11",
   species: specie3,
   user: user5,
-  description:"",
+  description:"One of my best dive.",
   depth: 11
   )
 tag26.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
@@ -636,10 +636,10 @@ tag27 = Tag.new(
   diving_date: "2020-3-11",
   species: specie3,
   user: user7,
-  description:"",
+  description:"One of my best dive.",
   depth: 7
   )
-tag27.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag27.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue10.jpg')), filename: 'tortue10.jpg')
 tag27.save!
 
 tag28 = Tag.new(
@@ -649,10 +649,10 @@ tag28 = Tag.new(
   diving_date: "2020-6-11",
   species: specie3,
   user: user3,
-  description:"",
+  description:"One of my best dive.",
   depth: 20
   )
-tag28.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag28.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue11.jpg')), filename: 'tortue11.jpg')
 tag28.save!
 
 tag29 = Tag.new(
@@ -662,10 +662,10 @@ tag29 = Tag.new(
   diving_date: "2020-2-11",
   species: specie3,
   user: user2,
-  description:"",
+  description:"One of my best dive.",
   depth: 20
   )
-tag29.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag29.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue12.jpg')), filename: 'tortue12.jpg')
 tag29.save!
 
 tag30 = Tag.new(
@@ -675,10 +675,10 @@ tag30 = Tag.new(
   diving_date: "2020-7-10",
   species: specie3,
   user: user4,
-  description:"",
+  description:"One of my best dive.Amazin dive! I will return !",
   depth: 27
   )
-tag30.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag30.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue13.jpg')), filename: 'tortue13.jpg')
 tag30.save!
 
 tag31 = Tag.new(
@@ -688,10 +688,10 @@ tag31 = Tag.new(
   diving_date: "2020-8-8",
   species: specie3,
   user: user5,
-  description:"",
+  description:"Amazin dive! I will return !",
   depth: 8
   )
-tag31.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag31.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue14.jpg')), filename: 'tortue14.jpg')
 tag31.save!
 
 tag32 = Tag.new(
@@ -701,10 +701,10 @@ tag32 = Tag.new(
   diving_date: "2020-6-11",
   species: specie3,
   user: user7,
-  description:"",
+  description:"Amazin dive! I will return !",
   depth: 20
   )
-tag32.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag32.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue15.jpg')), filename: 'tortue15.jpg')
 tag32.save!
 
 tag33 = Tag.new(
@@ -714,10 +714,10 @@ tag33 = Tag.new(
   diving_date: "2020-1-1",
   species: specie3,
   user: user2,
-  description:"",
+  description:"Amazin dive! I will return !",
   depth: 5
   )
-tag33.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag33.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue15.jpg')), filename: 'tortue15.jpg')
 tag33.save!
 
 tag34 = Tag.new(
@@ -727,10 +727,10 @@ tag34 = Tag.new(
   diving_date: "2020-9-10",
   species: specie3,
   user: user3,
-  description:"",
+  description:"Amazin dive! I will return !",
   depth: 15
   )
-tag34.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag34.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue16.jpg')), filename: 'tortue16.jpg')
 tag34.save!
 
 tag35 = Tag.new(
@@ -740,10 +740,10 @@ tag35 = Tag.new(
   diving_date: "2020-6-11",
   species: specie3,
   user: user4,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 17
   )
-tag35.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag35.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue17.jpg')), filename: 'tortue17.jpg')
 tag35.save!
 
 tag36 = Tag.new(
@@ -753,10 +753,10 @@ tag36 = Tag.new(
   diving_date: "2020-2-10",
   species: specie3,
   user: user5,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 6
   )
-tag36.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag36.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue18.jpg')), filename: 'tortue18.jpg')
 tag36.save!
 
 tag37 = Tag.new(
@@ -766,10 +766,10 @@ tag37 = Tag.new(
   diving_date: "2020-2-11",
   species: specie3,
   user: user7,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 26
   )
-tag37.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag37.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue19.jpg')), filename: 'tortue19.jpg')
 tag37.save!
 
 tag38 = Tag.new(
@@ -779,10 +779,10 @@ tag38 = Tag.new(
   diving_date: "2020-8-11",
   species: specie3,
   user: user2,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 7
   )
-tag38.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag38.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue20.jpg')), filename: 'tortue20.jpg')
 tag38.save!
 
 tag39 = Tag.new(
@@ -792,10 +792,10 @@ tag39 = Tag.new(
   diving_date: "2020-6-1",
   species: specie3,
   user: user3,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 5
   )
-tag39.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag39.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/tortue21.jpg')), filename: 'tortue21.jpg')
 tag39.save!
 
 tag40 = Tag.new(
@@ -805,10 +805,10 @@ tag40 = Tag.new(
   diving_date: "2020-8-1",
   species: specie4,
   user: user4,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 25
   )
-tag40.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag40.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard10.jpg')), filename: 'requin-renard10.jpg')
 tag40.save!
 
 tag41 = Tag.new(
@@ -818,10 +818,10 @@ tag41 = Tag.new(
   diving_date: "2020-1-1",
   species: specie4,
   user: user5,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 27
   )
-tag41.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag41.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard11.jpg')), filename: 'requin-renard11.jpg')
 tag41.save!
 
 tag42 = Tag.new(
@@ -831,10 +831,10 @@ tag42 = Tag.new(
   diving_date: "2020-12-1",
   species: specie4,
   user: user7,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 34
   )
-tag42.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag42.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard12.jpg')), filename: 'requin-renard12.jpg')
 tag42.save!
 
 tag43 = Tag.new(
@@ -844,10 +844,10 @@ tag43 = Tag.new(
   diving_date: "2020-9-1",
   species: specie4,
   user: user2,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 38
   )
-tag43.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag43.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard13.jpg')), filename: 'requin-renard13.jpg')
 tag43.save!
 
 tag44 = Tag.new(
@@ -857,10 +857,10 @@ tag44 = Tag.new(
   diving_date: "2020-6-1",
   species: specie4,
   user: user3,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 21
   )
-tag44.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag44.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard14.jpg')), filename: 'requin-renard14.jpg')
 tag44.save!
 
 tag45 = Tag.new(
@@ -870,10 +870,10 @@ tag45 = Tag.new(
   diving_date: "2020-12-1",
   species: specie4,
   user: user4,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 37
   )
-tag45.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag45.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard15.jpg')), filename: 'requin-renard15.jpg')
 tag45.save!
 
 tag46 = Tag.new(
@@ -883,10 +883,10 @@ tag46 = Tag.new(
   diving_date: "2020-10-1",
   species: specie4,
   user: user5,
-  description:"",
+  description:"A sensational dive with my friends and your DM",
   depth: 32
   )
-tag46.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag46.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard16.jpg')), filename: 'requin-renard16.jpg')
 tag46.save!
 
 tag47 = Tag.new(
@@ -896,10 +896,10 @@ tag47 = Tag.new(
   diving_date: "2020-6-1",
   species: specie4,
   user: user7,
-  description:"",
+  description:"I will never forget this moment!",
   depth: 29
   )
-tag47.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag47.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-renard19.jpg')), filename: 'requin-renard19.jpg')
 tag47.save!
 
 tag48 = Tag.new(
@@ -909,36 +909,36 @@ tag48 = Tag.new(
   diving_date: "2020-3-1",
   species: specie5,
   user: user2,
-  description:"",
+  description:"I will never forget this moment!",
   depth: 12
   )
-tag48.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag48.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/raie-manta10.jpg')), filename: 'raie-manta10.jpg')
 tag48.save!
 
 tag49 = Tag.new(
-  longitude: 115.579,
+  longitude: 115.576,
   latitude: -8.819,
   spot_name: "Manta Point",
   diving_date: "2020-10-10",
   species: specie5,
   user: user3,
-  description:"",
+  description:"I will never forget this moment!",
   depth: 20
   )
-tag49.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag49.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/raie-manta11.jpg')), filename: 'raie-manta11.jpg')
 tag49.save!
 
 tag50 = Tag.new(
   longitude: 115.579,
-  latitude: -8.819,
+  latitude: -8.82100,
   spot_name: "Manta Point",
   diving_date: "2020-6-1",
   species: specie5,
   user: user4,
-  description:"",
+  description:"I will never forget this moment!",
   depth: 25
   )
-tag50.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag50.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/raie-manta12.jpg')), filename: 'raie-manta12.jpg')
 tag50.save!
 
 tag51 = Tag.new(
@@ -948,10 +948,10 @@ tag51 = Tag.new(
   diving_date: "2020-11-1",
   species: specie5,
   user: user5,
-  description:"",
+  description:"I will never forget this moment!",
   depth: 19
   )
-tag51.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag51.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/raie-manta13.jpg')), filename: 'raie-manta13.jpg')
 tag51.save!
 
 tag52 = Tag.new(
@@ -961,7 +961,7 @@ tag52 = Tag.new(
   diving_date: "2020-6-1",
   species: specie4,
   user: user7,
-  description:"",
+  description:"I will never forget this moment!",
   depth: 8
   )
 tag52.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
@@ -971,14 +971,115 @@ tag53 = Tag.new(
   longitude: 115.579,
   latitude: -8.819,
   spot_name: "Manta Point",
-  diving_date: "2020-6-1",
+  diving_date: "2020-9-1",
   species: specie11,
-  user: user2,
-  description:"",
+  user: user1,
+  description:"I will never forget this moment!",
   depth: 19
   )
-tag53.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/green-turtle2.jpg')), filename: 'green-turtle2.jpg')
+tag53.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/poisson-clown10.jpg')), filename: 'poisson-clown10.jpg.jpg')
 tag53.save!
 
+tag54 = Tag.new(
+  longitude: 115.561,
+  latitude: -8.836,
+  spot_name: "Manta Point",
+  diving_date: "2020-10-1",
+  species: specie8,
+  user: user8,
+  description:"I will never forget this moment!",
+  depth: 19
+  )
+tag54.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/hippocampe10.jpg')), filename: 'hippocampe10.jpg')
+tag54.save!
 
+tag55 = Tag.new(
+  longitude: 43.683641,
+  latitude: -18.353669,
+  spot_name: "Grand tombant de la possession",
+  diving_date: "2020-6-1",
+  species: specie9,
+  user: user1,
+  description:"I will never forget this moment!",
+  depth: 2
+  )
+tag55.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/baleine-bleu10.jpg')), filename: 'baleine-bleu10.jpg')
+tag55.save!
 
+tag56 = Tag.new(
+  longitude: 115.541,
+  latitude: -8.67777,
+  spot_name: "SD Point",
+  diving_date: "2020-6-1",
+  species: specie10,
+  user: user6,
+  description:"I will never forget this moment!",
+  depth: 23
+  )
+tag56.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/napoleon10.jpg')), filename: 'napoleon10.jpg')
+tag56.save!
+
+tag57 = Tag.new(
+  longitude: 115.5801,
+  latitude: -8.811,
+  spot_name: "Manta Point",
+  diving_date: "2020-6-1",
+  species: specie14,
+  user: user8,
+  description:"I will never forget this moment!",
+  depth: 16
+  )
+tag57.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/eagle-ray10.jpg')), filename: 'eagle-ray10.jpg')
+tag57.save!
+
+tag58 = Tag.new(
+  longitude: 115.44777,
+  latitude: -8.66333,
+  spot_name: "Blue Corner",
+  diving_date: "2020-6-1",
+  species: specie12,
+  user: user1,
+  description:"I will never forget this moment!",
+  depth: 12
+  )
+tag58.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/barracuda10.jpg')), filename: 'barracuda10.jpg')
+tag58.save!
+
+tag59 = Tag.new(
+  longitude: 115.57666,
+  latitude: -8.8133,
+  spot_name: "Manta Point",
+  diving_date: "2020-6-1",
+  species: specie13,
+  user: user6,
+  description:"I will never forget this moment!",
+  depth: 19
+  )
+tag59.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/leopard-shark10.jpg')), filename: 'leopard-shark10.jpg')
+tag59.save!
+
+tag60 = Tag.new(
+  longitude: 115.548,
+  latitude: -8.67411,
+  spot_name: "SD Point",
+  diving_date: "2020-6-1",
+  species: specie15,
+  user: user8,
+  description:"I will never forget this moment!",
+  depth: 13
+  )
+tag60.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/box-fish10.jpg')), filename: 'box-fish10.jpg')
+tag60.save!
+
+tag61 = Tag.new(
+  longitude: 55.384,
+  latitude: -21.313,
+  spot_name: "Tombant de la pointe au sel",
+  diving_date: "2020-6-1",
+  species: specie16,
+  user: user8,
+  description:"I will never forget this moment!",
+  depth: 33
+  )
+tag61.photo.attach(io: File.open(Rails.root.join('db/fixtures/picture-tags/requin-marteaux10.jpg')), filename: 'requin-marteaux10.jpg')
+tag61.save!
