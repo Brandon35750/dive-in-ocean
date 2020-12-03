@@ -168,14 +168,13 @@
 
 .btn-show {
   width: 30%;
-  height: 6%;
-  margin-top: 12px;
+  height: auto;
   border-color: #005586;
   transition: .3s all ease-in-out;
   // background-color: #005586;
-  padding: 6px 12px 6px 12px;
-  margin-bottom: 16px;
-
+  // padding: 6px 12px 6px 12px;
+  margin-bottom: 12px;
+  margin-top: 12px;
 }
 
 .btn-show a {
@@ -184,7 +183,6 @@
   font-weight: bold;
   font-size: 14px;
   text-transform: uppercase;
-  padding-top: 8px;
 }
 
 .btn-show a:hover {

@@ -131,6 +131,10 @@
   color: white;
 }
 
+.form-control-file {
+  color: rgba(0, 0, 0, 0.5) !important;
+}
+
 .edit-form-profile textarea{
   width: 21%;
 }
@@ -180,5 +184,71 @@
   position: relative;
 }
 
+.text-on-map-form {
+  bottom: 0;
+  border: solid;
+  border-color: white;
+  background-color: transparent;
+  border-radius: 0px 32px 32px 0px;
+  margin: 30px 30px 30px 0px;
+  padding: 4px 12px 4px 12px;
+  position: fixed;
+  z-index: 999;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 4px 4px 6px 4px rgba(100, 100, 100, 0.4);
+  transition: all 0.3s ease-in-out 0.1s;
+  h4{font-family: Inconsolata;
+      color: $blue;
+      padding-left: 12px;
+      font-size: 24px;
+    }
+}
 
+.btn-show-form {
+  width: 100%;
+  margin-top: 12px;
+  border-color: $blue;
+  transition: .3s all ease-in-out;
+  // background-color: #005586;
+  padding: 6px 12px 6px 12px;
+  margin-top: 12px;
+}
+
+.btn-show-form a {
+  color: $blue;
+  font-family: Inconsolata;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+
+.btn-show-form a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.btn-show-form:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out 0.2s;
+  box-shadow: 0 0 0 2px $blue;
+  color: white;
+  text-decoration: none;
+  background-color: $blue;
+  a {
+  color: white;
+  font-family: Inconsolata;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding-top: 8px;
+}
+}
+
+.form-btn {
+  width: 60%;
+  margin: 0 auto;
+}
 

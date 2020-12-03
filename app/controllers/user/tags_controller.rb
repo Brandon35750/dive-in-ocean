@@ -1,13 +1,12 @@
 class User::TagsController < ApplicationController
-
-    def create
-        @tag = Tag.new(tag_params)
-        @tag.user = current_user
-        if @tag.save
-            redirect_to user_path(current_user)
-        else
-            render 'new'
-        end
+  def create
+    @tag = Tag.new(tag_params)
+    @tag.user = current_user
+    if @tag.save
+      redirect_to user_path(current_user)
+      else
+        render 'new'
+      end
     end
 
     def new
@@ -15,7 +14,8 @@ class User::TagsController < ApplicationController
     end
 
     def index
-        @tags = current_user.tags
+      @tags = current_user.tags
+
     end
 
     def destroy
