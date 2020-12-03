@@ -162,13 +162,19 @@
 }
 
 .text-on-map {
-  width: fit-content;
+
   position: absolute;
-  top: 20%; left: 50%;
-  transform: translate(-50%, -50%);
+  bottom: 0;
+  left: 13px;
+  padding: 14px 12px 14px 12px;
+  background-color: white;
+  border-top-right-radius: 20px;
+  i{color: #0A859C;}
+  h1{font-size: 28px;}
 }
 
 #map-new-tag {
+  position: relative;
   opacity: .7;
 }
 
