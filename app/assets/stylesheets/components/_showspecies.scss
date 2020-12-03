@@ -129,7 +129,7 @@
  }
 
 .tiret {
-  width: 33%;
+  width: 32%;
   padding: 16px 16px 16px 16px;
   display: inline-block;
 }
@@ -146,7 +146,7 @@
 }
 
 .tiret h4 {
-  border-right: solid 1px #005586;
+  // border-right: solid 1px #005586;
   font-family: Inconsolata;
   font-style: normal;
   font-weight: normal;
@@ -169,11 +169,12 @@
 .btn-show {
   width: 30%;
   height: 6%;
-  margin-top: 24px;
+  margin-top: 12px;
   border-color: #005586;
   transition: .3s all ease-in-out;
   // background-color: #005586;
   padding: 6px 12px 12px 12px;
+  margin-bottom: 64px;
 
 }
 
