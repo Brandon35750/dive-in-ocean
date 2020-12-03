@@ -37,6 +37,7 @@ const initMapbox = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
+
       style: 'mapbox://styles/brism35/cki92h3vh573u19rxcfbrqa1f',
       center: [14.5, -17],
       zoom: 1.3,
@@ -140,7 +141,7 @@ const createMarkers = (map, markers) => {
       map.flyTo({
         center: features[0].geometry.coordinates,
         zoom: zoom,
-        speed: 0.5,
+        speed: 2,
         curve: 1,
         easing: function (t) {
           return t;
@@ -156,7 +157,7 @@ const createMarkers = (map, markers) => {
     map.flyTo({
       center: e.features[0].geometry.coordinates,
         zoom: 9,
-        speed: 0.5,
+        speed: 2,
         curve: 1,
         easing: function (t) {
           return t;
@@ -261,4 +262,3 @@ const initMapboxUser = () => {
 };
 
 export { initMapbox, initMapboxNewTag, initMapboxUser };
-
