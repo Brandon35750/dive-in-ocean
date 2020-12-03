@@ -1,9 +1,9 @@
-
 <div id="map"
-   style="width: 100%; height: 100vh;"
+   style="width: 100%; height: 80vh;"
    data-markers="<%= @markers.to_json %>"
    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
 </div>
+
 
 
 <div class= "barre text-center">
@@ -27,9 +27,6 @@
       <h2 class="startt"><%= link_to "start a new search!", root_path%> </h2>
       </div>
       </div>
-
-
-
       <% elsif params[:query].present? %>
       <div class="card-map1" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path @tags_species1.first.photo.key %>)">
        <h2><%= params[:query]%></h2>
@@ -38,11 +35,8 @@
         </div>
       </div>
       <br>
-
-
-
-      <div class= "searchbarmap">
-            <div class= "mapsearchbar-picto"> <%= image_tag "mask-search.png", class: "image-small-32" %> </div>
+      <div class= "searchbar">
+            <div class= "searchbar-picto"> <%= image_tag "mask.png", class: "image-small-32" %> </div>
               <%= form_tag tags_path, class: "simple_form search w-100", method: :get do %>
               <%= hidden_field_tag :query,  params[:query] %>
             <div class="search-form-control form-group">
@@ -55,14 +49,13 @@
       </div>
     </div>
   </div>
-
     <% else %>
   <div class= container>
     <div class="row justify-content-center">
       <div class="comeanddive">
        <h2>Come and dive with us!</h2>
       </div>
-        <div class= "searchbarmap">
+        <div class= "searchbar">
           <div class= "searchbar-picto"> <%= image_tag "mask.png", class: "image-small-32" %> </div>
             <%= form_tag tags_path, class: "simple_form search w-100", method: :get do %>
             <div class="search-form-control form-group">
@@ -76,5 +69,4 @@
     </div>
   </div>
 <% end %>
-
 </div>

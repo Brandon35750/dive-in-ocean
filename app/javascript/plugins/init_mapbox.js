@@ -38,9 +38,9 @@ const initMapbox = () => {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
-      center: [14.5, -17],
-      zoom: 1.3,
-      pitch: 50,
+      center: [40, 0],
+      zoom: 2.1,
+      pitch: 40,
     });
 
     const markers = JSON.parse(mapElement.dataset.markers);
@@ -140,7 +140,7 @@ const createMarkers = (map, markers) => {
       map.flyTo({
         center: features[0].geometry.coordinates,
         zoom: zoom,
-        speed: 0.5,
+        speed: 2,
         curve: 1,
         easing: function (t) {
           return t;
@@ -156,7 +156,7 @@ const createMarkers = (map, markers) => {
     map.flyTo({
       center: e.features[0].geometry.coordinates,
         zoom: 9,
-        speed: 0.5,
+        speed: 2,
         curve: 1,
         easing: function (t) {
           return t;
@@ -261,4 +261,3 @@ const initMapboxUser = () => {
 };
 
 export { initMapbox, initMapboxNewTag, initMapboxUser };
-

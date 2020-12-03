@@ -2,18 +2,15 @@
   background-size:115%;
   transition: all 1s ease;
 }
-
 .card-map1 {
   background-size: 110% ;
   margin-right: 30px;
-  border: 5px solid #FFAA01;
+  border: 6px solid #FFAA01;
   transition: all 1s ease;
+  position: relative;
   background-position: center;
-  position: absolute;
-  height: 100px;
-  width: 320px;
-  bottom: 85px;
-  left: 200px;
+  height: 150px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,29 +18,23 @@
   font-size: 30px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-radius: 16px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   &:hover {
     .buttonmap{
       bottom: -11px;
       opacity:1;
       transition: 1s;
-
     }
   }
 }
-
-
 .card-map2:hover{
   background-size:115%;
   transition: all 1s ease;
 }
-
-
 .barremap {
   display: flex;
 }
-
 .buttontostart {
   border: 2px solid white;
   margin-left: 30px;
@@ -52,26 +43,22 @@
   padding: 20px;
   vertical-align: middle;
 }
-
 .startt a {
   color: white !important;
   font-family: Inconsolata;
   font-size: 20px;
   vertical-align: middle !important;
   padding-bottom: 30px;
-
 }
-
 .card-map2 {
   margin-right: 30px;
-  border: 5px solid #FEC763;
+  background-size: 110% ;
+  border: 6px solid #FEC763;
   transition: all 1s ease;
-  position: absolute;
-  height: 100px;
-  width: 320px;
-  bottom: 85px;
-  left: 200px;
+  position: relative;
   background-position: center;
+  height: 150px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -79,95 +66,74 @@
   font-size: 30px;
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-radius: 16px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   &:hover {
     .buttonmap{
       bottom: -11px;
       opacity:1;
       transition: 1s;
-
     }
   }
 }
-
-
-
-
-
 .card-map3:hover{
   background-size:115%;
   transition: all 1s ease;
 }
-
 .comeanddive {
   margin-right: 50px;
 }
-
-
-
 .card-map3 {
   background-size: 110% ;
-  border: 3px solid  #037A90;
+  border: 6px solid  #037A90;
   transition: all 1s ease;
-  position: absolute;
-  height: 100px;
-  width: 320px;
-  bottom: 85px;
-  right: 200px;
+  position: relative;
   background-position: center;
+  height: 150px;
+  width: 400px;
   display: flex;
   justify-content: center;
   align-items: center;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
+  border-radius: 16px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   &:hover {
     .buttonmap{
       bottom: -11px;
       opacity:1;
       transition: 1s;
-
     }
   }
 }
-
 .card-map3 a {
   font-size: 20px;
   font-family: "Inconsolata";
   font-weight: 100;
-
 }
-
 .card-map2 a {
   font-size: 20px;
   font-family: "Inconsolata";
   font-weight: 100;
 }
-
 .card-map1 a {
   font-size: 20px;
   font-family: "Inconsolata";
   font-weight: 100;
 }
-
-
-
 .buttonmap{
   position: absolute;
   bottom: 20px;
   transition: 1s;
-  width: 320px;
+  width: 400px;
   display:flex;
   margin-top: -10px;
   opacity: 0;
   text-align: center;
 }
-
  .buttonmap .one{
    background-color:white;
-   width: 320px;
+   width: 400px;
    padding:15px 10px ;
    border-bottom-left-radius: 5px;
    border: 1px solid white;
@@ -180,12 +146,9 @@
      box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
    }
   }
-
   .buttonmap .one a {
     color:#008297 !important;
-
   }
-
 //  .buttonmap .two{
 //    background-color:white;
 //    width: 200px;
@@ -201,5 +164,3 @@
 //      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 //    }
 //   }
-
-.mapboxgl-control-container { display: none; }
