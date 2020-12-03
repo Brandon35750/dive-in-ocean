@@ -1,6 +1,7 @@
 
 import mapboxgl from 'mapbox-gl';
 
+
 const initMapboxNewTag = () => {
   const mapElement = document.getElementById('map-new-tag');
   if (mapElement) { // only build a map if there's a div#map to inject into
@@ -228,7 +229,35 @@ const initMapboxUser = () => {
     };
 
     fitMapToMarkers(map, markers);
+
+    function easing(t) {
+      return t * (2 - t);
+    }
+
+    const marker = JSON.parse(mapElement.dataset.markers);
+
+    const fitMapToMarker = (map, marker) => {
+    const bounds = new mapboxgl.LngLatBounds();
+      bounds.extend([ marker.lng, marker.lat ]);
+      map.fitBounds(bounds, { padding: 70, maxZoom: 15, duration: 1000, easing: easing, pitch: 60 });
+    };
+
+    const card_show1 = document.querySelector('.card-product-show-0');
+    card_show1.addEventListener( 'click', function(e) {
+    fitMapToMarker(map, marker[(marker.length)-3]);
+    });
+
+    const card_show2 = document.querySelector('.card-product-show-1');
+    card_show2.addEventListener( 'click', function(e) {
+    fitMapToMarker(map, marker[(marker.length)-2]);
+    });
+
+    const card_show3 = document.querySelector('.card-product-show-2');
+    card_show3.addEventListener( 'click', function(e) {
+    fitMapToMarker(map, marker[(marker.length)-1]);
+    });
     }
 };
 
 export { initMapbox, initMapboxNewTag, initMapboxUser };
+
