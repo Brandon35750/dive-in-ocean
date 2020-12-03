@@ -17,7 +17,7 @@
    </div>
 
 
-<div class="container-index">
+<div class="container-index container-index-img">
   <div class="cards-index">
     <% @species.each do |species| %>
     <div class="card-category-index" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= cl_image_path species.photo.key %>)">
