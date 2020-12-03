@@ -4,13 +4,24 @@
 
 
 
+// .barre {
+//   background-color : #00005A;
+//   height: 15vh;
+
+// }
+
 .barre {
-  background-color : #00005A;
-  height: 20vh;
-  padding-top: 20px;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  text-align: center;
 }
 
+
+
 .barre h2{
+  // position: absolute;
   color: white !important;
 }
 
@@ -52,3 +63,15 @@
 .card-product .card-product-infos {
   padding: 16px;
 }
+
+
+
+// #map {
+//   position: relative;
+
+// }
+
+// .coucou {
+//   position: absolute;
+//   top: 50rem;
+// }

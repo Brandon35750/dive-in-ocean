@@ -1,0 +1,76 @@
+
+.search-form-control {
+  position: relative;
+
+}
+
+.search-form-control .btn {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  right: 8px;
+
+}
+
+.search-form-control .form-control {
+  height: 3.5rem;
+  // box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  border: 1px solid #E7E7E7;
+
+}
+
+.image-small-32 {
+  width: 32px;
+  height: 32px;
+
+}
+
+.searchbarmap {
+  width: 500px;
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+  border-radius: 16px;
+  border: 1px solid #065CAB;
+  position: absolute;
+  bottom: 85px;
+  right: 200px;
+
+}
+
+// .searchbarmap4 {
+//   margin-left: 30px;
+// }
+
+.mapsearchbar-picto {
+  padding: 12px;
+  border-right: 1px solid #065CAB;
+
+}
+
+.search-form-control input{
+  background-color: rgba(3,13,36,0);
+  border : none !important;
+  font-family: "Inconsolata";
+  font-size: 16px;
+  // color: white;
+
+}
+
+
+
+.searchbarmap ::placeholder {
+  color: #065CAB !important;
+  background-color: transparent !important;
+}
+
+
+.searchbarmap .form-control:focus {
+  background-color: transparent !important;
+  color: #065CAB;
+}
+
+
+.searchbarmap .search-form-control i{
+  color: #065CAB;
+}
