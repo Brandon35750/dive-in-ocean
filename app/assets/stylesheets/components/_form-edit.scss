@@ -161,4 +161,15 @@
   text-align: center;
 }
 
+.text-on-map {
+  width: fit-content;
+  position: absolute;
+  top: 20%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#map-new-tag {
+  opacity: .7;
+}
+
 

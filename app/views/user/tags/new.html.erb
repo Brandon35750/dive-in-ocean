@@ -8,6 +8,9 @@
            style="height: 100vh"
            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
+      <div class="text-on-map">
+        <h1>Click on the map to plot your dive!</h1>
+      </div>
     </div>
 
     <div class="col-4 nopadding edit-form" style="height: 100vh">
@@ -16,12 +19,12 @@
       </div>
       <div class="form-dive">
         <%= simple_form_for [:user, @tag] do |f| %>
+        <%= f.association :species, label: "What species have you observed?", input_html: { class: "bar" } %>
         <%= f.input :diving_date, as: :date, html5: true, label: "When did you dive?", input_html: { class: "bar" } %>
         <%= f.input :spot_name, label: "Where was it?", input_html: { class: "bar" } %>
-        <%= f.input :latitude, input_html: { class: "bar" } %>
-        <%= f.input :longitude, input_html: { class: "bar" } %>
-        <%= f.association :species, label: "What species have you observed?", input_html: { class: "bar" } , label_html: { class: "white-text" }%>
-        <%= f.input :depth, label: "At what depth?", input_html: { class: "bar" }, label_html: { class: "white-text" } %>
+        <%= f.input :latitude, input_html: { class: "bar" }, label_html: { class: "white-text" } %>
+        <%= f.input :longitude, input_html: { class: "bar" }, label_html: { class: "white-text" } %>
+        <%= f.input :depth, label: "At what depth?", input_html: { class: "bar white-text" }, label_html: { class: "white-text" } %>
         <%= f.input :description, label: "Tell us more!", label_html: { class: "white-text" }, input_html: { class: "white-text" } %>
         <%= f.input :photo, label: "Did you take a picture?", as: :file, label_html: { class: "white-text" } %>
         <div class="form-dive-btn">
