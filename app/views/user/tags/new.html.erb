@@ -1,3 +1,10 @@
+<div class="topnav-map-bandeau">
+  <div class="position-logo">
+    <%= link_to "/", class: "topnav-centered dispo-liens2" do %>
+    <%= image_tag "logo.png", alt: "logo" %>
+    <% end %>
+  </div>
+</div>
 
 <div class="addadive">
 
@@ -8,22 +15,45 @@
            style="height: 100vh"
            data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
       </div>
+      <div class="text-on-map">
+        <h1>Click on the map to plot your dive! <i class="fas fa-map-marker-alt"></i></h1>
+      </div>
     </div>
 
     <div class="col-4 nopadding edit-form" style="height: 100vh">
       <div class="input-bloc">
         <h1>Post your new dive</h1>
+
+            <div class="topnav-map-avatar">
+              <% if user_signed_in? %>
+              <il class="nav-item dropdown">
+                <%= cl_image_tag current_user.avatar.key, class: "zoom avatar dropdown-toggle m-3", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+                <div class="dropdown-menu dropdown-menu-right menu-avatar" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item item"><%= link_to "Add a tag", new_user_tag_path %></a>
+                  <a class="dropdown-item item"><%= link_to "Profile", user_path(current_user.id) %></a>
+                  <a class="dropdown-item item"><%= link_to "Log out", destroy_user_session_path, method: :delete%></a>
+                </div>
+              </il>
+                <% else %>
+                <a class="nav-item">
+                  <%= link_to "Login", new_user_session_path, class: "text-center" %>
+                </a>
+                <% end %>
+            </div>
+
       </div>
       <div class="form-dive">
         <%= simple_form_for [:user, @tag] do |f| %>
+        <%= f.association :species, label: "What species have you observed?", input_html: { class: "bar" } %>
         <%= f.input :diving_date, as: :date, html5: true, label: "When did you dive?", input_html: { class: "bar" } %>
         <%= f.input :spot_name, label: "Where was it?", input_html: { class: "bar" } %>
-        <%= f.input :latitude, input_html: { class: "bar" } %>
-        <%= f.input :longitude, input_html: { class: "bar" } %>
-        <%= f.association :species, label: "What species have you observed?", input_html: { class: "bar" } , label_html: { class: "white-text" }%>
-        <%= f.input :depth, label: "At what depth?", input_html: { class: "bar" }, label_html: { class: "white-text" } %>
-        <%= f.input :description, label: "Tell us more!", label_html: { class: "white-text" }, input_html: { class: "white-text" } %>
-        <%= f.input :photo, label: "Did you take a picture?", as: :file, label_html: { class: "white-text" } %>
+        <div class="position">
+          <%= f.input :latitude, input_html: { class: "bar" } %>
+          <%= f.input :longitude, input_html: { class: "bar" } %>
+        </div>
+        <%= f.input :depth, label: "At what depth?", input_html: { class: "bar" } %>
+        <%= f.input :description, label: "Tell us more!" %>
+        <%= f.input :photo, value: "Choose a picture", label: "Did you take a picture?", as: :file %>
         <div class="form-dive-btn">
           <button type="submit" class="form-btn-fa add-a-dive">
             <i class="fas fa-plus-circle"></i>
