@@ -39,7 +39,7 @@ const initMapbox = () => {
       style: 'mapbox://styles/mapbox/streets-v11',
       center: [14.5, -17],
       zoom: 1.3,
-      pitch: 60,
+      pitch: 50,
     });
 
     const markers = JSON.parse(mapElement.dataset.markers);
@@ -69,11 +69,11 @@ const createMarkers = (map, markers) => {
         'circle-radius': [
           'step',
           ['get', 'point_count'],
-          25,  // px
+          20,  // px
           5,  // jusqu'à ce nombre de point
-          45,  // px
+          22,  // px
           15,  // jusqu'à ce nombre de point
-          60   // px pour au delà
+          25   // px pour au delà
         ]
       }
     });
@@ -110,7 +110,7 @@ const createMarkers = (map, markers) => {
       layout: {
         'text-field': "{species}",
         'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-        'text-size': 10,
+        'text-size': 12,
       }
     });
 
@@ -122,7 +122,7 @@ const createMarkers = (map, markers) => {
       layout: {
         'text-field': '{point_count_abbreviated}',
         'text-font': ['DIN Offc Pro Medium', 'Arial Unicode MS Bold'],
-        'text-size': 10
+        'text-size': 12
       }
     });
   });
@@ -139,11 +139,12 @@ const createMarkers = (map, markers) => {
       map.flyTo({
         center: features[0].geometry.coordinates,
         zoom: zoom,
-        speed: 0.2,
+        speed: 0.5,
         curve: 1,
         easing: function (t) {
           return t;
         }
+
       });
     });
   });
@@ -154,7 +155,7 @@ const createMarkers = (map, markers) => {
     map.flyTo({
       center: e.features[0].geometry.coordinates,
         zoom: 9,
-        speed: 0.2,
+        speed: 0.5,
         curve: 1,
         easing: function (t) {
           return t;
@@ -208,7 +209,7 @@ const initMapboxUser = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map-user',
-      style: 'mapbox://styles/mapbox/streets-v11'
+      style: 'mapbox://styles/mapbox/streets-v11',
     });
 
 
