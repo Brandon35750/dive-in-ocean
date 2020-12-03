@@ -1,35 +1,23 @@
-<div class="edit-form  edit-form-profile">
-    <div class="edit-form-container pl-4">
-          <div class="input-bloc">
+<div class="edit-form-user  edit-form-profile-user">
+    <div class="edit-form-container-user pl-4">
+          <div>
             <h1>Edit my profile</h1>
           </div>
           <%= simple_form_for @user do |f| %>
             <%= f.error_notification %>
 
-            <%= f.input :username, input_html: { class: "bar-user" } %>
-            <%= f.input :first_name, input_html: { class: "bar-user" } %>
-            <%= f.input :last_name, input_html: { class: "bar-user" } %>
-            <%= f.input :diving_level, input_html: { class: "bar-user" } %>
-            <%= f.input :description, textarea_html: { class: "bar-user" }, input_html: { class: "bar-user" } %>
+            <%= f.input :username, input_html: { class: "bar-user-profile" } %>
+            <%= f.input :first_name, input_html: { class: "bar-user-profile" } %>
+            <%= f.input :last_name, input_html: { class: "bar-user-profile" } %>
+            <%= f.input :diving_level, input_html: { class: "bar-user-profile" } %>
+            <%= f.input :description, textarea_html: { class: "bar-user-profile" }, input_html: { class: "bar-user-profile" } %>
             <%= f.input :avatar, as: :file %>
-            <%= f.button :submit, "Edit profile", class: "btn-form" %>
-            <%= f.button :button, "Cancel", type: "reset", class: "btn-form" %>
-
-
-
-
-              <!-- <button type="reset" class="test">
-                <i class="fas fa-undo-alt"></i>
-              </button> -->
-
-
-            <% end %>
-
-
-          <div class="btn-form-back">
-            <%= link_to 'Back', user_path %>
-          </div>
-
-
+            <div class="form-dive-btn-user">
+              <%= f.button :submit, "Edit profile", class: "btn btn-primary btn-edit" %>
+              <% end %>
+              <div>
+                <%= link_to 'Back', user_path, class: "btn btn-primary btn-edit" %>
+              </div>
+            </div>
     </div>
 </div>
