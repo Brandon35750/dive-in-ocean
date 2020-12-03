@@ -9,12 +9,13 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @tags = @user.tags
     @markers = @tags.map do |tag|
+      icon = 'https://res.cloudinary.com/dradgipdv/image/upload/v1607014670/icon-dive_1_zjnjvf.png'
       {
         lat: tag.latitude,
         lng: tag.longitude,
-        infoWindow: render_to_string(partial: "tags/info_window", locals: { tag: tag })
+        infoWindow: render_to_string(partial: "tags/info_window", locals: { tag: tag }),
         # infoWindow: render_to_string(partial: "info_window", locals: { tag: tag })
-        # image_url: helpers.asset_url('../assets/images/mask.png')
+        image_url: helpers.asset_url(icon)
       }
     end
   end
