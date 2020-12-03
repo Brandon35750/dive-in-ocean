@@ -52,19 +52,52 @@ width: 100px;
 
 
 /* Responsive navigation menu - display links on top of each other instead of next to each other (for mobile devices) */
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav-right{
+@media screen and (max-width: 1300px) {
+  .topnav a{
     float: none;
-    display: flex;
     border-bottom: none;
+    font-size: 18px;
+    color: #005586;
+    padding: 3px 3px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0.2s;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin:4px;
+
   }
 
-.logo-home a {
-  position: relative;
-  top: 0;
-  left: 0;
-  transform: none;
+  .nav-item {
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  position: fixed;
+  top:30px;
+  right:30px;
+  }
 }
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    border-bottom: none;
+    font-size: 12px;
+    color: #005586;
+    padding: 2px 2px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out 0.2s;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin:8px;
+  }
+
+  .nav-item {
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  position: fixed;
+  top:30px;
+  right:30px;
+  }
 }
 
 .topnav a.active {
