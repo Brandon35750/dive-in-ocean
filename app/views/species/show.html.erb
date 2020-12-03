@@ -32,13 +32,11 @@
         <h5><%=@species.threat_level%></h5>
         </div>
       </div>
-      <div class="btn btn-show">
-        <%= link_to "Where to find me ?", tags_path(query: @species.name)%>
-      </div>
+
       <div class=div-img>
         <div class="img-tag ">
           <h3>Last Pictures</h3>
-          <h4><%= link_to "See all", ""%></h4>
+          <h4><%= link_to "See all", gallery_path%></h4>
         </div>
         <div class="card-show">
           <%@species.tags.last(3).each do |tag| %>
@@ -47,6 +45,9 @@
           </div>
           <% end %>
         </div>
+      </div>
+      <div class="btn btn-show">
+        <%= link_to "Where to find me ?", tags_path(query: @species.name)%>
       </div>
     </div>
 </div>
