@@ -8,7 +8,7 @@ const initMapboxNewTag = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map-new-tag',
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/brism35/cki92h3vh573u19rxcfbrqa1f',
       zoom: 0
     });
 
@@ -37,10 +37,11 @@ const initMapbox = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map',
-      style: 'mapbox://styles/mapbox/streets-v11',
-      center: [40, 0],
-      zoom: 2.1,
-      pitch: 40,
+
+      style: 'mapbox://styles/brism35/cki92h3vh573u19rxcfbrqa1f',
+      center: [14.5, -17],
+      zoom: 1.3,
+      pitch: 50,
     });
 
     const markers = JSON.parse(mapElement.dataset.markers);
@@ -210,7 +211,7 @@ const initMapboxUser = () => {
     mapboxgl.accessToken = mapElement.dataset.mapboxApiKey;
     const map = new mapboxgl.Map({
       container: 'map-user',
-      style: 'mapbox://styles/mapbox/streets-v11',
+      style: 'mapbox://styles/brism35/cki92h3vh573u19rxcfbrqa1f',
     });
 
 
