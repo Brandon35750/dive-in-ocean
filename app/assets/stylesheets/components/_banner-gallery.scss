@@ -3,18 +3,31 @@
   background-size: cover;
   background-position: center;
   width: 100%;
-  height: 300px;
+  height: 200px;
   text-align: center;
   margin-bottom: 100px;
 }
 
 
 .title-gallery h1{
-  color: #00005A;
+  color: #065CAB;
   font-family: "Inconsolata";
   font-weight: bold;
-  font-size: 50px;
-  padding-top: 7rem;
+  font-size: 40px;
+  padding-top: 3rem;
   // text-shadow: 0px 1px 4px rgba(0,0,0,0.3);
   margin-bottom: 20px;
+}
+
+.title-gallery h3 {
+  font-family: Inconsolata;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #005586;
+  opacity: 0.5;
 }

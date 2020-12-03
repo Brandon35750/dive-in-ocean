@@ -1,0 +1,135 @@
+// CAROUSSEL
+.carou {
+  max-width: 1300px !important;
+
+  }
+
+
+
+
+
+  .carousel-inner .noidea{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border: 2px solid #0A859C;
+    margin-right: auto;
+    margin-left: auto;
+    width: 700px;
+    border-radius: 8px;
+    padding-top: 6px;
+    text-shadow: 0px 1px 4px rgba(255, 255, 255, 0.1);
+
+  }
+
+
+
+  .controls-top i {
+    color:  #0A859C;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+
+
+
+  .carousel-inner {
+    background-image: asset-url('fond.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 370px;
+    width: 100%;
+    margin-bottom: 100px;
+
+  }
+
+
+  .picture:hover {
+    background-size:115%;
+    transition: all 1s ease;
+  }
+
+  .picture {
+    margin: 0;
+    background-size: 110%;
+    transition: all 1s ease;
+    position: relative;
+    background-position: center;
+    height: 220px;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    &:hover {
+      .onglet{
+        bottom: -20px;
+        opacity:1;
+        transition: 1s;
+
+      }
+    }
+  }
+
+
+
+
+
+
+
+
+  .onglet {
+    position: absolute;
+    bottom: -10px !important;
+    transition: 1s;
+
+   width: 400px;
+   display:flex;
+   margin-top: -10px;
+   opacity: 0;
+   text-align: center;
+  }
+
+
+  .onglet .where {
+    background-color:white;
+    width: 200px;
+    padding:15px 10px ;
+    border-bottom-left-radius: 5px;
+    border: 1px solid white;
+    opacity: 0.8;
+    font-size: 15px;
+    font-family: "Inconsolata";
+    &:hover{
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 10px 20px -12px inset, rgba(0, 0, 0, 0.3) 0px 9px 18px -9px inset;
+    }
+   }
+
+
+   .onglet .info {
+      background-color:white;
+      width: 200px;
+      padding:15px 10px ;
+      border-bottom-right-radius: 5px;
+      border: 1px solid white;
+      opacity: 0.8;
+      font-size: 15px;
+      font-family: "Inconsolata";
+      &:hover{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+      }
+     }
+
+  .onglet .info a {
+    color: #0A859C !important;
+  }
+
+  .onglet .where a {
+    color: #0A859C !important;
+  }

@@ -1,56 +1,96 @@
 
 
 
-
-// body {
-// 	min-height: 100vh;
-// 	background-color: #fafafa;
-// }
-
 .container-gallery {
 	max-width: 100rem;
-	margin: 0 auto;
-	padding: 0 2rem 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 2rem 2rem;
+  background-image: asset-url('map-transparente.png');
+
 }
 
-.heading {
-	font-family: "Montserrat", Arial, sans-serif;
-	font-size: 4rem;
-	font-weight: 500;
-	line-height: 1.5;
-	text-align: center;
-	padding: 3.5rem 0;
-	color: #1a1a1a;
-}
+// .heading {
+// 	font-family: "Montserrat", Arial, sans-serif;
+// 	font-size: 4rem;
+// 	font-weight: 500;
+// 	line-height: 1.5;
+// 	text-align: center;
+// 	padding: 3.5rem 0;
+// 	color: #1a1a1a;
+// }
 
-.heading span {
-	display: block;
-}
+// .heading span {
+//   display: block;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
-.gallery {
-	display: flex;
-	flex-wrap: wrap;
-	/* Compensate for excess margin on outer gallery flex items */
-	margin: -1rem -1rem;
-}
+// .gallery {
+// 	// display: flex;
+//   // flex-wrap: wrap;
+//   // width: 1300px;
+//   // margin-left: auto;
+//   // margin-right: auto;
+// 	/* Compensate for excess margin on outer gallery flex items */
+// 	// margin: -10rem -10rem;
+// }
 
 .gallery-item {
 	/* Minimum width of 24rem and grow to fit available space */
-	flex: 1 0 24rem;
+  flex: 1 0 24rem;
+
 	/* Margin value should be half of grid-gap value as margins on flex items don't collapse */
-	margin: 1rem;
+	// margin: 10rem;
 	box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
-	overflow: hidden;
+  overflow: hidden;
+  min-width: 400px;
+  max-width: 400px;
+  align-items: center;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: 8px;
+  margin-bottom: 50px;
+  position: relative;
+
+
 }
+
+
+.gallery-item-info {
+  position: absolute;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  .titles {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .titlename h2{
+      color: white !important;
+    }
+  }
+  &:hover {
+    opacity: 1;
+    transition-duration: 0,5s;
+  }
+}
+
+
+
 
 .gallery-image {
 	display: block;
-	// width: 100%;
-  // height: 100%;
-  min-height: 500px;
-  max-height: 500px;
-  min-width: 500px;
-  max-width: 500px;
+	width: 100%;
+  height: 100%;
+  // min-height: 500px;
+  // max-height: 500px;
+  // min-width: 500px;
+  // max-width: 500px;
 	object-fit: cover;
 	transition: transform 400ms ease-out;
 }
@@ -59,13 +99,7 @@
 	transform: scale(1.15);
 }
 
-/*
 
-The following rule will only run if your browser supports CSS grid.
-
-Remove or comment-out the code block below to see how the browser will fall-back to flexbox styling.
-
-*/
 
 @supports (display: grid) {
 	.gallery {
@@ -74,8 +108,5 @@ Remove or comment-out the code block below to see how the browser will fall-back
 		grid-gap: 2rem;
 	}
 
-	.gallery,
-	.gallery-item {
-		margin: 0;
-	}
+
 }
