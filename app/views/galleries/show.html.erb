@@ -1,6 +1,7 @@
 <div class="bannergallery">
       <div class= "title-gallery">
-        <h1>Dive-in Ocean Gallery</h1>
+        <h1>DIVE-IN OCEAN GALLERY</h1>
+        <h3>Dive-in Ocean thanks you for your pictures!</h3>
       </div>
    </div>
 
@@ -10,7 +11,17 @@
     <% @tags.each do |tag| %>
       <% if tag.photo.attached? %>
 		    <div class="gallery-item">
+          <div class="gallery-item-info">
+            <div class="titles">
+              <div class="titlename text-center">
+                <h2><%= tag.species.name %></h2>
+                <h2><%= tag.spot_name %></h2>
+              </div>
+            </div>
+          </div>
           <%= cl_image_tag tag.photo.key, class: "gallery-image" %>
+
+
         </div>
       <% end %>
     <% end %>
