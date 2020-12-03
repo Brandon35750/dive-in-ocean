@@ -30,11 +30,15 @@ import "bootstrap";
 // Internal imports, e.g:
 import { initMapbox, initMapboxNewTag, initMapboxUser } from '../plugins/init_mapbox';
 import { scrollnavbar } from '../plugins/scroll-navbar.js';
+
+import { zoomtag } from '../plugins/zoomtag.js';
+
 document.addEventListener('turbolinks:load', () => {
   initMapbox();
   initMapboxNewTag();
   initMapboxUser();
   scrollnavbar();
+  zoomtag();
 })
 
 
