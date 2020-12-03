@@ -8,6 +8,7 @@ const initMapboxNewTag = () => {
     const map = new mapboxgl.Map({
       container: 'map-new-tag',
       style: 'mapbox://styles/mapbox/streets-v11',
+ //     style: 'mapbox://styles/brism35/ckhyvdf2h01tc19lrki6k28uc',
       zoom: 0
     });
 
@@ -37,6 +38,7 @@ const initMapbox = () => {
     const map = new mapboxgl.Map({
       container: 'map',
       style: 'mapbox://styles/mapbox/streets-v11',
+ //     style: 'mapbox://styles/brism35/ckhyvdf2h01tc19lrki6k28uc',
       center: [14.5, -17],
       zoom: 1.3,
       pitch: 60,
@@ -209,6 +211,7 @@ const initMapboxUser = () => {
     const map = new mapboxgl.Map({
       container: 'map-user',
       style: 'mapbox://styles/mapbox/streets-v11'
+//      style: 'mapbox://styles/brism35/ckhyvdf2h01tc19lrki6k28uc',
     });
 
 
