@@ -10,23 +10,19 @@
         <p><strong><%= link_to(tag.user.username, user_path(tag.user))%></strong></p>
         <p>diving close to <strong><%=tag.spot_name%></strong> captured this picture at a depth of <strong><%=tag.depth%> meters</strong>.</p>
       </div>
-
-
-
       <div class="infos">
         <p>Lat: <%=tag.latitude%></p>
         <p>Lng: <%=tag.longitude%></p>
       </div>
 
+      <% if tag.user == current_user %>
        <div class="bin">
          <%= link_to user_tag_path(tag), class: 'btn', data: {confirm: "Are you sure to destroy your tag?"}, method: :delete do %>
          <i class="far fa-trash-alt fa-2x"></i>
          <% end %>
        </div>
-
-
-
-
+      <% end %>
+      
     </div>
     <%= cl_image_tag tag.user.avatar.key, class: "card-tag-user avatar-bordered"%>
   </div>
