@@ -59,9 +59,11 @@
         <%= f.input :photo, value: "Choose a picture", label: "Did you take a picture?", as: :file %>
 
 
-          <div class="btn btn-show-form">
-            <%= link_to "Add your species", edit_user_path(current_user.id)%>
-          </div>
+          <button type="submit" class="btn btn-show-form">
+            <i>Add your species</i>
+          </button>
+
+
 
         <% end %>
       </div>
