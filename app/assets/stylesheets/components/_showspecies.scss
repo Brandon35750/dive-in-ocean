@@ -15,8 +15,8 @@
 .img-species-show img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  // object-fit: cover;
+  // object-position: center;
 
 }
 
@@ -354,7 +354,7 @@ $teal12: #84CDD4;
 .container-ligth {
   position: absolute;
   top: 0;
-  z-index:4000;
+  z-index:800;
   width: 56vw;
   height: 100%;
   background: linear-gradient(to bottom, #96C7CC 0%, #C3DDD8 30%, #C3DDD8 100%);
