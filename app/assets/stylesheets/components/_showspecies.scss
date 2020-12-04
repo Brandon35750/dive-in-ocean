@@ -8,13 +8,13 @@
   display: flex;
 }
 
-.img-species {
-  width:56%;
+.img-species-show {
+  width: 56%;
 }
 
-.img-species img {
+.img-species-show img {
   width: 100%;
-  height:100%;
+  height: 100%;
   object-fit: cover;
   object-position: center;
 
@@ -25,6 +25,7 @@
   float: right;
   position: relative;
   color:#696969;
+  background-color: white;
 }
 
 .name-center {
@@ -242,3 +243,213 @@
   opacity: 0.5;
   z-index: 999;
 }
+
+@keyframes bubblesIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@for $i from 1 through 25 {
+  $size: random(7) + 1 + px;
+  .bubbleX#{$i} {
+    display: inline-block;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background: #FFF;
+    transform: translateX(0);
+    animation-name: bubbleX#{$i};
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .bubbleY#{$i} {
+    display: inline-block;
+    position: absolute;
+    z-index: 5000;
+    bottom: random(70) + vh;
+    left: random(56) + vw;
+    animation-name: bubbleY;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    transform: translateY(0);
+    opacity: .2;
+    animation-delay: random(5) + s;
+  }
+  @keyframes bubbleX#{$i} {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-random(15) + px) }
+    40% { transform: translateX(random(15) + px) }
+    60% { transform: translateX(-random(15) + px) }
+    80% { transform: translateX(random(15) + px) }
+    100% { transform: translateX(-random(15) + px); }
+  }
+
+  @keyframes bubbleY {
+    0% {
+      transform: translateY(0);
+      opacity: 0;
+    }
+    20% {
+      transform: translateY(-12px);
+      opacity: 0.4;
+    }
+    40% {
+      transform: translateY(-24px);
+      opacity: 0.3;
+    }
+    60% {
+      transform: translateY(-36px);
+      opacity: 0.5;
+    }
+    80% {
+      transform: translateY(-48px);
+      opacity: 0.3;
+    }
+    100% {
+      transform: translateY(-60px);
+      opacity: 0;
+    }
+  }
+}
+
+.img-species-show img{
+  height: 100%;
+  transform: scale(1);
+  transition: all 1.5s ease-in-out 0.1s;
+}
+.img-species-show img:hover{
+  transform: scale(1.05);
+  transition: all 1.5s ease-in-out 0.1s;
+}
+
+$rayHeight: 800px;
+$teal1: #AFE0E4;
+$teal2: #C0E6E9;
+$teal3: #84CDD4;
+$teal4: #7EC9D1;
+$teal5: #97D6DC;
+$teal6: #AEDEE2;
+$teal7: #96D3D8;
+$teal8: #9CD7DD;
+$teal9: #7ECBD3;
+$teal10: #AFE0E4;
+$teal11: #B6DFE3;
+$teal12: #84CDD4;
+.img{
+  width: 500px;
+  height: 335px;
+  position: relative;
+  left: 500px;
+}
+.container-ligth {
+  position: absolute;
+  top: 0;
+  z-index:4000;
+  width: 56vw;
+  height: 100%;
+  background: linear-gradient(to bottom, #96C7CC 0%, #C3DDD8 30%, #C3DDD8 100%);
+  opacity: 0.2;
+  background-image: url("https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.futura-sciences.com%2Fplanete%2Fphotos%2Foceanographie-oceans-film-hommage-nature-631%2Focean-photo-poisson-lune-ce-geant-oceans-3288%2F&psig=AOvVaw3zoDoTWI-5LcVPhMXnBtg7&ust=1606584244578000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCNiQkreRo-0CFQAAAAAdAAAAABA");
+  overflow: hidden;
+}
+.gradientContainer {
+  // border: 1px solid #FF9900;
+  width: 100%;
+  height: 100%;
+  overflow:hidden;
+//  background: linear-gradient(to bottom, #C3E5E5, #0D3F53);
+  background: transparent;
+  position: absolute;
+  z-index: 200;
+}
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  &.one {
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, #0B4558 100%);
+    z-index: 100;
+  }
+}
+.gradient {
+  margin-top: -100px;
+  // border: 1px solid red;
+  width: 2500px;
+  height: 700px;
+  transform: translateX(-50px) rotate(20deg);
+  animation-name: gradient;
+  animation-duration: 40s;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-timing-function: linear;
+  transform-style: preserve-3d;
+}
+@keyframes gradient {
+  0% {
+    transform: translateX(-50px) rotate(20deg);
+  }
+  100% {
+    transform: translateX(-379px) rotate(20deg);
+  }
+}
+@for $i from 1 through 58 {
+  .ray#{$i} {
+    height: $rayHeight;
+    display: inline-block;
+    animation-name: blinkRay;
+    animation-duration: random(4) + s;
+    animation-delay: random(4) + s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    opacity: 1;
+  }
+}
+@keyframes blinkRay {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.4;
+  }
+}
+.ray1, .ray14, .ray27, .ray40, .ray53, .ray66  { width: 20px; background: linear-gradient(to bottom, $teal1 0%, $teal1 40%, rgba(255, 255, 255,0) 100%); }
+.ray2, .ray15, .ray28, .ray41, .ray54 { width: 20px; background: linear-gradient(to bottom, $teal2 0%, $teal2 30%, rgba(255, 255, 255,0) 100%); }
+.ray3, .ray16, .ray29, .ray42, .ray55 { width: 15px; background: linear-gradient(to bottom, $teal3 0%, $teal3 20%, rgba(255, 255, 255,0) 100%); }
+.ray4, .ray17, .ray30, .ray43, .ray56 { width: 5px; background: linear-gradient(to bottom, $teal4 0%, $teal4 10%, rgba(255, 255, 255,0) 100%); }
+.ray5, .ray18, .ray31, .ray44, .ray57 { width: 10px; background: linear-gradient(to bottom, $teal5 0%, $teal5 40%, rgba(255, 255, 255,0) 100%); }
+.ray6, .ray19, .ray32, .ray45, .ray58 { width: 10px; background: linear-gradient(to bottom, $teal6 0%, $teal6 30%, rgba(255, 255, 255,0) 100%); }
+.ray7, .ray20, .ray33, .ray46, .ray59 { width: 10px; background: linear-gradient(to bottom, $teal7 0%, $teal7 20%, rgba(255, 255, 255,0) 100%); }
+.ray8, .ray21, .ray34, .ray47, .ray60 { width: 5px; background: linear-gradient(to bottom, $teal8 0%, $teal8 40%, rgba(255, 255, 255,0) 100%); }
+.ray9, .ray22, .ray35, .ray48, .ray61 { width: 25px; background: linear-gradient(to bottom, $teal9 0%, $teal9 60%, rgba(255, 255, 255,0) 100%); }
+.ray10, .ray23, .ray36, .ray49, .ray62 { width: 10px; background: linear-gradient(to bottom, $teal5 0%, $teal5 50%, rgba(255, 255, 255,0) 100%); }
+.ray11, .ray24, .ray37, .ray50, .ray63 { width: 10px; background: linear-gradient(to bottom, $teal6 0%, $teal6 40%, rgba(255, 255, 255,0) 100%); }
+.ray12, .ray25, .ray38, .ray51, .ray64 { width: 10px; background: linear-gradient(to bottom, $teal7 0%, $teal7 20%, rgba(255, 255, 255,0) 100%); }
+.ray13, .ray26, .ray39, .ray52, .ray65 { width: 5px; background: linear-gradient(to bottom, $teal8 0%, $teal8 10%, rgba(255, 255, 255,0) 100%); }
+@keyframes sunset {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  100% {
+    transform: translateY(10px) scale(.9);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
