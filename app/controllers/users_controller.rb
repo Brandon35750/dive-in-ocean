@@ -9,7 +9,7 @@ class UsersController < ApplicationController
     @user = User.find(params[:id])
     @tags = @user.tags
     @markers = @tags.map do |tag|
-      icon = 'https://res.cloudinary.com/dradgipdv/image/upload/v1607014670/icon-dive_1_zjnjvf.png'
+      icon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Fish_icon.svg/1101px-Fish_icon.svg.png'
       {
         lat: tag.latitude,
         lng: tag.longitude,
