@@ -1,11 +1,10 @@
 .mapboxgl-popup-content {
   width: 400px;
-  position: relative;
   padding: 0px 0px 0px;
   pointer-events: auto;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   background: rgba(225, 225, 225, .9);
-  z-index: auto;
+
 }
 
 .card-tag {
@@ -13,7 +12,7 @@
   width: 400px;
   border-radius: 6px;
   overflow: hidden;
-  // z-index: 999;
+
 }
 
 .infos {
